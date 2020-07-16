@@ -26,26 +26,35 @@ mass_696_young1_d_xyz=mass_696_d_xyz_lessthan1[ind_age_young1_d_xyz] #Selected t
 #z_691_tracked
 #mass_691_tracked
 
+#Note: The masses (mass_696_young1_d_xyz and mass_691_tracked) are equal as they are the same stars !!!!!!!!!!!!!!!!!!!
+
+###################I put this here to calculate the cm locally
+#total_mass=sum(mass_691_tracked)  
+#cm = sum(mass_691_tracked[i]*x_691_tracked[i] for i in range(len(x_691_tracked)))/ total_mass
+#print("This is the cm I calculated locally",cm)
+####################################################################################
+
 
 #Calculating the center of mass using the x y and z and mass values from the snapshot 696
-xcm_696=distance_functions.cm(x_young1_d_xyz, mass_696_young1_d_xyz)
-ycm_696=distance_functions.cm(y_young1_d_xyz, mass_696_young1_d_xyz)
-zcm_696=distance_functions.cm(z_young1_d_xyz, mass_696_young1_d_xyz)
-delta_rxyz_696=distance_functions.dr(xcm_696,ycm_696,zcm_696,mass_696_young1_d_xyz)
-
+xcm_696=distance_functions.cm(x_young1_d_xyz,mass_696_young1_d_xyz)
+ycm_696=distance_functions.cm(y_young1_d_xyz,mass_696_young1_d_xyz)
+zcm_696=distance_functions.cm(z_young1_d_xyz,mass_696_young1_d_xyz)
+delta_rxyz_696=distance_functions.dr(x_young1_d_xyz,y_young1_d_xyz,z_young1_d_xyz,mass_696_young1_d_xyz)
+print("\n \n This gives the position of star relative to the center of mass in in snapshot 696 \n \n",delta_rxyz_696)
 
 #Calculating the center of mass using the x y and z and mass values from the snapshot 691
-xcm_691=distance_functions.cm(x_691_tracked, mass_691_tracked)
-ycm_691=distance_functions.cm(y_691_tracked, mass_691_tracked)
-zcm_691=distance_functions.cm(z_691_tracked, mass_691_tracked)
+xcm_691=distance_functions.cm(x_691_tracked,mass_691_tracked)
+ycm_691=distance_functions.cm(y_691_tracked,mass_691_tracked)
+zcm_691=distance_functions.cm(z_691_tracked,mass_691_tracked)
 delta_rxyz_691=distance_functions.dr(x_691_tracked,y_691_tracked,z_691_tracked,mass_691_tracked)
+print("\n \n This gives the position of star relative to the center of mass in in snapshot 691 \n \n",delta_rxyz_691)
 
 
 #Now plotting figure 10 with y limits, x limits and the center of mass
 fig10 = plt.figure()
 ax1 = fig10.add_subplot(211)
 ax1.scatter(y_691_tracked,x_691_tracked,marker=".",s=0.5)
-ax1.plot(ycm_691,xcm_691)
+ax1.plot(ycm_691,xcm_691,color='red',marker=".")
 ax1.set_xlabel('y')
 ax1.set_ylabel('x')
 ax1.set_ylim(-2,2)
@@ -56,7 +65,7 @@ plt.subplots_adjust(hspace=.5)
 
 ax2=fig10.add_subplot(212)
 ax2.scatter(y_young1_d_xyz,x_young1_d_xyz,marker=".",s=0.5)
-ax2.plot(ycm_696,xcm_696)
+ax2.plot(ycm_696,xcm_696,color='red',marker=".")
 ax2.set_xlabel('y')
 ax2.set_ylabel('x')
 ax2.minorticks_on()
