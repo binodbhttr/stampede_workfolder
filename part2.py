@@ -60,5 +60,5 @@ ax2.set_title('in 2D (x vs y)')
 #plt.tight_layout()
 fig7.savefig("./plots/spherical_cut_1_young1_age7to8inlog10scale.png")
 
-ind_tracked_id_691=np.where(id_691==id_young1_d_xyz_lessthan1)
+ind_tracked_id_691=np.where(id_691==id_young1_d_xyz)
 tracked_id_691=id_691[ind_tracked_id_691]
