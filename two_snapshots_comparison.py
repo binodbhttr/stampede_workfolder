@@ -82,16 +82,13 @@ age_691=ageall_691[0:n_691]*1e9 #age converted to years Note: NOT IN GYR ANYMORE
 
 R=np.sqrt(np.square(x)+np.square(y)) #calculate the radius in the xy plane
 print("Calculated the cylindrical radius R in xy plane for the snapshot 696",R)
-r=np.sqrt(x**2+y**2+z**2) #calculate the spherical radius in the xyz plane
-print("Calculated the spherical radius r in the xyz plane")
+
 
 R_691=np.sqrt(np.square(x_691)+np.square(y_691)) #calculate the radius in the xy plane
 print("Calculated the cylindrical radius R in xy plane for the snapshot 691",R_691)
 
 
 # In[ ]:
-
-
 
 
 
