@@ -10,6 +10,8 @@ age_R7to9=np.log10(age[ind_R7to9])
 print("Note ages are already in log scale now !!!!! These are the ages from the snapshot (696) ",age_R7to9)
 R_R7to9=R[ind_R7to9] #store the cylindrical radius in array Note: the values should be between 7 and 9
 id_R7to9=id[ind_R7to9]
+id_child_R7to9=id_child[ind_R7to9]
+
 
 d_xyz=np.sqrt(x_R7to9**2+(y_R7to9-8)**2+z_R7to9**2)   #calculate radius of all stars in xyz plane form a point 
 print("Calculated the spherical radius for all points that lie inside the cylindrical radius 7 and 9") #inside the selection we made previously. Here the point is (0,8)
@@ -25,6 +27,8 @@ z_d_xyz_lessthan1=z_R7to9[ind_d_xyz_lessthan1]
 R_d_xyz_lessthan1=R_R7to9[ind_d_xyz_lessthan1]
 age_d_xyz_lessthan1=age_R7to9[ind_d_xyz_lessthan1] #ages of star in the region R7to9 that are withtin d<1 in xyz plane
 id_d_xyz_lessthan1=id_R7to9[ind_d_xyz_lessthan1]
+id_child_d_xyz_lessthan1=id_child_R7to9[ind_d_xyz_lessthan1]
+
 print("These are the ids of the objects that are within a spherical radius of 1kpc from a point (0,8,0)",id_d_xyz_lessthan1)
 
 #Now we are going to make age selections
@@ -35,8 +39,9 @@ y_young1_d_xyz=y_d_xyz_lessthan1[ind_age_young1_d_xyz]
 z_young1_d_xyz=z_d_xyz_lessthan1[ind_age_young1_d_xyz] 
 age_young1_d_xyz=age_d_xyz_lessthan1[ind_age_young1_d_xyz]   
 id_young1_d_xyz=id_d_xyz_lessthan1[ind_age_young1_d_xyz]
+id_child_young1_d_xyz=id_child_d_xyz_lessthan1[ind_age_young1_d_xyz]
+
 print("The total no. of young stars (7 to 8) in the sperical radius <1 from a point (0,8,0) in Snapshot 696 is",len(id_young1_d_xyz))
-print(ind_age_young1_d_xyz)
 
 #Now plotting that selection
 fig7 = plt.figure()
@@ -65,7 +70,7 @@ fig7.savefig("./plots/spherical_cut_1_young1_age7to8inlog10scale.png")
 
 ind=np.array(0) #Creates an array ind with an element 0
 for i in range(len(id_young1_d_xyz)):
-  match=np.where(id_691==id_young1_d_xyz[i]) #find each matching id and store its index in match
+  match=np.where((id_691==id_young1_d_xyz[i])&(id_child_691==id_child_young1_d_xyz[i])) #find each matching id and store its index in match
   print("Matched the id",id_691[match])
   ind=np.append(ind,match) # the index of matching id is appended. But it has one extra element in the beginning
   
@@ -114,7 +119,7 @@ ax1 = fig9.add_subplot(211)
 ax1.scatter(y_691_tracked,x_691_tracked,marker=".",s=0.5)
 ax1.set_xlabel('y')
 ax1.set_ylabel('x')
-ax1.set_ylim(-10,5)
+ax1.set_ylim(-2,2)
 ax1.set_xlim(-10,10)
 ax1.set_title('Snapshot 691: young stars age 7 to 8 dec within 1kpc sphere from 0,8,0')
 
@@ -125,7 +130,7 @@ ax2.scatter(y_young1_d_xyz,x_young1_d_xyz,marker=".",s=0.5)
 ax2.set_xlabel('y')
 ax2.set_ylabel('x')
 ax2.minorticks_on()
-ax2.set_ylim(-10,5)
+ax2.set_ylim(-2,2)
 ax2.set_xlim(-10,10)
 ax2.set_title('Snapshot 696: young stars age 7 to 8 dec within 1kpc sphere from 0,8,0')
 #plt.tight_layout()

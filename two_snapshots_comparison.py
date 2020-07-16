@@ -31,11 +31,13 @@ part_691 = gizmo.io.Read.read_snapshots(['star'],'snapshot_index',691 , simulati
 
 part['star'].keys()
 id=part['star'].prop('id')
-print("Loaded the ids of the latest snapshot (696)",id)
+id_child=part['star'].prop('id.child')
+print("Loaded the ids and id.child of the latest snapshot (696)",id,id_child)
 
 part_691['star'].keys()
 id_691=part_691['star'].prop('id')
-print("Loaded the ids of the early snapshot (691)",id_691)
+id_child_691=part_691['star'].prop('id.child')
+print("Loaded the ids and id.child of the early snapshot (691)",id_691,id_child_691)
 
 # In[ ]:
 
