@@ -99,6 +99,34 @@ ax2.scatter(y_young1_d_xyz,x_young1_d_xyz,marker=".",s=0.5)
 ax2.set_xlabel('y')
 ax2.set_ylabel('x')
 ax2.minorticks_on()
+
 ax2.set_title('Snapshot 696: young stars age 7 to 8 dec within 1kpc sphere from 0,8,0')
 #plt.tight_layout()
 fig8.savefig("./plots/young1_age7to8_snapshots691_and_696.png")
+
+
+
+
+
+#Now plotting figure 08 with y limits and x limits
+fig9 = plt.figure()
+ax1 = fig9.add_subplot(211)
+ax1.scatter(y_691_tracked,x_691_tracked,marker=".",s=0.5)
+ax1.set_xlabel('y')
+ax1.set_ylabel('x')
+ax1.set_ylim(-10,5)
+ax1.set_xlim(-10,10)
+ax1.set_title('Snapshot 691: young stars age 7 to 8 dec within 1kpc sphere from 0,8,0')
+
+plt.subplots_adjust(hspace=.5)
+
+ax2=fig9.add_subplot(212)
+ax2.scatter(y_young1_d_xyz,x_young1_d_xyz,marker=".",s=0.5)
+ax2.set_xlabel('y')
+ax2.set_ylabel('x')
+ax2.minorticks_on()
+ax2.set_ylim(-10,5)
+ax2.set_xlim(-10,10)
+ax2.set_title('Snapshot 696: young stars age 7 to 8 dec within 1kpc sphere from 0,8,0')
+#plt.tight_layout()
+fig9.savefig("./plots/same_scale_young1_age7to8_snapshots691_and_696.png")
