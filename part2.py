@@ -35,9 +35,8 @@ y_young1_d_xyz=y_d_xyz_lessthan1[ind_age_young1_d_xyz]
 z_young1_d_xyz=z_d_xyz_lessthan1[ind_age_young1_d_xyz] 
 age_young1_d_xyz=age_d_xyz_lessthan1[ind_age_young1_d_xyz]   
 id_young1_d_xyz=id_d_xyz_lessthan1[ind_age_young1_d_xyz]
-print("The total no. of young stars (7 to 8) in the sperical radius <1 from a point (0,8,0) is",len(age_young1_d_xyz))
-print("These are the ids of the young stars",id_young1_d_xyz)
-
+print("The total no. of young stars (7 to 8) in the sperical radius <1 from a point (0,8,0) in Snapshot 696 is",len(id_young1_d_xyz))
+print(ind_age_young1_d_xyz)
 
 #Now plotting that selection
 fig7 = plt.figure()
@@ -66,11 +65,19 @@ fig7.savefig("./plots/spherical_cut_1_young1_age7to8inlog10scale.png")
 
 ind=np.array(0) #Creates an array ind with an element 0
 for i in range(len(id_young1_d_xyz)):
-  match=np.where(id_691==id_young1_d_xyz[i] #find each matching id and store its index in match
+  match=np.where(id_691==id_young1_d_xyz[i]) #find each matching id and store its index in match
+  print("Matched the id",id_691[match])
   ind=np.append(ind,match) # the index of matching id is appended. But it has one extra element in the beginning
   
+print(ind)
 ind_tracked_id_691=ind[1:len(ind)] #The extra element in the beginning is removed by this process
 tracked_id_691=id_691[ind_tracked_id_691]
+
+print("The number of stars in Snapshot 691 is",len(tracked_id_691))
+print("Which is strange as they are not equal. I think 691 could have a little less but not more !!!!!!!!!!!! ") # There are duplicated IDss !!!
+print("Total ids in Snapshot 696 was",len(id))
+print("Total ids in Snapshot 691 was",len(id_691))
+
 
 x_691_tracked=x_691[ind_tracked_id_691]
 y_691_tracked=y_691[ind_tracked_id_691]
@@ -79,7 +86,7 @@ z_691_tracked=z_691[ind_tracked_id_691]
 
 #Now plotting ind 2D the stars in two snapshots
 fig8 = plt.figure()
-ax1 = fig8.add_subplot(211, projection='3d')
+ax1 = fig8.add_subplot(211)
 ax1.scatter(y_691_tracked,x_691_tracked,marker=".",s=0.5)
 ax1.set_xlabel('y')
 ax1.set_ylabel('x')
@@ -87,11 +94,11 @@ ax1.set_title('Snapshot 691: young stars age 7 to 8 dec within 1kpc sphere from 
 
 plt.subplots_adjust(hspace=.5)
 
-ax2=fig7.add_subplot(212)
+ax2=fig8.add_subplot(212)
 ax2.scatter(y_young1_d_xyz,x_young1_d_xyz,marker=".",s=0.5)
 ax2.set_xlabel('y')
 ax2.set_ylabel('x')
 ax2.minorticks_on()
 ax2.set_title('Snapshot 696: young stars age 7 to 8 dec within 1kpc sphere from 0,8,0')
 #plt.tight_layout()
-fig7.savefig("./plots/young1_age7to8_snapshots691_and_696.png")
+fig8.savefig("./plots/young1_age7to8_snapshots691_and_696.png")
