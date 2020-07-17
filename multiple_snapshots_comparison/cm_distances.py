@@ -1,31 +1,37 @@
 from __main__ import *
 from sl_utilities import distance_functions
 
-mass_691=part['star']['mass'] #mass of all stars in snapshot 691
-mass_692=part_691['star']['mass'] #mass of all stars in snapshot 692
+mass_691=part_691['star']['mass'] #mass of all stars in snapshot 691
+mass_692=part_692['star']['mass'] #mass of all stars in snapshot 692
+mass_693=part_693['star']['mass'] #mass of all stars in snapshot 693
+mass_694=part_694['star']['mass'] #mass of all stars in snapshot 694
+mass_695=part_695['star']['mass'] #mass of all stars in snapshot 695
+mass_696=part_696['star']['mass'] #mass of all stars in snapshot 696
 
 
 mass_692_tracked=mass_692[ind_tracked_id_692] #we stored the mass of stars that we are tracking in snapshot 691. These are the mass we need to find CM
+mass_693_tracked=mass_693[ind_tracked_id_693]
+mass_694_tracked=mass_694[ind_tracked_id_694]
+mass_695_tracked=mass_695[ind_tracked_id_695]
+mass_696_tracked=mass_696[ind_tracked_id_696]
 
-
-mass_691_R7to9=mass_696[ind_R7to9] #selected the mass values that fall in R 7 to 9
-
+mass_691_R7to9=mass_691[ind_R7to9] #selected the mass values that fall in R 7 to 9
 mass_691_d_xyz_lessthan1=mass_691_R7to9[ind_d_xyz_lessthan1] #selected the mass values that fall in radius less than 1 (second cut) 
 mass_691_young1_d_xyz=mass_691_d_xyz_lessthan1[ind_age_young1_d_xyz] #Selected the mass values that for the selected age group (7 to 8) in log10 scale
 
-#These are the x,y, z and mass info of the stars we are interested in the Snapshot 696.
+#These are the x,y, z and mass info of the stars we are interested in the Snapshot 691.
 #x_young1_d_xyz 
 #y_young1_d_xyz   
 #z_young1_d_xyz
 #mass_696_young1_d_xyz
 
-#These are the x,y, z and mass info of the stars we are interested in the Snapshot 691.
-#x_691_tracked
-#y_691_tracked
-#z_691_tracked
-#mass_691_tracked
+#These are the x,y, z and mass info of the stars we are interested in the Snapshot 692.
+#x_692_tracked
+#y_692_tracked
+#z_692_tracked
+#mass_692_tracked
 
-#Note: The masses (mass_696_young1_d_xyz and mass_691_tracked) are equal as they are the same stars !!!!!!!!!!!!!!!!!!!
+#Note: The masses (mass_691_young1_d_xyz and mass_692_tracked) are equal as they are the same stars !!!!!!!!!!!!!!!!!!!
 
 ###################I put this here to calculate the cm locally
 #total_mass=sum(mass_691_tracked)  

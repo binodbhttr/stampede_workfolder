@@ -43,10 +43,6 @@ print(" \n Loaded the ids and id.child of the early snapshot (691)",id_691,id_ch
 ageall_691=part_691['star'].prop('age')
 
 
-
-
-
-
 # Loading age and id data from snapshot 692
 part_692['star'].keys()
 id_692=part_692['star'].prop('id')
