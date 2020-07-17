@@ -44,10 +44,10 @@ print("Loaded the ids and id.child of the early snapshot (691)",id_691,id_child_
 
 # 3-D position of star particle (particle number x dimension number) [kpc comoving]
 
-starposition=part['star']['position'] # starposition is the array of position of all stars
+#starposition=part['star']['position'] # starposition is the array of position of all stars
 ageall=part['star'].prop('age') #stored all ages in a
 
-starposition_691=part_691['star']['position']
+#starposition_691=part_691['star']['position']
 ageall_691=part_691['star'].prop('age')
 
 
@@ -69,7 +69,7 @@ n=nall # This is the no. of stars we are going to use. n=nall means choose all, 
 n_691=nall_691
 print("Total particles in 696 snapshots is",n)
 print("Total particles in 691 snapshots is",n_691)                
-smallpart=starposition[0:n] # This is selecting a small part from the collection of all star positions
+#smallpart=starposition[0:n] # This is selecting a small part from the collection of all star positions
 
 x=xall[0:n] # select x components from 0 to n
 y=yall[0:n] # select y components from 0 to n
