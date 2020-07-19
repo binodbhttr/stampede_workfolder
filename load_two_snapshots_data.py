@@ -10,26 +10,19 @@ from matplotlib import pyplot as plt
 import numpy as np
 from mpl_toolkits.mplot3d import Axes3D
 
-
-
 # In[ ]:
-
-
 simname = 'm12i_res7100_mhdcv'
 simdir = '/scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/'
 snapnumber = 696
 
-
 # In[ ]:
-
-
 part = gizmo.io.Read.read_snapshots(['star'],'snapshot_index', snapnumber, simulation_name=simname, simulation_directory=simdir, assign_hosts=True, assign_hosts_rotation=True)
 
 part_691 = gizmo.io.Read.read_snapshots(['star'],'snapshot_index',691 , simulation_name=simname, simulation_directory=simdir, assign_hosts=True, assign_hosts_rotation=True)
 # In[ ]:
 
 
-part['star'].keys()
+#part['star'].keys()
 id=part['star'].prop('id')
 id_child=part['star'].prop('id.child')
 print("Loaded the ids and id.child of the latest snapshot (696)",id,id_child)
@@ -88,14 +81,4 @@ print("Calculated the cylindrical radius R in xy plane for the snapshot 696",R)
 
 R_691=np.sqrt(np.square(x_691)+np.square(y_691)) #calculate the radius in the xy plane
 print("Calculated the cylindrical radius R in xy plane for the snapshot 691",R_691)
-
-
-# In[ ]:
-
-
-
-# In[ ]:
-
-
-
 
