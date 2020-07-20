@@ -2,23 +2,20 @@ from __main__ import *
 from sl_utilities import distinct_colours as dc
 from sl_utilities import distance_functions
 
-id_test_cluster=np.array([46025169,55215865,14548425,27846424,21612608,26482714,45183866,23320885,13309616,57262468,19850157,17172767])
-id_child_test_cluster=np.array([0,0,0,0,0,0,0,0,1,0,0,0])
+###########Loading the sample cluster to be tracked and sorting its id and id_child
+id_test_cluster=np.array([68937285, 22084940, 62548983, 9584721, 19068644, 15790620, 11621407, 18313194, 64000598, 16844755, 61271023, 26250753, 8928920, 56087355, 5936263]) #ids of the cluster to begin with 
+id_child_test_cluster=np.array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
 sortind=np.argsort(id_test_cluster)
 id_test_cluster_sorted=id_test_cluster[sortind]
 id_child_test_cluster_sorted=id_child_test_cluster[sortind]
 print("The total no. of stars in this cluster is",len(id_test_cluster_sorted))
 print("Sorted ids of this cluster is",id_test_cluster_sorted)
 
-#id_array=np.array(id)
-#id_child_array=np.array(id_child)
-
+##########################################################################################
 
 ###Now let's find the matching ids in the next snapshot using a function
 def matchids(id_current,id_child_current,id_next,id_child_next): #this function returns the index of the ids in the next snapshot that match with the current
   ind=np.array(0)
-  print("These are the input ids that the function got\n",id_next,type(id_next))
-  print("Checking if np.where works",np.where(id_next==id_current[4]))
   for i in range(len(id_current)):
     match=np.where((id_next==id_current[i])&(id_child_next==id_child_current[i]))
     print("\nMatched the id",id_next[match])
@@ -27,27 +24,25 @@ def matchids(id_current,id_child_current,id_next,id_child_next): #this function 
   print("\nThese are the indices of the ids that matched in current snapshot\n",ind_tracked_id_next)
   return ind_tracked_id_next  
 ###################################################################
-'''
-print(id_array[snapshot_start+1],type(id_array))
 
-ind_tracked=matchids(id_test_cluster_sorted,id_child_test_cluster_sorted,id_array[snapshot_start+1],id_child_array[snapshot_start+1])
-print(ind_tracked)
-'''
-print("These are the ids of the first snapshot",id[snapshot_start])
-ind_tracked=[] #finding the indices of the tracked stars in each snapshot and storing it into a list
-print("This is the id in the beginning",id[snapshot_start])
+
+### Now matching the IDs for all our snapshots that are loaded
+ind_tracked={} #finding the indices of the tracked stars in each snapshot. To access indices for each snapshot use id[snapshot_n0][ind_tracked[snapshot_no]]
 for j in range(snapshot_end+1): 
   if j<snapshot_start:
-    ind_tracked.append(0)
+    ind_tracked[j]=0
   else:
     #print(id_array[j])
     #print(id_child_array[j])
-    id_next=np.array(id[j])
-    id_child_next=np.array(id_child[j])
-    ind_tracked.append(matchids(id_test_cluster_sorted,id_child_test_cluster_sorted,id_next,id_child_next))
+    id_next=id[j]
+    id_child_next=id_child[j]
+    ind_tracked[j]=matchids(id_test_cluster_sorted,id_child_test_cluster_sorted,id_next,id_child_next)
     
-    
+ 
+###Testing if the matching worked
+print("These are the ids that were tracked in snapshot 671",id[671][ind_tracked[671]]) 
 ##################################################################
+
 
 '''
 ##################################################################

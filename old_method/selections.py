@@ -2,7 +2,7 @@ from __main__ import *
 from sl_utilities import distinct_colours as dc
 from sl_utilities import distance_functions
 print("Now running the part to make selections from a different file !!!")
-
+'''
 ind_R7to9=np.where((R_691>7) & (R_691<9)) #Select those stars with r greater than 7 and less than 9
 
 x_R7to9=x_691[ind_R7to9] #find the x components only of the slection
@@ -42,7 +42,8 @@ z_young1_d_xyz=z_d_xyz_lessthan1[ind_age_young1_d_xyz]
 age_young1_d_xyz=age_d_xyz_lessthan1[ind_age_young1_d_xyz]   
 #id_young1_d_xyz=id_d_xyz_lessthan1[ind_age_young1_d_xyz]
 #id_child_young1_d_xyz=id_child_d_xyz_lessthan1[ind_age_young1_d_xyz]
-#created a fake ID here
+'''
+#Manually loaded ids of a sampel cluster that we want to track over the snapshots
 id_young1_d_xyz=np.array([46025169,55215865,14548425,27846424,21612608,26482714,45183866,23320885,13309616,57262468,19850157,17172767])
 id_child_young1_d_xyz=np.array([0,0,0,0,0,0,0,0,1,0,0,0])
 sortind=np.argsort(id_young1_d_xyz)
