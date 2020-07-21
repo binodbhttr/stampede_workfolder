@@ -22,7 +22,7 @@ snapnumber = 691
 
 # In[ ]:
 snapshot_start=671
-snapshot_end=675
+snapshot_end=696
 part={} #part is a list of arrarys
 id={}
 id_child={}

@@ -1,6 +1,7 @@
 from __main__ import *
 from sl_utilities import distinct_colours as dc
 from sl_utilities import distance_functions
+import utilities as ut
 
 ###########Loading the sample cluster to be tracked and sorting its id and id_child
 id_test_cluster=np.array([68937285, 22084940, 62548983, 9584721, 19068644, 15790620, 11621407, 18313194, 64000598, 16844755, 61271023, 26250753, 8928920, 56087355, 5936263]) #ids of the cluster to begin with 
@@ -76,7 +77,7 @@ ymax={}
 ymin={}
 xmax={}
 xmin={}
-
+avg_delta_rxyz={}
 for i in range(snapshot_end+1): #Calculating the center of mass and related features using the x y and z and mass values from tracked stars of all snapshots
   if i<snapshot_start:
     xcm[i]={}
@@ -88,6 +89,7 @@ for i in range(snapshot_end+1): #Calculating the center of mass and related feat
     ymin[i]={}
     xmax[i]={}
     xmin[i]={}
+    avg_delta_rxyz[i]={}
   else:
     xcm[i]=distance_functions.cm(x_tracked[i],mass_tracked[i])
     ycm[i]=distance_functions.cm(y_tracked[i],mass_tracked[i])
@@ -98,43 +100,87 @@ for i in range(snapshot_end+1): #Calculating the center of mass and related feat
     ymin[i]=(ycm[i]-3*rmax[i])
     xmax[i]=(xcm[i]+3*rmax[i])
     xmin[i]=(xcm[i]-3*rmax[i])
-
+    avg_delta_rxyz[i]=np.mean(np.absolute(delta_rxyz[i]))
 
 total_subplots=snapshot_end-snapshot_start+1
 print("\n Now we are going to plot these snapshots !!!!!! \n####\nTotal plots we would need is",total_subplots)
-cols=int(total_subplots**0.5)
+#cols=int(total_subplots**0.5)
+cols=3
 print("Total columns we need in this plot is",cols)
 rows=total_subplots//cols
 rows=rows+total_subplots%cols
 position = range(1,total_subplots + 1)
 
-fig = plt.figure(1)
+fig = plt.figure(figsize=(10,20))
 snap=snapshot_start
 for i in range(total_subplots): # add every single subplot to the figure with a for loop
     print("\n\nx of snapshot",snap,"is",x_tracked[snap])
     print("xcm of snapshot",snap,"is",xcm[snap])
     ax = fig.add_subplot(rows,cols,position[i])
-    ax.scatter(x_tracked[snap],y_tracked[snap],marker=".",s=10)
-    ax.plot(xcm[snap],ycm[snap],color='red',marker=".")
+    ax.scatter(np.absolute(x_tracked[snap]),np.absolute(y_tracked[snap]),marker=".",s=1)
+    ax.plot(np.absolute(xcm[snap]),np.absolute(ycm[snap]),color='red',marker=".",markersize=1)
     ax.set_xlabel('x')
     ax.set_ylabel('y')
     ax.minorticks_on()
-    ax.set_xlim(xmin[snap],xmax[snap])
-    ax.set_ylim(ymin[snap],ymax[snap])
+    ax.set_xlim(np.absolute(xmin[snap]),np.absolute(xmax[snap]))
+    ax.set_ylim(np.absolute(ymin[snap]),np.absolute(ymax[snap]))
     title="Snapshot " + str(snap)
     ax.set_title(title)
     snap=snap+1
       
 plt.tight_layout()
-filename="./plots/snapshots_"+str(snapshot_start)+"_to_"+str(snapshot_end)
-plt.savefig(filename)
+plotname="./plots/snapshots_"+str(snapshot_start)+"_to_"+str(snapshot_end)
+plt.savefig(plotname,dpi=600)
+plt.close()
+print("Plot generated and saved as filename:",plotname)
+
+#plotting the average distance of paricles from the center of mass of each snapshot
+snapshot_list=np.arange(snapshot_start,snapshot_end+1)
+avg_r_cm_temp=np.array(0)
+count=snapshot_start
+for i in range(len(snapshot_list)):
+  avg_r_cm_temp=np.append(avg_r_cm_temp,avg_delta_rxyz[count])
+  count=count+1
+
+avg_r_cm=avg_r_cm_temp[1:len(avg_r_cm_temp)]
+print(avg_r_cm)
+
+
+fig2=plt.figure()
+ax1=fig2.add_subplot(1,1,1)
+ax1.plot(snapshot_list,avg_r_cm,marker='*', color='b')
+ax1.set_xlabel('Snapshots')
+ax1.set_ylabel('Average Distance from CM')
+ax1.minorticks_on()
+plt.tight_layout()
+fig2.savefig("./plots/snapshots_vs_averageDistanceFromCM")
 plt.close()
 
+#Now lets write our tracked data from each snapshots to a file
+
+count=snapshot_start
+for i in range(len(snapshot_list)):
+  dict_exportdata={"ind_tracked":ind_tracked[count],
+"age_tracked":age_tracked[count],"x_tracked":x_tracked[count],"y_tracked":y_tracked[count],"z_tracked":z_tracked[count],"mass_tracked":mass_tracked[count],"xcm":xcm[count],"ycm":ycm[count],"zcm":zcm[count],
+"delta_rxyz":delta_rxyz[count],"rmax":rmax[count],"ymax":ymax[count],"ymin":ymin[count],"xmax":xmax[count],"xmin":xmin[count],"avg_delta_rxyz":avg_delta_rxyz[count]}
+  file_name="export_tracked_data_snapshot"+str(count)
+  path="./data/"
+  ut.io.file_hdf5(path+file_name, dict_exportdata)
+  print("\n Stored data from the snapshot no.",count,"to filename:",file_name,"\n#####\n")
+  count=count+1
 
 
 
 
-
+'''
+# below, cluster4 is a dictionary i generate that i want to write to an hdf5 file
+path = '/home1/04712/tg840119/' # where i want to write the output file (my home directory on stampede)
+file_name = 'm12f_cluster4.hdf5' # the name of the file i want to write
+ut.io.file_hdf5(path+file_name, cluster4) # call the file_hdf5 function from utilities.io
+# at this point i have an hdf5 file containing my dictionary saved to the directory i specified
+# to read this file in later, just type: 
+cluster4 = ut.io.file_hdf5(path+file_name) # now i have the dictionary i want loaded into cluster4 again.
+'''
 
 
 '''
