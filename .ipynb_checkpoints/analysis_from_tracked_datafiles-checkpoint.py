@@ -2,8 +2,7 @@
 from sl_utilities import distinct_colours as dc
 from sl_utilities import distance_functions
 import utilities as ut
-from matplotlib import pyplot as plt
-import numpy as np
+
 #this file is targetted to help avoid running tonns of snapshots each time to analyse the tracked data
 # I am working towards loading each data from this file and generating all the kinds of plots here
 # It is assumed we know the snapshot_start and snapshot_end value
@@ -15,7 +14,7 @@ importdata={}
 for i in range(n):
   file_name="export_tracked_data_snapshot"+str(count)
   path="./data/"
-  importdata[count]=ut.io.file_hdf5(path+file_name) #reading data from each file and storing it to a dictionary importdata
+  importdata[count]=ut.io.file_hdf5(path+file_name)
   print("\n Loaded data from the snapshot no.",count,"located in filename:",file_name,"to importdata[",count,"]\n#####\n")
   count=count+1
   
@@ -31,12 +30,12 @@ rows=total_subplots//cols
 rows=rows+total_subplots%cols
 position = range(1,total_subplots + 1)
 
-fig1 = plt.figure(figsize=(10,20))
+fig = plt.figure(figsize=(10,20))
 snap=snapshot_start
 for i in range(total_subplots): # add every single subplot to the figure with a for loop
     print("\n\nx of snapshot",snap,"is",importdata[snap]['x_tracked'])
     print("xcm of snapshot",snap,"is",importdata[snap]['xcm'])
-    ax = fig1.add_subplot(rows,cols,position[i])
+    ax = fig.add_subplot(rows,cols,position[i])
     ax.scatter(np.absolute(importdata[snap]['x_tracked']),np.absolute(importdata[snap]['y_tracked']),marker=".",s=1)
     ax.plot(np.absolute(importdata[snap]['xcm']),np.absolute(importdata[snap]['ycm']),color='red',marker=".",markersize=1)
     ax.set_xlabel('x')
@@ -50,20 +49,6 @@ for i in range(total_subplots): # add every single subplot to the figure with a 
       
 plt.tight_layout()
 plotname="./plots/from_file_snapshots_"+str(snapshot_start)+"_to_"+str(snapshot_end)
-fig1.savefig(plotname,dpi=600)
+plt.savefig(plotname,dpi=600)
 plt.close()
 print("Plot generated and saved as filename:",plotname)
-
-
-
-
-fig2=plt.figure()
-ax1=fig2.add_subplot(1,1,1)
-ax1.plot(snapshot_list,avg_r_cm,marker='*', color='b')
-ax1.set_xlabel('Snapshots')
-ax1.set_ylabel('Average Distance from CM')
-ax1.minorticks_on()
-plt.tight_layout()
-plotname="./plots/averageDistanceFromCM_"+str(snapshot_start)+"_to_"+str(snapshot_end)
-fig2.savefig(plotname)
-plt.close()
