@@ -1,7 +1,50 @@
-from __main__ import *
+#!/usr/bin/env python
+# coding: utf-8
+
+#this file will load snapshots and store details of the tracked star cluster thoroughout the snapshots into individual files available at ./data
+
+import gizmo_analysis as gizmo
+import utilities as ut
+from matplotlib import pyplot as plt
+import numpy as np
+from mpl_toolkits.mplot3d import Axes3D
+
 from sl_utilities import distinct_colours as dc
 from sl_utilities import distance_functions
-import utilities as ut
+
+
+simname = 'm12i_res7100_mhdcv'
+simdir = '/scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/'
+
+# In[ ]:
+snapshot_start=671
+snapshot_end=696
+part={} #part is a dictionary 
+id={}
+id_child={}
+age={}
+x={}
+y={}
+z={}
+n={}
+mass={}
+total_snaps=snapshot_end-snapshot_start+1
+snap=snapshot_start
+for i in range(total_snaps): 
+  part[snap]=gizmo.io.Read.read_snapshots(['star'],'snapshot_index', snap, simulation_name=simname, simulation_directory=simdir, assign_hosts=True, assign_hosts_rotation=True) #snap is the snapshot number here that changes everytime the loop iterates
+  id[snap]=part[snap]['star'].prop('id')
+  id_child[snap]=part[snap]['star'].prop('id.child')
+  age[snap]=part[snap]['star'].prop('age')
+  x[snap]=part[snap]['star'].prop('host.distance.principal')[:,0] #x component of the position of all stars 
+  y[snap]=part[snap]['star'].prop('host.distance.principal')[:,1] #y component of the position of all stars
+  z[snap]=part[snap]['star'].prop('host.distance.principal')[:,2] #z component of the position of all stars
+  n[snap]=len(x[snap]) # counting the total no. of star particles
+  mass[snap]=part[snap]['star']['mass'] #mass of all stars in snapshot 691
+  print("\n#######################\n#######################\nLoaded id,id_child,age,x,y,z, mass and number of particles for snapshot no.",snap)
+  print("Total no of particles in this shapshot no.",snap,"is",n[snap])
+  snap=snap+1
+  
+  
 
 ###########Loading the sample cluster to be tracked and sorting its id and id_child
 id_test_cluster=np.array([68937285, 22084940, 62548983, 9584721, 19068644, 15790620, 11621407, 18313194, 64000598, 16844755, 61271023, 26250753, 8928920, 56087355, 5936263]) #ids of the cluster to begin with 
@@ -157,99 +200,5 @@ for i in range(total_snaps):
   path="./data/"
   ut.io.file_hdf5(path+file_name, dict_exportdata)
   print("\n Stored data from the snapshot no.",count,"to filename:",file_name,".hdf5\n#####\n")
-  count=count+1
-
-
-
-
-'''
-# below, cluster4 is a dictionary i generate that i want to write to an hdf5 file
-path = '/home1/04712/tg840119/' # where i want to write the output file (my home directory on stampede)
-file_name = 'm12f_cluster4.hdf5' # the name of the file i want to write
-ut.io.file_hdf5(path+file_name, cluster4) # call the file_hdf5 function from utilities.io
-# at this point i have an hdf5 file containing my dictionary saved to the directory i specified
-# to read this file in later, just type: 
-cluster4 = ut.io.file_hdf5(path+file_name) # now i have the dictionary i want loaded into cluster4 again.
-'''
-
-
-'''
-#Now plotting ind 2D the stars in two snapshots
-fig8 = plt.figure()
-#fig8.suptitle("Stars aged 7 to 8 dec within 1 from 0,8,0 \n \n")
-
-ax1 = fig8.add_subplot(321)
-for i in range(len(x_691_tracked)):
-  ax1.scatter([-1*x_691_tracked[i]],[-1*y_691_tracked[i]],color=colors[i],marker=".",s=10)
-ax1.plot(xcm_691,ycm_691,color='red',marker=".")
-ax1.set_xlabel('x')
-ax1.set_ylabel('y')
-ax1.minorticks_on()
-ax1.set_xlim(xmin_691,xmax_691)
-ax1.set_ylim(ymin_691,ymax_691)
-ax1.set_title('Snapshot 691')
-
-ax2=fig8.add_subplot(322)
-for i in range(len(x_692_tracked)):
-  ax2.scatter([x_692_tracked[i]],[y_692_tracked[i]],color=colors[i],marker=".",s=10)
-ax2.plot(xcm_692,ycm_692,color='red',marker=".")
-ax2.set_xlabel('x')
-ax2.set_ylabel('y')
-ax2.minorticks_on()
-ax2.set_xlim(xmin_692,xmax_692)
-ax2.set_ylim(ymin_692,ymax_692)
-ax2.set_title('Snapshot 692')
-
-
-ax3=fig8.add_subplot(323)
-for i in range(len(x_693_tracked)):
-  ax3.scatter([x_693_tracked[i]],[y_693_tracked[i]],color=colors[i],marker=".",s=10)
-ax3.plot(xcm_693,ycm_693,color='red',marker=".")
-ax3.set_xlabel('x')
-ax3.set_ylabel('y')
-ax3.set_xlim(xmin_693,xmax_693)
-ax3.set_ylim(ymin_693,ymax_693)
-ax3.minorticks_on()
-ax3.set_title('Snapshot 693')
-
-#plt.subplots_adjust(hspace=.5)
-
-ax4=fig8.add_subplot(324)
-for i in range(len(x_694_tracked)):
-  ax4.scatter([x_694_tracked[i]],[y_694_tracked[i]],color=colors[i],marker=".",s=10)
-ax4.plot(xcm_694,ycm_694,color='red',marker=".")
-ax4.set_xlabel('x')
-ax4.set_ylabel('y')
-ax4.minorticks_on()
-ax4.set_xlim(xmin_694,xmax_694)
-ax4.set_ylim(ymin_694,ymax_694)
-ax4.set_title('Snapshot 694')
-
-
-ax5=fig8.add_subplot(325)
-for i in range(len(x_695_tracked)):  
-  ax5.scatter([x_695_tracked[i]],[y_695_tracked[i]],color=colors[i],marker=".",s=10)
-ax5.plot(xcm_695,ycm_695,color='red',marker=".")
-ax5.set_xlabel('x')
-ax5.set_ylabel('y')
-ax5.minorticks_on()
-ax5.set_xlim(xmin_695,xmax_695)
-ax5.set_ylim(ymin_695,ymax_695)
-ax5.set_title('Snapshot 695')
-
-#plt.subplots_adjust(hspace=.5)
-
-ax6=fig8.add_subplot(326)
-for i in range(len(x_696_tracked)):  
-  ax6.scatter([x_696_tracked[i]],[y_696_tracked[i]],color=colors[i],marker=".",s=10)
-ax6.plot(xcm_696,ycm_696,color='red',marker=".")
-ax6.set_xlabel('x')
-ax6.set_ylabel('y')
-ax6.minorticks_on()
-ax6.set_xlim(xmin_696,xmax_696)
-ax6.set_ylim(ymin_696,ymax_696)
-ax6.set_title('Snapshot 696')
-
-plt.tight_layout()
-fig8.savefig("./plots/cluster_group_15_snapshots691to696.png")
-'''
+  count=count+1  
+  
