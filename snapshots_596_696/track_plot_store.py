@@ -12,9 +12,9 @@ import numpy as np
 ################################################################
 ################################################################
 #Loading the sample cluster to be tracked and sorting its id and id_child
-cluster_groupid="snapshot671_cluster_group3" #Remember to change it if you  are changing the star culuster you are tracking in given snapshot
-id_test_cluster=np.array([68937285, 22084940, 62548983, 9584721, 19068644, 15790620, 11621407, 18313194, 64000598, 16844755, 61271023, 26250753, 8928920, 56087355, 5936263]) #ids of the cluster to begin with 
-id_child_test_cluster=np.array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
+cluster_groupid="snapshot596_cluster_group8" #Remember to change it if you  are changing the star culuster you are tracking in given snapshot
+id_test_cluster=np.array([7620560, 64973359, 37115634, 22018460, 57048199, 64336462, 11396756, 15963144, 5078452, 38480512, 41238223, 51251614, 56558892, 29262007]) #ids of the cluster to begin with 
+id_child_test_cluster=np.array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0])
 sortind=np.argsort(id_test_cluster)
 id_test_cluster_sorted=id_test_cluster[sortind]
 id_child_test_cluster_sorted=id_child_test_cluster[sortind]
@@ -28,10 +28,10 @@ print("Sorted ids of this cluster is",id_test_cluster_sorted)
 ################################################################
 ################################################################
 ###Now let's find the matching ids in the next snapshot using a function
-def matchids(id_current,id_child_current,id_next,id_child_next): #this function returns the index of the ids in the next snapshot that match with the current
+def matchids(id_current,id_child_current,id_next,id_child_next,id_generation_next): #this function returns the index of the ids in the next snapshot that match with the current
   ind=np.array(0)
   for i in range(len(id_current)):
-    match=np.where((id_next==id_current[i])&(id_child_next==id_child_current[i])) #Also add id_generations<30
+    match=np.where((id_next==id_current[i])&(id_child_next==id_child_current[i])&(id_generation_next<30)) #Also add id_generations<30
     print("\nFound the id",id_next[match],"at the index",match[0],"in this snapshot")
     ind=np.append(ind,match)
   ind_tracked_id_next=ind[1:len(ind)]  #The extra element in the beginning is removed by this process
@@ -53,13 +53,14 @@ snap=snapshot_start
 for j in range(total_snaps): 
   id_next=id[snap]
   id_child_next=id_child[snap]
+  id_generation_next=id_generation[snap]
   print("\n\nNow Matching the ids for the snapshot",snap,"########\n")
-  ind_tracked[snap]=matchids(id_test_cluster_sorted,id_child_test_cluster_sorted,id_next,id_child_next)
+  ind_tracked[snap]=matchids(id_test_cluster_sorted,id_child_test_cluster_sorted,id_next,id_child_next,id_generation_next)
   snap=snap+1
     
  
 ###Testing if the matching worked
-print("\nTesting:(You should get the same IDs as that of cluster you are tracking.)These are the ids that matached in snapshot 671",id[671][ind_tracked[671]]) 
+print("\nTesting:You should get the same IDs as that of cluster you are tracking which is",snapshot_start,id[snapshot_start][ind_tracked[snapshot_start]]) 
 ################################################################
 ################################################################
 
@@ -129,10 +130,10 @@ for i in range(total_snaps): #Calculating the center of mass and related feature
   zcm[snap]=distance_functions.cm(z_tracked[snap],mass_tracked[snap])
   delta_rxyz[snap]=distance_functions.dr(x_tracked[snap],y_tracked[snap],z_tracked[snap],mass_tracked[snap])
   rmax[snap]=distance_functions.drmax(x_tracked[snap],y_tracked[snap],z_tracked[snap],mass_tracked[snap])
-  ymax[snap]=(ycm[snap]+3*rmax[snap])
-  ymin[snap]=(ycm[snap]-3*rmax[snap])
-  xmax[snap]=(xcm[snap]+3*rmax[snap])
-  xmin[snap]=(xcm[snap]-3*rmax[snap])
+  ymax[snap]=(ycm[snap]+2*rmax[snap])
+  ymin[snap]=(ycm[snap]-2*rmax[snap])
+  xmax[snap]=(xcm[snap]+2*rmax[snap])
+  xmin[snap]=(xcm[snap]-2*rmax[snap])
   avg_delta_rxyz[snap]=np.mean(np.absolute(delta_rxyz[snap]))
   snap=snap+1
 ################################################################
@@ -153,13 +154,17 @@ rows=total_subplots//cols
 rows=rows+total_subplots%cols
 position = range(1,total_subplots + 1)
 
+
+colors=['cyan','blue','green','magenta','yellow','orange','purple','tan','lime','brown','grey','pink','navy','teal']
+
+
 fig = plt.figure(figsize=(10,20))
 snap=snapshot_start
 for i in range(total_subplots): # add every single subplot to the figure with a for loop
     print("\n\n x of snapshot",snap,"is",x_tracked[snap])
     print("xcm of snapshot",snap,"is",xcm[snap])
     ax = fig.add_subplot(rows,cols,position[i])
-    ax.scatter(np.absolute(x_tracked[snap]),np.absolute(y_tracked[snap]),marker=".",s=1)
+    ax.scatter(np.absolute(x_tracked[snap]),np.absolute(y_tracked[snap]),marker=".",s=mass_tracked[snap]/30,c=colors)
     ax.plot(np.absolute(xcm[snap]),np.absolute(ycm[snap]),color='red',marker=".",markersize=1)
     ax.set_xlabel('x')
     ax.set_ylabel('y')

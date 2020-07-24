@@ -17,11 +17,12 @@ simname = 'm12i_res7100_mhdcv'
 simdir = '/scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/1Myr_fire2'
 
 # In[ ]:
-snapshot_start=671
-snapshot_end=696
+snapshot_start=596
+snapshot_end=598
 part={} #part is a dictionary 
 id={}
 id_child={}
+id_generation={}
 age={}
 x={}
 y={}
@@ -37,6 +38,7 @@ for i in range(total_snaps):
   part[snap]=gizmo.io.Read.read_snapshots(['star'],'snapshot_index', snap, simulation_name=simname, simulation_directory=simdir, assign_hosts=True, assign_hosts_rotation=True) #snap is the snapshot number here that changes everytime the loop iterates
   id[snap]=part[snap]['star'].prop('id')
   id_child[snap]=part[snap]['star'].prop('id.child')
+  id_generation[snap]=part[snap]['star'].prop('id.generation')
   age[snap]=part[snap]['star'].prop('age')
   x[snap]=part[snap]['star'].prop('host.distance.principal')[:,0] #x component of the position of all stars 
   y[snap]=part[snap]['star'].prop('host.distance.principal')[:,1] #y component of the position of all stars
