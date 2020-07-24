@@ -10,8 +10,8 @@ import numpy as np
 ################################################
 #Now loading data from each file and storing it to a dictionary importdata which can be accessed as importdata[snapshotnumber]['key']
 #For example to load the x coordinates of the tracked stars in snapshot no. 690, importdata[690]['x_tracked']
-cluster_groupid="snapshot671_cluster_group3" #Remember to change it if you  are changing the star culuster you are tracking in given snapshot
-snapshot_start=671
+cluster_groupid="snapshot596_cluster_group8" #Remember to change it if you  are changing the star culuster you are tracking in given snapshot
+snapshot_start=596
 snapshot_end=696
 n=snapshot_end-snapshot_start+1
 count=snapshot_start
@@ -23,7 +23,7 @@ for i in range(n):
   print("\n Loaded data from the snapshot no.",count,"located in filename:",file_name,"to importdata[",count,"]\n#####\n")
   count=count+1
 ################################################
-
+colors=['cyan','blue','green','magenta','yellow','orange','purple','tan','lime','brown','grey','pink','navy','teal']
 
 
 #Now plotting all snapshots
@@ -43,7 +43,7 @@ for i in range(total_subplots): # add every single subplot to the figure with a 
     print("\n\nx of snapshot",snap,"is",importdata[snap]['x_tracked'])
     print("xcm of snapshot",snap,"is",importdata[snap]['xcm'])
     ax = fig1.add_subplot(rows,cols,position[i])
-    ax.scatter(np.absolute(importdata[snap]['x_tracked']),np.absolute(importdata[snap]['y_tracked']),marker=".",s=1)
+    ax.scatter(np.absolute(importdata[snap]['x_tracked']),np.absolute(importdata[snap]['y_tracked']),marker=".",s=1,c=colors)
     ax.plot(np.absolute(importdata[snap]['xcm']),np.absolute(importdata[snap]['ycm']),color='red',marker=".",markersize=1)
     ax.set_xlabel('x')
     ax.set_ylabel('y')
