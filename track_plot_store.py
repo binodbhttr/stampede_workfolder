@@ -235,3 +235,99 @@ for i in range(total_snaps):
 
 ################################################################
 ################################################################  
+
+
+
+
+
+'''
+# below, cluster4 is a dictionary i generate that i want to write to an hdf5 file
+path = '/home1/04712/tg840119/' # where i want to write the output file (my home directory on stampede)
+file_name = 'm12f_cluster4.hdf5' # the name of the file i want to write
+ut.io.file_hdf5(path+file_name, cluster4) # call the file_hdf5 function from utilities.io
+# at this point i have an hdf5 file containing my dictionary saved to the directory i specified
+# to read this file in later, just type: 
+cluster4 = ut.io.file_hdf5(path+file_name) # now i have the dictionary i want loaded into cluster4 again.
+'''
+
+
+'''
+#Now plotting ind 2D the stars in two snapshots
+fig8 = plt.figure()
+#fig8.suptitle("Stars aged 7 to 8 dec within 1 from 0,8,0 \n \n")
+
+ax1 = fig8.add_subplot(321)
+for i in range(len(x_691_tracked)):
+  ax1.scatter([-1*x_691_tracked[i]],[-1*y_691_tracked[i]],color=colors[i],marker=".",s=10)
+ax1.plot(xcm_691,ycm_691,color='red',marker=".")
+ax1.set_xlabel('x')
+ax1.set_ylabel('y')
+ax1.minorticks_on()
+ax1.set_xlim(xmin_691,xmax_691)
+ax1.set_ylim(ymin_691,ymax_691)
+ax1.set_title('Snapshot 691')
+
+ax2=fig8.add_subplot(322)
+for i in range(len(x_692_tracked)):
+  ax2.scatter([x_692_tracked[i]],[y_692_tracked[i]],color=colors[i],marker=".",s=10)
+ax2.plot(xcm_692,ycm_692,color='red',marker=".")
+ax2.set_xlabel('x')
+ax2.set_ylabel('y')
+ax2.minorticks_on()
+ax2.set_xlim(xmin_692,xmax_692)
+ax2.set_ylim(ymin_692,ymax_692)
+ax2.set_title('Snapshot 692')
+
+
+ax3=fig8.add_subplot(323)
+for i in range(len(x_693_tracked)):
+  ax3.scatter([x_693_tracked[i]],[y_693_tracked[i]],color=colors[i],marker=".",s=10)
+ax3.plot(xcm_693,ycm_693,color='red',marker=".")
+ax3.set_xlabel('x')
+ax3.set_ylabel('y')
+ax3.set_xlim(xmin_693,xmax_693)
+ax3.set_ylim(ymin_693,ymax_693)
+ax3.minorticks_on()
+ax3.set_title('Snapshot 693')
+
+#plt.subplots_adjust(hspace=.5)
+
+ax4=fig8.add_subplot(324)
+for i in range(len(x_694_tracked)):
+  ax4.scatter([x_694_tracked[i]],[y_694_tracked[i]],color=colors[i],marker=".",s=10)
+ax4.plot(xcm_694,ycm_694,color='red',marker=".")
+ax4.set_xlabel('x')
+ax4.set_ylabel('y')
+ax4.minorticks_on()
+ax4.set_xlim(xmin_694,xmax_694)
+ax4.set_ylim(ymin_694,ymax_694)
+ax4.set_title('Snapshot 694')
+
+
+ax5=fig8.add_subplot(325)
+for i in range(len(x_695_tracked)):  
+  ax5.scatter([x_695_tracked[i]],[y_695_tracked[i]],color=colors[i],marker=".",s=10)
+ax5.plot(xcm_695,ycm_695,color='red',marker=".")
+ax5.set_xlabel('x')
+ax5.set_ylabel('y')
+ax5.minorticks_on()
+ax5.set_xlim(xmin_695,xmax_695)
+ax5.set_ylim(ymin_695,ymax_695)
+ax5.set_title('Snapshot 695')
+
+#plt.subplots_adjust(hspace=.5)
+
+ax6=fig8.add_subplot(326)
+for i in range(len(x_696_tracked)):  
+  ax6.scatter([x_696_tracked[i]],[y_696_tracked[i]],color=colors[i],marker=".",s=10)
+ax6.plot(xcm_696,ycm_696,color='red',marker=".")
+ax6.set_xlabel('x')
+ax6.set_ylabel('y')
+ax6.minorticks_on()
+ax6.set_xlim(xmin_696,xmax_696)
+ax6.set_ylim(ymin_696,ymax_696)
+ax6.set_title('Snapshot 696')
+
+plt.tight_layout()
+fig8.savefig("./plots/cluster_group_15_snapshots691to696.png")
+'''
