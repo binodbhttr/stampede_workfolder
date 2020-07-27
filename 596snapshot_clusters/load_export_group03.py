@@ -24,14 +24,14 @@ snapshot_end=696 #ran out of memory after 646
 
 
 #Loading the sample cluster to be tracked and sorting its id and id_child
-cluster_groupid="snapshot596_cluster_group02" #Remember to change it if you  are changing the star culuster you are tracking in given snapshot
+cluster_groupid="snapshot596_cluster_group03" #Remember to change it if you  are changing the star culuster you are tracking in given snapshot
 
 path="./data/"+cluster_groupid+"/" #creating a path to store the data only if it does not exist
 if not os.path.exists(path):
   os.makedirs(path)
 
-id_test_cluster=np.array([46786008, 6860778, 20107439, 49550991, 13027098, 22977173, 39704303, 10198043, 24799333, 24417344, 7002081, 27712015, 43323314, 45046197, 17769166, 27255123, 61338518, 8567404, 13560518, 60115939, 18130738, 19163283, 43727962, 31087189, 31237355, 43507221, 46756910, 67267822, 37713207, 40474883, 14623897, 28443331, 33161748, 58175346, 25315569, 19222307, 39278483, 56718637, 35909616, 12306432]) #ids of the cluster to begin with 
-id_child_test_cluster=np.array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0])
+id_test_cluster=np.array([62790620, 7971613, 7124981, 18458607, 31817459, 46845465, 49310711, 59750126, 14889399, 9713924, 32610269, 57213856, 26809768, 60575512, 28960278, 39824972, 26483755, 19726841, 65726832, 17360972, 20288913, 49330677, 54310013, 52141811, 22337018, 29403687, 33733805, 19317441, 64701671, 49292708]) #ids of the cluster to begin with 
+id_child_test_cluster=np.array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
 sortind=np.argsort(id_test_cluster)
 id_test_cluster_sorted=id_test_cluster[sortind]
 id_child_test_cluster_sorted=id_child_test_cluster[sortind]
