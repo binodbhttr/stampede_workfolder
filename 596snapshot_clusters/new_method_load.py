@@ -8,14 +8,10 @@ import utilities as ut
 from matplotlib import pyplot as plt
 import numpy as np
 from mpl_toolkits.mplot3d import Axes3D
-
 from sl_utilities import distinct_colours as dc
 from sl_utilities import distance_functions
-
 import os
 
-def clear():
-    os.system( 'cls' )
 
 
 
@@ -24,7 +20,7 @@ simdir = '/scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/1
 
 # In[ ]:
 snapshot_start=596
-snapshot_end=696 #ran out of memory after 646
+snapshot_end=598 #ran out of memory after 646
 
 
 #Loading the sample cluster to be tracked and sorting its id and id_child
@@ -66,7 +62,7 @@ snap=snapshot_start
 ind_tracked={} #finding the indices of the tracked stars in each snapshot.
 for i in range(total_snaps): 
   part=gizmo.io.Read.read_snapshots(['star'],'snapshot_index', snap, simulation_name=simname, simulation_directory=simdir, assign_hosts=True, assign_hosts_rotation=True) #snap is the snapshot number here that changes everytime the loop iterates
-  clear()
+  os.system('clear')
   id=part['star'].prop('id')
   id_child=part['star'].prop('id.child')
   id_generation=part['star'].prop('id.generation')
@@ -118,11 +114,15 @@ for i in range(total_snaps):
   ################################################################
   ################################################################
   #Now lets write our tracked data from each snapshots to a file
+  
+  path="./data/"+cluster_groupid+"/" #creating a path to store the data only if it does not exist
+  if not os.path.exists(path):
+    os.makedirs(path)
+    
   dict_exportdata={"ind_tracked":ind_tracked,
 "age_tracked":age_tracked,"x_tracked":x_tracked,"y_tracked":y_tracked,"z_tracked":z_tracked,"vx_tracked":vx_tracked,"vy_tracked":vy_tracked,"vz_tracked":vz_tracked,"mass_tracked":mass_tracked,"xcm":xcm,"ycm":ycm,"zcm":zcm,
 "delta_rxyz":delta_rxyz,"rmax":rmax,"ymax":ymax,"ymin":ymin,"xmax":xmax,"xmin":xmin,"avg_delta_rxyz":avg_delta_rxyz}
   file_name=cluster_groupid+"_tracked_data_snapshot"+str(snap)
-  path="./data/"
   ut.io.file_hdf5(path+file_name, dict_exportdata)
   print("\n Stored data from the snapshot no.",snap,"to filename:",file_name,".hdf5\n#####\n")
   snap=snap+1
