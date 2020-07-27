@@ -18,6 +18,8 @@ plot_path="./plots/"+cluster_groupid+"/" #creating a path to store the plots onl
 if not os.path.exists(plot_path):
   os.makedirs(plot_path)
   
+#dict_keys(['age_tracked', 'avg_delta_rxyz', 'delta_rxyz', 'ind_tracked', 'mass_tracked', 'rmax', 'vx_tracked', 'vy_tracked', 'vz_tracked', 'x_tracked', 'xcm', 'xmax', 'xmin', 'y_tracked', 'ycm', 'ymax', 'ymin', 'z_tracked', 'zcm']) #these are the keys of dictionary importdata[snapshotnumber]
+
 
 snapshot_start=596
 snapshot_end=696
@@ -34,48 +36,10 @@ for i in range(n):
 colors=['cyan','blue','green','magenta','yellow','orange','purple','tan','lime','brown','grey','pink','navy','teal']
 
 
-##Now plotting all snapshots
-#################################################  
-#total_subplots=snapshot_end-snapshot_start+1  
-#print("\n Now we are going to plot these snapshots !!!!!! \n####\nTotal plots we would need is",total_subplots)
-##cols=int(total_subplots**0.5)
-#cols=3
-#print("Total columns we need in this plot is",cols)
-#rows=total_subplots//cols
-#rows=rows+total_subplots%cols
-#position = range(1,total_subplots + 1)
-#
-#fig1 = plt.figure(figsize=(9,rows*3))
-#snap=snapshot_start
-#for i in range(total_subplots): # add every single subplot to the figure with a for loop
-#    print("\n\nx, y and z of snapshot",snap,"is",importdata[snap]['x_tracked'],importdata[snap]['y_tracked'],importdata[snap]['z_tracked'])
-#    print("xcm of snapshot",snap,"is",importdata[snap]['xcm'],importdata[snap]['ycm'],importdata[snap]['zcm'])
-#    os.system('clear')
-#    ax = fig1.add_subplot(rows,cols,position[i])
-#    ax.scatter(np.absolute(importdata[snap]['x_tracked']),np.absolute(importdata[snap]['y_tracked']),marker=".",s=importdata[snap]['mass_tracked']/100,c=colors)
-#    ax.plot(np.absolute(importdata[snap]['xcm']),np.absolute(importdata[snap]['ycm']),color='red',marker=".",markersize=1)
-#    ax.set_xlabel('x')
-#    ax.set_ylabel('y')
-#    ax.minorticks_on()
-#    ax.set_xlim(np.absolute(importdata[snap]['xmin']),np.absolute(importdata[snap]['xmax']))
-#    ax.set_ylim(np.absolute(importdata[snap]['ymin']),np.absolute(importdata[snap]['ymax']))
-#    title="Snapshot " + str(snap)
-#    ax.set_title(title)
-#    snap=snap+1
-#      
-#plt.tight_layout()
-#plotname=cluster_groupid+"_"+str(snapshot_start)+"_to_"+str(snapshot_end)+"_using_exported_data.png"
-#print("###################\nSaving plot of all snapshots as filename:",plotname)
-#fig1.savefig(plot_path+plotname,dpi=600)
-#print("\nSaving Complete !!!")
-#plt.close()
-###############################################################################
-###############################################################################
-
 
 
 ##################################
-#Now plotting the verage distances from the center of mass for each snapshots we tracked
+#Now plotting the average distances from the center of mass for each snapshots we tracked
 snapshot_list=np.arange(snapshot_start,snapshot_end+1) #create a list of snapshots to plot with the average distance from the CM
 avg_r_cm_temp=np.array(0)
 count=snapshot_start
@@ -83,12 +47,13 @@ for i in range(len(snapshot_list)):
   avg_r_cm_temp=np.append(avg_r_cm_temp,importdata[count]['avg_delta_rxyz'])
   count=count+1
 avg_r_cm=avg_r_cm_temp[1:len(avg_r_cm_temp)]
+time=snapshot_list-snapshot_start #time starts from zero here where t=0 is at the snapshot where we start from
 print("\nThese are the average distances from the center of mass for each snapshots we tracked:\n",avg_r_cm)
 
 
 fig2=plt.figure()
 ax1=fig2.add_subplot(1,1,1)
-ax1.plot(snapshot_list-snapshot_start,avg_r_cm*1000, color='b') #snapshot_list and avg_r_cm both are arrays
+ax1.plot(time,avg_r_cm*1000, color='b') #snapshot_list and avg_r_cm both are arrays
 ax1.set_xlabel('Time in Myr')
 ax1.set_ylabel('Average Distance of stars from CM of the cluster in parsec')
 ax1.set_title(cluster_groupid)
@@ -98,4 +63,90 @@ plotname="averageDistanceFromCM_"+str(snapshot_start)+"_to_"+str(snapshot_end)+"
 print("###################\nSaving plot of Average Distance from CM vs Snapshots as:",plotname)
 fig2.savefig(plot_path+plotname)
 plt.close()
-###################################
+
+
+
+
+#########################################################
+#########################################################
+#plotting the standard deviation of the max r from the center of Mass for each snapshot
+std_r_cm_temp=np.array(0)
+count=snapshot_start
+for i in range(len(snapshot_list)):
+  std_r_cm_temp=np.append(std_r_cm_temp,np.nanstd(importdata[count]['delta_rxyz']))
+  count=count+1
+std_r_cm=std_r_cm_temp[1:len(std_r_cm_temp)]
+time=snapshot_list-snapshot_start #time starts from zero here where t=0 is at the snapshot where we start from
+print("\nThese are the stdev of distances from the center of mass for each snapshots we tracked:\n",std_r_cm)
+
+
+
+
+fig3=plt.figure()
+ax1=fig3.add_subplot(1,1,1)
+ax1.plot(time,std_r_cm*1000,color='b') #snapshot_list and avg_r_cm both are arrays
+ax1.set_xlabel('Time in Myr')
+ax1.set_ylabel('stdev of Distance of stars from CM of the cluster in parsec')
+ax1.set_title(cluster_groupid)
+ax1.minorticks_on()
+plt.tight_layout()
+plotname="stdev_DistanceFromCM_"+str(snapshot_start)+"_to_"+str(snapshot_end)+".png"
+print("###################\nSaving plot of stdev of Distance from CM vs Snapshots as:",plotname)
+fig3.savefig(plot_path+plotname)
+plt.close()
+
+
+#########################################################
+#########################################################
+#plotting the standard deviation of the magnitude of velocitiy of the stars in each snapshot
+std_v_mag_temp=np.array(0)
+count=snapshot_start
+for i in range(len(snapshot_list)):
+  v_mag=(importdata[count]['vx_tracked']**2+importdata[count]['vy_tracked']**2+importdata[count]['vz_tracked']**2)**(1/2)*1.023
+  std_v_mag_temp=np.append(std_v_mag_temp,np.nanstd(v_mag))
+  count=count+1
+std_v_mag=std_v_mag_temp[1:len(std_v_mag_temp)]
+time=snapshot_list-snapshot_start #time starts from zero here where t=0 is at the snapshot where we start from
+print("\nThese are the stdev of distances from the center of mass for each snapshots we tracked:\n",std_v_mag)
+
+
+fig4=plt.figure()
+ax1=fig4.add_subplot(1,1,1)
+ax1.plot(time,std_v_mag,color='b') #time and std_v_mag both are arrays
+ax1.set_xlabel('Time in Myr')
+ax1.set_ylabel('stdev of Velocity of stars in the cluster in parsec/Myr')
+ax1.set_title(cluster_groupid)
+ax1.minorticks_on()
+plt.tight_layout()
+plotname="stdev_Velocity_"+str(snapshot_start)+"_to_"+str(snapshot_end)+".png"
+print("###################\nSaving plot of stdev of Velocity of stars in the cluster in each Snapshot as:",plotname)
+fig4.savefig(plot_path+plotname)
+plt.close()
+
+
+
+#########################################################
+#########################################################
+#plotting the largest distance from the Center of Mass of the stars in each snapshot
+rmax_temp=np.array(0)
+count=snapshot_start
+for i in range(len(snapshot_list)):
+  rmax_temp=np.append(rmax_temp,importdata[count]['rmax']*1000)
+  count=count+1
+rmax=rmax_temp[1:len(rmax_temp)]
+time=snapshot_list-snapshot_start #time starts from zero here where t=0 is at the snapshot where we start from
+print("\nThese are the largest distances (in pc) from the center of mass for each snapshots we tracked:\n",rmax)
+
+
+fig4=plt.figure()
+ax1=fig4.add_subplot(1,1,1)
+ax1.plot(time,rmax,color='b') 
+ax1.set_xlabel('Time in Myr')
+ax1.set_ylabel('largest distances (in parsec) from the center of mass')
+ax1.set_title(cluster_groupid)
+ax1.minorticks_on()
+plt.tight_layout()
+plotname="rmax_fromCM"+str(snapshot_start)+"_to_"+str(snapshot_end)+".png"
+print("###################\nSaving plot of largest distances (in pc) from the center of mass in each Snapshot as:",plotname)
+fig4.savefig(plot_path+plotname)
+plt.close()
