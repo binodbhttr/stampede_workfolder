@@ -20,7 +20,7 @@ simdir = '/scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/1
 
 # In[ ]:
 snapshot_start=596
-snapshot_end=597 #ran out of memory after 646
+snapshot_end=610 #ran out of memory after 646
 
 
 #Loading the sample cluster to be tracked and sorting its id and id_child
@@ -29,6 +29,9 @@ cluster_group="snapshot596" #Remember to change it if you  are changing the star
 path="./data_pkl/" #creating a path to store the data only if it does not exist
 if not os.path.exists(path):
   os.makedirs(path)
+
+
+
 
 ###############################################
 ###############################################
@@ -56,6 +59,11 @@ with open(path+file_name, 'wb') as output:
 #####3
 To access id from say cluster 2, use import_cluster[2]["id"]
 '''
+################################################################
+################################################################
+
+
+
 
 
 ################################################################
@@ -74,16 +82,40 @@ def matchids(id_current,id_child_current,id_next,id_child_next,id_generation_nex
 ################################################################
 
 
-total_clusters=len(import_cluster)
-total_snaps=snapshot_end-snapshot_start+1
-snap=snapshot_start
-test_cluster=1
-ind_tracked={} #finding the indices of the tracked stars in each snapshot.
+total_clusters=len(import_cluster)         #count the total no. of clusters we have in clusters file
+total_snaps=snapshot_end-snapshot_start+1  #count the total no. of snapshots we are going to track
+snap=snapshot_start                        #Mark the beginning of the snapshot
+test_cluster=1                             #Mark the beginning of the cluster that we would be tracking
+ind_tracked={}                             #finding the indices of the tracked stars in each snapshot for each cluster.
 
-tracked_data_all_clusters_each_snap={} 
+tracked_data_all_clusters_each_snap={}     #dictionary for storing data from all clusters and in each snapshot
 
-for i in range(total_snaps): 
-  part=gizmo.io.Read.read_snapshots(['star'],'snapshot_index', snap, simulation_name=simname, simulation_directory=simdir, assign_hosts=True, assign_hosts_rotation=True) #snap is the snapshot number here that changes everytime the loop iterates
+
+#Algorithm followed for scanning each snapshot for all given star clusters is as follows
+'''
+Step1: Load the star clusters from the given file
+Step2: snap=snapshot to begin with
+Step3: Load id, id_child, id_genearation, age, mass, positoins, velocities and everything you want form the snapshot snap
+Step4: Now assign test_cluster=1 which is the star cluster to begin with for tracking
+Step5: Track the stars from the test_cluster using the id, id_child and id_generation
+Step6: Get the information of the tracked stars id, id_child, id_genearation, age, mass, positoins, velocities and everything you want form the snapshot snap
+        Save the information you gathered into a dictionary tracked_data_all_clusters
+        test_cluster+=1
+Step7: Is test_cluster<total_clusters? If yes goto step 5 else goto step 8
+Step8: All clusters were tracked for the given snapshot
+        Store the data gathered from all clusters in given snapshot to a dictionary tracked_data_all_clusters_each_snap
+        It has the format {596:{1:{"x_tracked":[array],...},2:{"x_tracked":[array],...}},597:{1:{"x_tracked":[array],..},2:{"x_tracked":[array],..}..}}
+        snap+=1
+        Is snap<total_snaps? If yes goto step 3 else goto Step 9
+Step9: End
+
+'''
+
+
+
+
+for i in range(total_snaps):               #we run a for loop until the end of all snapshots
+  part=gizmo.io.Read.read_snapshots(['star'],'snapshot_index', snap, simulation_name=simname, simulation_directory=simdir, assign_hosts=True, assign_hosts_rotation=True)               #snap is the snapshot number here that changes everytime the loop iterates. It starts with sanpshot_start
   
   id=part['star'].prop('id')
   id_child=part['star'].prop('id.child')
@@ -107,17 +139,17 @@ for i in range(total_snaps):
   ################################################################
   ################################################################
   ### Now matching the IDs of this snapshot with the ids of all clusters
-  test_cluster=1
-  tracked_data_all_clusters={}
+  test_cluster=1                       #This is the test cluster to begin with. It resets to 1 at each snapshot 
+  tracked_data_all_clusters={}         #This dictionary keeps the tracked information for all star clusters in given snapshot. It also resets with snapshots.
   for j in range(total_clusters):
-    tracked_data={}
+    tracked_data={}                    #This dictionary holds the tracked information for a cluster temporarily until it is pushed to tracked_data_all_clusters
     print("\n\nNow Matching the ids of the snapshot",snap," with the cluster group id",test_cluster)
     id_test_cluster=import_cluster[test_cluster]["id"]
     id_child_test_cluster=import_cluster[test_cluster]["id_children"]
     sortind=np.argsort(id_test_cluster)
     id_test_cluster_sorted=id_test_cluster[sortind]
     id_child_test_cluster_sorted=id_child_test_cluster[sortind]
-    print("The total no. of stars in this cluster is",len(id_test_cluster_sorted))
+    print("The total no. of stars in cluster id ",test_cluster," is",len(id_test_cluster_sorted))
     print("Sorted ids of this cluster is",id_test_cluster_sorted)
     ind_tracked=matchids(id_test_cluster_sorted,id_child_test_cluster_sorted,id,id_child,id_generation)
     
@@ -171,7 +203,7 @@ for i in range(total_snaps):
 #Finally we scanned through all the snapshots and now we come out of the loop to store the final file that contains all the tracked information of all clusters 
 #Now we store the tracked data of all clusters into a dictionary with snapshot number as the key. This would be our final dictionary of dictinaries. 
 with open(path+"total_data_all_clusters_all_snapshots.pkl", 'wb') as output:
-  pickle.dump(tracked_data_all_clusters_each_snap, output)
+  pickle.dump(tracked_data_all_clusters_each_snap, output) #access the data using tracked_data_all_clusters_each_snap[snapshot][cluster_id]["x_tracked"])
   
 #Expected Result: tracked_data_all_clusters_each_snap={596:{1:tracked_data,2:tracked_data..},597:{1:tracked_data,2:tracked_data..upto total clusters},598....     upto total snapshots}
   
