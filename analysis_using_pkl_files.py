@@ -14,7 +14,8 @@ simname = 'm12i_res7100_mhdcv'
 simdir = '/scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/1Myr_fire2'
 file_name="total_data_all_clusters_all_snapshots.pkl"
 snapshot_start=596
-snapshot_end=610
+snapshot_end=696
+
 
 
 with open(path+file_name, "rb") as input:
