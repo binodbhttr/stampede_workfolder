@@ -20,7 +20,7 @@ simdir = '/scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/1
 
 # In[ ]:
 snapshot_start=596
-snapshot_end=610 #ran out of memory after 646
+snapshot_end=696 #ran out of memory after 646
 
 
 #Loading the sample cluster to be tracked and sorting its id and id_child
@@ -129,7 +129,14 @@ for i in range(total_snaps):               #we run a for loop until the end of a
   vy=part['star'].prop('host.velocity.principal')[:,1]
   vz=part['star'].prop('host.velocity.principal')[:,2]
   mass=part['star']['mass'] #mass of all stars in snapshot 691
-  print("\n#######################\n#######################\nLoaded id,id_child,age,x,y,z,vx,vy,vz,mass and number of particles for snapshot no.",snap)
+  # compute 3-D velocity in cylindrical coordinates
+  # first value is along the major axes (positive definite)
+  # secod value is azimuthal velocity in the plane of the disk (positive definite)
+  # third value is vertical velocity wrt the disk (signed)
+  vR_cyl=part['star'].prop('host.velocity.principal.cylindrical')[:,0]
+  vphi_cyl=part['star'].prop('host.velocity.principal.cylindrical')[:,1]
+  vz_cyl=part['star'].prop('host.velocity.principal.cylindrical')[:,2]
+  print("\n#########\n############\nLoaded id,id_child,age,x,y,z,vx,vy,vz,mass, cylindrical velocities and number of particles for snapshot no.",snap)
   print("Total no of particles in this shapshot no.",snap,"is",n)
   
   
@@ -164,7 +171,11 @@ for i in range(total_snaps):               #we run a for loop until the end of a
     vy_tracked=vy[ind_tracked]
     vz_tracked=vz[ind_tracked]
     mass_tracked=mass[ind_tracked]
-  
+    vR_cyl_tracked=vR_cyl[ind_tracked]
+    vphi_cyl_tracked=vphi_cyl[ind_tracked]
+    vz_cyl_tracked=vz_cyl[ind_tracked]
+    
+    
     ################################################################
     ################################################################
     #Now calculating center of mass and realted properties  
@@ -183,7 +194,13 @@ for i in range(total_snaps):               #we run a for loop until the end of a
     ################################################################
     ################################################################
     #Now lets write our tracked data from each snapshots to a file
-    tracked_data={"ind_tracked":ind_tracked,"age_tracked":age_tracked,"x_tracked":x_tracked,"y_tracked":y_tracked,"z_tracked":z_tracked,"vx_tracked":vx_tracked,"vy_tracked":vy_tracked,"vz_tracked":vz_tracked,"mass_tracked":mass_tracked,"xcm":xcm,"ycm":ycm,"zcm":zcm,"delta_rxyz":delta_rxyz,"rmax":rmax,"ymax":ymax,"ymin":ymin,"xmax":xmax,"xmin":xmin,"avg_delta_rxyz":avg_delta_rxyz}
+    tracked_data={"ind_tracked":ind_tracked,"age_tracked":age_tracked,"x_tracked":x_tracked,"y_tracked":y_tracked,"z_tracked":z_tracked,
+    "vx_tracked":vx_tracked,"vy_tracked":vy_tracked,"vz_tracked":vz_tracked,
+    "mass_tracked":mass_tracked,"xcm":xcm,"ycm":ycm,"zcm":zcm,"delta_rxyz":delta_rxyz,"rmax":rmax,
+    "ymax":ymax,"ymin":ymin,"xmax":xmax,"xmin":xmin,"avg_delta_rxyz":avg_delta_rxyz,
+    "vR_cyl_tracked":vR_cyl_tracked,"vphi_cyl_tracked":vphi_cyl_tracked,"vz_cyl_tracked":vz_cyl_tracked}
+    
+    
     tracked_data_all_clusters.update({test_cluster:tracked_data}) #access it using tracked_data_all_clusters[clusterid]["key"]
     test_cluster+=1
   
