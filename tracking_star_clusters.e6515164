@@ -1,0 +1,38 @@
+Traceback (most recent call last):
+  File "/home1/07428/binod/simulation_code/utilities/simulation.py", line 416, in read_snapshot_times
+    Snapshot.read_snapshots('snapshot_times.txt', directory)
+  File "/home1/07428/binod/simulation_code/utilities/simulation.py", line 310, in read_snapshots
+    ('time.width', np.float64),
+  File "/home1/07428/binod/anaconda3/lib/python3.7/site-packages/numpy/lib/npyio.py", line 981, in loadtxt
+    fh = np.lib._datasource.open(fname, 'rt', encoding=encoding)
+  File "/home1/07428/binod/anaconda3/lib/python3.7/site-packages/numpy/lib/_datasource.py", line 269, in open
+    return ds.open(path, mode, encoding=encoding, newline=newline)
+  File "/home1/07428/binod/anaconda3/lib/python3.7/site-packages/numpy/lib/_datasource.py", line 623, in open
+    raise IOError("%s not found." % path)
+OSError: /scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/1Myr_fire2/snapshot_times.txt not found.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home1/07428/binod/simulation_code/utilities/simulation.py", line 418, in read_snapshot_times
+    Snapshot.read_snapshots('snapshot_scale-factors.txt', directory)
+  File "/home1/07428/binod/simulation_code/utilities/simulation.py", line 317, in read_snapshots
+    scalefactors = np.loadtxt(path_file_name, np.float32)
+  File "/home1/07428/binod/anaconda3/lib/python3.7/site-packages/numpy/lib/npyio.py", line 981, in loadtxt
+    fh = np.lib._datasource.open(fname, 'rt', encoding=encoding)
+  File "/home1/07428/binod/anaconda3/lib/python3.7/site-packages/numpy/lib/_datasource.py", line 269, in open
+    return ds.open(path, mode, encoding=encoding, newline=newline)
+  File "/home1/07428/binod/anaconda3/lib/python3.7/site-packages/numpy/lib/_datasource.py", line 623, in open
+    raise IOError("%s not found." % path)
+OSError: /scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/1Myr_fire2/snapshot_scale-factors.txt not found.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "load_export_all_snapshots_all_clusters.py", line 118, in <module>
+    part=gizmo.io.Read.read_snapshots(['star'],'snapshot_index', snap, simulation_name=simname, simulation_directory=simdir, assign_hosts=True, assign_hosts_rotation=True)               #snap is the snapshot number here that changes everytime the loop iterates. It starts with sanpshot_start
+  File "/home1/07428/binod/simulation_code/gizmo_analysis/gizmo_io.py", line 767, in read_snapshots
+    Snapshot = ut.simulation.read_snapshot_times(simulation_directory, self.verbose)
+  File "/home1/07428/binod/simulation_code/utilities/simulation.py", line 420, in read_snapshot_times
+    raise OSError(f'cannot find file of snapshot times in {directory}')
+OSError: cannot find file of snapshot times in /scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/1Myr_fire2/

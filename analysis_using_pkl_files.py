@@ -60,13 +60,14 @@ cluster_count=0
 for i in range(len(cluster_groupid)):
     avg_r_cm_temp=np.array(0)
     snapshot_count=snapshot_start
+    n_star=len(importdata[snapshot_count][cluster_count+1]["x_tracked"])
     for j in range(n):
         avg_r_cm_temp=np.append(avg_r_cm_temp,importdata[snapshot_count][cluster_count+1]["avg_delta_rxyz"])
         snapshot_count+=1
     avg_r_cm=avg_r_cm_temp[1:len(avg_r_cm_temp)]*1000 #converted into parsec
     #print(avg_r_cm)
     slope, intercept = np.polyfit(time,avg_r_cm, 1)
-    ax1.plot(time,avg_r_cm,label=cluster_groupid[cluster_count]+",slope="+str(round(slope,4)))
+    ax1.plot(time,avg_r_cm,label=cluster_groupid[cluster_count]+",n_star="+str(n_star))
     #ax1.plot(time,slope*time+intercept,label=cluster_groupid[cluster_count]+"fitted")
     ax1.legend(loc='upper left')
     cluster_count+=1
