@@ -16,11 +16,11 @@ import os
 
 
 simname = 'm12i_res7100_mhdcv'
-simdir = '/scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/1Myr_fire2'
+#simdir = '/scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/1Myr_fire2'
+simdir = '/scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/fire2' #directory has been changed october 2020 to fire2 from 1Myr_fire2
 
-# In[ ]:
 snapshot_start=596
-snapshot_end=696 #ran out of memory after 646
+snapshot_end=599 #ran out of memory after 646
 
 
 #Loading the sample cluster to be tracked and sorting its id and id_child
