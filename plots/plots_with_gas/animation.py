@@ -4,9 +4,11 @@ images=[]
 plot_path="./" #creating a path to store the plots only if it does not exist
 
 
-p=[600,630,660,690]
-for img in p:
-    images.append(imageio.imread(plot_path+"snap"+str(img) + '.png'))
+snapshot_start=596
+snapshot_end=690
+for img in range(snapshot_start,snapshot_end+1):
+    print(img)
+    images.append(imageio.imread(plot_path+"17clusters_snap"+str(img) + '.png'))
     #os.remove(plot_path+"snap"+str(k) + ".png")
-imageio.mimsave(plot_path+"animation.gif", images, duration = 1/1)
+imageio.mimsave(plot_path+"17clusters_animation.gif", images, duration = 1/5)
      
