@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "load_export_all_fire3.py", line 154, in <module>
-    id_test_cluster=import_cluster[test_cluster]["id"]
-KeyError: 19
