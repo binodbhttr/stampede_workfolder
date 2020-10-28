@@ -1,0 +1,512 @@
+These are the clusters groups we have tracked data of:
+ ['snapshot641_cluster_group1', 'snapshot641_cluster_group2', 'snapshot641_cluster_group3', 'snapshot641_cluster_group4', 'snapshot641_cluster_group5', 'snapshot641_cluster_group6', 'snapshot641_cluster_group7', 'snapshot641_cluster_group8', 'snapshot641_cluster_group9', 'snapshot641_cluster_group10', 'snapshot641_cluster_group11', 'snapshot641_cluster_group12', 'snapshot641_cluster_group13', 'snapshot641_cluster_group14', 'snapshot641_cluster_group15', 'snapshot641_cluster_group16', 'snapshot641_cluster_group17', 'snapshot641_cluster_group18', 'snapshot641_cluster_group19']
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/fire3/snapshot_times.txt
+
+  using snapshot index = 641, redshift = 0.004
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/fire3/output/snapdir_641/snapshot_641.0.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 70514272 particles
+    dark2     (id = 2): 5513331 particles
+    gas       (id = 0): 55558957 particles
+    star      (id = 4): 15423898 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['accelerdation', 'density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'photon.energy', 'position', 'potential', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    snapshot_641.0.hdf5
+    snapshot_641.1.hdf5
+    snapshot_641.2.hdf5
+    snapshot_641.3.hdf5
+
+* reading cosmological parameters from:  scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/fire3/initial_condition/ic_agora_m12i.conf
+
+* checking sanity of particle properties
+! warning: gas id.child [min, max] = [0.000, 4.290e9]
+! warning: gas temperature [min, max] = [2.831, 4.374e8]
+! warning: star id.child [min, max] = [0.000, 4.294e9]
+
+  cannot read file containing hosts coordinates
+  instead will assign hosts via iterative zoom on particle mass
+
+# in utilities.particle.get_center_positions():
+* assigning position for 1 center/host, via iterative zoom-in on star particle mass
+  host1 position = (41847.860, 44102.790, 46279.424) [kpc comoving]
+
+# in utilities.particle.get_center_velocities():
+* assigning velocity for 1 center/host, weighting star particles by mass
+  host1 velocity = (-51.6, 78.4, 91.8) [km / s]
+
+
+# in utilities.particle.get_principal_axes():
+* assigning rotation tensor for 1 host
+  using star particles at distance < 10.0 kpc
+  using distance < 7.9 kpc that encloses 90% of mass
+  using youngest 25% of star particles
+  host1: using star particles with age = [0.000, 3.035] Gyr
+  host1: axis ratios: min/maj = 0.175, min/med = 0.182, med/maj = 0.965
+
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/fire3/snapshot_times.txt
+
+  using snapshot index = 642, redshift = 0.004
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/fire3/output/snapdir_642/snapshot_642.0.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 70514272 particles
+    dark2     (id = 2): 5513331 particles
+    gas       (id = 0): 55558231 particles
+    star      (id = 4): 15424674 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['accelerdation', 'density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'photon.energy', 'position', 'potential', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    snapshot_642.0.hdf5
+    snapshot_642.1.hdf5
+    snapshot_642.2.hdf5
+    snapshot_642.3.hdf5
+
+* reading cosmological parameters from:  scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/fire3/initial_condition/ic_agora_m12i.conf
+
+* checking sanity of particle properties
+! warning: gas id.child [min, max] = [0.000, 4.290e9]
+! warning: gas temperature [min, max] = [2.831, 4.122e8]
+! warning: star id.child [min, max] = [0.000, 4.294e9]
+
+  cannot read file containing hosts coordinates
+  instead will assign hosts via iterative zoom on particle mass
+
+# in utilities.particle.get_center_positions():
+* assigning position for 1 center/host, via iterative zoom-in on star particle mass
+  host1 position = (41847.820, 44102.866, 46279.518) [kpc comoving]
+
+# in utilities.particle.get_center_velocities():
+* assigning velocity for 1 center/host, weighting star particles by mass
+  host1 velocity = (-51.7, 78.5, 91.7) [km / s]
+
+
+# in utilities.particle.get_principal_axes():
+* assigning rotation tensor for 1 host
+  using star particles at distance < 10.0 kpc
+  using distance < 7.9 kpc that encloses 90% of mass
+  using youngest 25% of star particles
+  host1: using star particles with age = [0.000, 3.036] Gyr
+  host1: axis ratios: min/maj = 0.175, min/med = 0.182, med/maj = 0.964
+
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/fire3/snapshot_times.txt
+
+  using snapshot index = 643, redshift = 0.004
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/fire3/output/snapdir_643/snapshot_643.0.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 70514272 particles
+    dark2     (id = 2): 5513331 particles
+    gas       (id = 0): 55557527 particles
+    star      (id = 4): 15425430 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['accelerdation', 'density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'photon.energy', 'position', 'potential', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    snapshot_643.0.hdf5
+    snapshot_643.1.hdf5
+    snapshot_643.2.hdf5
+    snapshot_643.3.hdf5
+
+* reading cosmological parameters from:  scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/fire3/initial_condition/ic_agora_m12i.conf
+
+* checking sanity of particle properties
+! warning: gas id.child [min, max] = [0.000, 4.290e9]
+! warning: gas temperature [min, max] = [2.831, 3.682e8]
+! warning: star id.child [min, max] = [0.000, 4.294e9]
+
+  cannot read file containing hosts coordinates
+  instead will assign hosts via iterative zoom on particle mass
+
+# in utilities.particle.get_center_positions():
+* assigning position for 1 center/host, via iterative zoom-in on star particle mass
+  host1 position = (41847.759, 44102.948, 46279.621) [kpc comoving]
+
+# in utilities.particle.get_center_velocities():
+* assigning velocity for 1 center/host, weighting star particles by mass
+  host1 velocity = (-51.7, 78.7, 91.6) [km / s]
+
+
+# in utilities.particle.get_principal_axes():
+* assigning rotation tensor for 1 host
+  using star particles at distance < 10.0 kpc
+  using distance < 7.9 kpc that encloses 90% of mass
+  using youngest 25% of star particles
+  host1: using star particles with age = [0.000, 3.037] Gyr
+  host1: axis ratios: min/maj = 0.175, min/med = 0.182, med/maj = 0.963
+
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/fire3/snapshot_times.txt
+
+  using snapshot index = 644, redshift = 0.004
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/fire3/output/snapdir_644/snapshot_644.0.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 70514272 particles
+    dark2     (id = 2): 5513331 particles
+    gas       (id = 0): 55556677 particles
+    star      (id = 4): 15426328 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['accelerdation', 'density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'photon.energy', 'position', 'potential', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    snapshot_644.0.hdf5
+    snapshot_644.1.hdf5
+    snapshot_644.2.hdf5
+    snapshot_644.3.hdf5
+
+* reading cosmological parameters from:  scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/fire3/initial_condition/ic_agora_m12i.conf
+
+* checking sanity of particle properties
+! warning: gas id.child [min, max] = [0.000, 4.290e9]
+! warning: gas temperature [min, max] = [2.831, 3.302e8]
+! warning: star id.child [min, max] = [0.000, 4.294e9]
+
+  cannot read file containing hosts coordinates
+  instead will assign hosts via iterative zoom on particle mass
+
+# in utilities.particle.get_center_positions():
+* assigning position for 1 center/host, via iterative zoom-in on star particle mass
+  host1 position = (41847.691, 44103.028, 46279.720) [kpc comoving]
+
+# in utilities.particle.get_center_velocities():
+* assigning velocity for 1 center/host, weighting star particles by mass
+  host1 velocity = (-51.7, 78.9, 91.5) [km / s]
+
+
+# in utilities.particle.get_principal_axes():
+* assigning rotation tensor for 1 host
+  using star particles at distance < 10.0 kpc
+  using distance < 7.9 kpc that encloses 90% of mass
+  using youngest 25% of star particles
+  host1: using star particles with age = [0.000, 3.038] Gyr
+  host1: axis ratios: min/maj = 0.175, min/med = 0.182, med/maj = 0.962
+
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/fire3/snapshot_times.txt
+
+  using snapshot index = 645, redshift = 0.004
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/fire3/output/snapdir_645/snapshot_645.0.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 70514272 particles
+    dark2     (id = 2): 5513331 particles
+    gas       (id = 0): 55555843 particles
+    star      (id = 4): 15427224 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['accelerdation', 'density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'photon.energy', 'position', 'potential', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    snapshot_645.0.hdf5
+    snapshot_645.1.hdf5
+    snapshot_645.2.hdf5
+    snapshot_645.3.hdf5
+
+* reading cosmological parameters from:  scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/fire3/initial_condition/ic_agora_m12i.conf
+
+* checking sanity of particle properties
+! warning: gas id.child [min, max] = [0.000, 4.290e9]
+! warning: gas temperature [min, max] = [2.831, 2.836e8]
+! warning: star id.child [min, max] = [0.000, 4.294e9]
+
+  cannot read file containing hosts coordinates
+  instead will assign hosts via iterative zoom on particle mass
+
+# in utilities.particle.get_center_positions():
+* assigning position for 1 center/host, via iterative zoom-in on star particle mass
+  host1 position = (41847.627, 44103.106, 46279.814) [kpc comoving]
+
+# in utilities.particle.get_center_velocities():
+* assigning velocity for 1 center/host, weighting star particles by mass
+  host1 velocity = (-51.8, 79.0, 91.5) [km / s]
+
+
+# in utilities.particle.get_principal_axes():
+* assigning rotation tensor for 1 host
+  using star particles at distance < 10.0 kpc
+  using distance < 7.9 kpc that encloses 90% of mass
+  using youngest 25% of star particles
+  host1: using star particles with age = [0.000, 3.038] Gyr
+  host1: axis ratios: min/maj = 0.176, min/med = 0.183, med/maj = 0.962
+
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/fire3/snapshot_times.txt
+
+  using snapshot index = 646, redshift = 0.004
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/fire3/output/snapdir_646/snapshot_646.0.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 70514272 particles
+    dark2     (id = 2): 5513331 particles
+    gas       (id = 0): 55554965 particles
+    star      (id = 4): 15428140 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['accelerdation', 'density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'photon.energy', 'position', 'potential', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    snapshot_646.0.hdf5
+    snapshot_646.1.hdf5
+    snapshot_646.2.hdf5
+    snapshot_646.3.hdf5
+
+* reading cosmological parameters from:  scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/fire3/initial_condition/ic_agora_m12i.conf
+
+* checking sanity of particle properties
+! warning: gas id.child [min, max] = [0.000, 4.290e9]
+! warning: gas temperature [min, max] = [2.831, 2.346e8]
+! warning: star id.child [min, max] = [0.000, 4.294e9]
+
+  cannot read file containing hosts coordinates
+  instead will assign hosts via iterative zoom on particle mass
+
+# in utilities.particle.get_center_positions():
+* assigning position for 1 center/host, via iterative zoom-in on star particle mass
+  host1 position = (41847.564, 44103.188, 46279.913) [kpc comoving]
+
+# in utilities.particle.get_center_velocities():
+* assigning velocity for 1 center/host, weighting star particles by mass
+  host1 velocity = (-51.8, 79.2, 91.4) [km / s]
+
+
+# in utilities.particle.get_principal_axes():
+* assigning rotation tensor for 1 host
+  using star particles at distance < 10.0 kpc
+  using distance < 7.9 kpc that encloses 90% of mass
+  using youngest 25% of star particles
+  host1: using star particles with age = [0.000, 3.038] Gyr
+  host1: axis ratios: min/maj = 0.176, min/med = 0.183, med/maj = 0.961
+
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/fire3/snapshot_times.txt
+
+  using snapshot index = 647, redshift = 0.004
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/fire3/output/snapdir_647/snapshot_647.0.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 70514272 particles
+    dark2     (id = 2): 5513331 particles
+    gas       (id = 0): 55554137 particles
+    star      (id = 4): 15429017 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['accelerdation', 'density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'photon.energy', 'position', 'potential', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    snapshot_647.0.hdf5
+    snapshot_647.1.hdf5
+    snapshot_647.2.hdf5
+    snapshot_647.3.hdf5
+
+* reading cosmological parameters from:  scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/fire3/initial_condition/ic_agora_m12i.conf
+
+* checking sanity of particle properties
+! warning: gas id.child [min, max] = [0.000, 4.290e9]
+! warning: gas temperature [min, max] = [2.831, 2.301e8]
+! warning: star id.child [min, max] = [0.000, 4.294e9]
+
+  cannot read file containing hosts coordinates
+  instead will assign hosts via iterative zoom on particle mass
+
+# in utilities.particle.get_center_positions():
+* assigning position for 1 center/host, via iterative zoom-in on star particle mass
+  host1 position = (41847.489, 44103.266, 46280.009) [kpc comoving]
+
+# in utilities.particle.get_center_velocities():
+* assigning velocity for 1 center/host, weighting star particles by mass
+  host1 velocity = (-51.7, 79.3, 91.3) [km / s]
+
+
+# in utilities.particle.get_principal_axes():
+* assigning rotation tensor for 1 host
+  using star particles at distance < 10.0 kpc
+  using distance < 7.9 kpc that encloses 90% of mass
+  using youngest 25% of star particles
+  host1: using star particles with age = [0.000, 3.038] Gyr
+  host1: axis ratios: min/maj = 0.176, min/med = 0.183, med/maj = 0.961
+
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/fire3/snapshot_times.txt
+
+  using snapshot index = 648, redshift = 0.003
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/fire3/output/snapdir_648/snapshot_648.0.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 70514272 particles
+    dark2     (id = 2): 5513331 particles
+    gas       (id = 0): 55553199 particles
+    star      (id = 4): 15430001 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['accelerdation', 'density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'photon.energy', 'position', 'potential', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    snapshot_648.0.hdf5
+    snapshot_648.1.hdf5
+    snapshot_648.2.hdf5
+    snapshot_648.3.hdf5
+
+* reading cosmological parameters from:  scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/fire3/initial_condition/ic_agora_m12i.conf
+
+* checking sanity of particle properties
+! warning: gas id.child [min, max] = [0.000, 4.290e9]
+! warning: gas temperature [min, max] = [2.831, 3.155e8]
+! warning: star id.child [min, max] = [0.000, 4.294e9]
+
+  cannot read file containing hosts coordinates
+  instead will assign hosts via iterative zoom on particle mass
+
+# in utilities.particle.get_center_positions():
+* assigning position for 1 center/host, via iterative zoom-in on star particle mass
+  host1 position = (41847.428, 44103.344, 46280.107) [kpc comoving]
+
+# in utilities.particle.get_center_velocities():
+* assigning velocity for 1 center/host, weighting star particles by mass
+  host1 velocity = (-51.7, 79.5, 91.2) [km / s]
+
+
+# in utilities.particle.get_principal_axes():
+* assigning rotation tensor for 1 host
+  using star particles at distance < 10.0 kpc
+  using distance < 7.9 kpc that encloses 90% of mass
+  using youngest 25% of star particles
+  host1: using star particles with age = [0.000, 3.038] Gyr
+  host1: axis ratios: min/maj = 0.176, min/med = 0.183, med/maj = 0.961
+
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/fire3/snapshot_times.txt
+
+  using snapshot index = 649, redshift = 0.003
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/fire3/output/snapdir_649/snapshot_649.0.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 70514272 particles
+    dark2     (id = 2): 5513331 particles
+    gas       (id = 0): 55552327 particles
+    star      (id = 4): 15430927 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['accelerdation', 'density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'photon.energy', 'position', 'potential', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    snapshot_649.0.hdf5
+    snapshot_649.1.hdf5
+    snapshot_649.2.hdf5
+    snapshot_649.3.hdf5
+
+* reading cosmological parameters from:  scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/fire3/initial_condition/ic_agora_m12i.conf
+
+* checking sanity of particle properties
+! warning: gas id.child [min, max] = [0.000, 4.290e9]
+! warning: gas temperature [min, max] = [2.831, 3.019e8]
+! warning: star id.child [min, max] = [0.000, 4.294e9]
+
+  cannot read file containing hosts coordinates
+  instead will assign hosts via iterative zoom on particle mass
+
+# in utilities.particle.get_center_positions():
+* assigning position for 1 center/host, via iterative zoom-in on star particle mass
+  host1 position = (41847.376, 44103.415, 46280.209) [kpc comoving]
+
+# in utilities.particle.get_center_velocities():
+* assigning velocity for 1 center/host, weighting star particles by mass
+  host1 velocity = (-51.7, 79.6, 91.1) [km / s]
+
+
+# in utilities.particle.get_principal_axes():
+* assigning rotation tensor for 1 host
+  using star particles at distance < 10.0 kpc
+  using distance < 7.9 kpc that encloses 90% of mass
+  using youngest 25% of star particles
+  host1: using star particles with age = [0.000, 3.039] Gyr
+  host1: axis ratios: min/maj = 0.176, min/med = 0.183, med/maj = 0.960
+
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/fire3/snapshot_times.txt
+
+  using snapshot index = 650, redshift = 0.003
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/fire3/output/snapdir_650/snapshot_650.0.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 70514272 particles
+    dark2     (id = 2): 5513331 particles
+    gas       (id = 0): 55551388 particles
+    star      (id = 4): 15431918 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['accelerdation', 'density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'photon.energy', 'position', 'potential', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    snapshot_650.0.hdf5
+    snapshot_650.1.hdf5
+    snapshot_650.2.hdf5
+    snapshot_650.3.hdf5
+
+* reading cosmological parameters from:  scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/fire3/initial_condition/ic_agora_m12i.conf
+
+* checking sanity of particle properties
+! warning: gas id.child [min, max] = [0.000, 4.290e9]
+! warning: gas temperature [min, max] = [2.831, 2.682e8]
+! warning: star id.child [min, max] = [0.000, 4.294e9]
+
+  cannot read file containing hosts coordinates
+  instead will assign hosts via iterative zoom on particle mass
+
+# in utilities.particle.get_center_positions():
+* assigning position for 1 center/host, via iterative zoom-in on star particle mass
+  host1 position = (41847.321, 44103.491, 46280.306) [kpc comoving]
+
+# in utilities.particle.get_center_velocities():
+* assigning velocity for 1 center/host, weighting star particles by mass
+  host1 velocity = (-51.7, 79.7, 91.1) [km / s]
+
+
+# in utilities.particle.get_principal_axes():
+* assigning rotation tensor for 1 host
+  using star particles at distance < 10.0 kpc
+  using distance < 7.9 kpc that encloses 90% of mass
+  using youngest 25% of star particles
+  host1: using star particles with age = [0.000, 3.039] Gyr
+  host1: axis ratios: min/maj = 0.176, min/med = 0.183, med/maj = 0.960
+

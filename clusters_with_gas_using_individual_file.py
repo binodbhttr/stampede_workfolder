@@ -65,7 +65,7 @@ snap=596                #this is the snapshot at which the clusters were taken f
 simname = 'm12i_res7100_mhdcv' #this is the name of the simulation
 simdir = '/scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/fire2'
 #file_name="total_data_all_clusters_all_snapshots.pkl"  #this data contains the the tracked information of all clusters
-snapshot_start=659  #snapshot to begin creating the figure
+snapshot_start=596  #snapshot to begin creating the figure
 snapshot_end=690    #snapshot to stop at
 #print("Testing if the loading of data was successful !! \n")
 #print("x_tracked of snapshot 596 for cluster 1",importdata[596][1]["x_tracked"])
@@ -105,6 +105,26 @@ snapshot_list=np.arange(snapshot_start,snapshot_end+1) #create a list of snapsho
 time=snapshot_list-snapshot_start #time starts from zero here where t=0 is at the snapshot where we start from eg. [0,1,2,3,....]
 #time=[[0],[20],[40],[60],[80],[100]] #another way of providing fixed time stamps to look at
 
+
+############################
+############################
+#Doing all this trouble to stor the initial mass of the clusters
+fn="all_clusters_at_snapshot_"+str(snap)+".pkl"
+with open(datapath+fn, "rb") as input:
+  initial_cluster_data = pickle.load(input)
+clustermass=[]
+
+for c in range(len(initial_cluster_data)):
+    m=np.sum(initial_cluster_data[c+1]["mass_tracked"]) #the cluster group name starts with 1 so we are adding extra 1 to the counter c
+    clustermass.append(m)
+############################
+###############################
+
+
+
+
+
+
 for i in range(len(time)):                              
     snapnumber=time[i]+snapshot_start      #this is the true snapshot number each time
     ###################
@@ -126,19 +146,23 @@ for i in range(len(time)):
         xcm=importdata[cluster_count+1]["xcm"]
         ycm=importdata[cluster_count+1]["ycm"]
         z=importdata[cluster_count+1]["z_tracked"]
-        cluster_mass=np.sum(importdata[cluster_count+1]["mass_tracked"])
-        s1=ax.scatter(x,y,label="Cluster"+str(cluster_count+1)+', $M_{{cluster}}$ (M$_{{\odot}}$)='+f'{cluster_mass:.3f}',c=colors[cluster_count],alpha=0.7)
+        #cluster_mass=np.sum(importdata[cluster_count+1]["mass_tracked"])
+        #cluster_mass_initial=np.sum(initial_cluster_data[cluster_count+1]["mass_tracked"])
+        s1=ax.scatter(x,y,label=f'{clustermass[cluster_count]:.2e}'+' M$_{{\odot}}$',c=colors[cluster_count])
         #ax.scatter(np.abs(xcm),np.abs(ycm),c="black")
         ax.minorticks_on()
         ax.tick_params(labelsize=12)
         ax.set_xlabel("x (kpc)",fontsize=12,labelpad=3)
         ax.set_ylabel("y (kpc)",fontsize=12,labelpad=-5)
-        time_label= 'time = ' + f'{snaptime:.3f}' + ' Gyr'
+        #time_label= 'time = ' + f'{snaptime:.3f}' + ' Gyr'
         #ax.set_title("Clusters at T="+str(time[plot_count])+" in Myr")
-        ax.set_title("Clusters at "+time_label)
+        #ax.set_title("Clusters at "+time_label)
         cluster_count+=1
     
-    ax.legend(bbox_to_anchor=(1,0.5), loc='center left')
+    #ax.legend(bbox_to_anchor=(1,0.5), loc='center left')
+    handles,labels = ax.get_legend_handles_labels()
+    sorted_legends= [x for _,x in sorted(zip(clustermass,labels),reverse=True)] #sort the labels based on the clustermass which is a list
+    ax.legend(sorted_legends,bbox_to_anchor=(1,0.5), loc='center left')
     #plt.tight_layout()
     part = gizmo.io.Read.read_snapshots(['all'],'snapshot_index', time[i]+snapshot_start, simulation_name=simname, simulation_directory=simdir, assign_hosts_rotation=True, assign_hosts=True)  
     t = np.max(part['star'].prop('form.time'))  
@@ -196,12 +220,12 @@ for i in range(len(time)):
     ax.text(-22.5, 20, label1, fontsize=12.5)
     
     #label the name of the galaxy on plot 
-    label2="m12i mhdcv" 
+    label2="m12i mhdcv FIRE-2" 
     ax.text(-23.5,-23.5,label2,fontsize=13.5) 
     
     #label the time from the snapshot_times.txt file
-    #label3 = 'time = ' + f'{snaptime:.3f}' + ' Gyr'
-    #ax.text(3.5,-23.5,label3,fontsize=13.5)  
+    label3 = 'time = ' + f'{snaptime:.3f}' + ' Gyr'
+    ax.text(3.5,-23.5,label3,fontsize=13.5)  
     
     fig1.savefig(plot_path+"17clusters_snap"+str(plot_count+snapshot_start)+".png",bbox_inches='tight',dpi=200)
     plot_count+=1
