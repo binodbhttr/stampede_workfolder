@@ -63,7 +63,7 @@ snap=596                #this is the snapshot at which the clusters were taken f
 simname = 'm12i_res7100_mhdcv' #this is the name of the simulation
 simdir = '/scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/fire3'
 #file_name="total_data_all_clusters_all_snapshots.pkl"  #this data contains the the tracked information of all clusters
-snapshot_start=691  #snapshot to begin creating the figure
+snapshot_start=681  #snapshot to begin creating the figure
 snapshot_end=696    #snapshot to stop at
 ################################
 ################################
@@ -153,8 +153,9 @@ for i in range(len(time)):
         cluster_count+=1
     
     handles,labels = ax.get_legend_handles_labels()
+    sorted_handles= [x for _,x in sorted(zip(clustermass,handles),reverse=True)] #sort the handles (the colors next to the labels) based on clustermass
     sorted_legends= [x for _,x in sorted(zip(clustermass,labels),reverse=True)] #sort the labels based on the clustermass which is a list
-    ax.legend(sorted_legends,bbox_to_anchor=(1,0.5), loc='center left')
+    ax.legend(sorted_handles,sorted_legends,bbox_to_anchor=(1,0.5), loc='center left')
     
     #plt.tight_layout()
     part = gizmo.io.Read.read_snapshots(['all'],'snapshot_index', time[i]+snapshot_start, simulation_name=simname, simulation_directory=simdir, assign_hosts_rotation=True, assign_hosts=True)  
