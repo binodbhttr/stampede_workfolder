@@ -2,9 +2,9 @@
 
 #----------------------------------------------------
 
-#SBATCH -J load_export_all_sf-fire3.py     # Job name Give a name for the job here good convention would include the simulation name
-#SBATCH -o load_export_all_sf-fire3.py.o%j # Name of stdout output file
-#SBATCH -e load_export_all_sf-fire3.py.e%j # Name of stderr error file
+#SBATCH -J sf-fire3_all.py.py     # Job name Give a name for the job here good convention would include the simulation name
+#SBATCH -o sf-fire3_all.py.o%j # Name of stdout output file
+#SBATCH -e sf-fire3_all.py.e%j # Name of stderr error file
 #SBATCH -p normal           # Queue (partition) name skx-normal more memory if you use normal only it has less memory
 #SBATCH -N 1                # Total # of nodes (must be 1 for serial) Not required for now
 #SBATCH -n 1                # Total # of mpi tasks (should be 1 for serial) Not required for now
@@ -16,7 +16,7 @@
 
 # Launch serial code...
 
-/home1/07428/binod/anaconda3/bin/python load_export_all_sf-fire3.py
+/home1/07428/binod/anaconda3/bin/python sf-fire3_all.py
 
 
 # ---------------------------------------------------
