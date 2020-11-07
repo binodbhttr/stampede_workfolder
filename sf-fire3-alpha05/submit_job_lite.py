@@ -2,10 +2,10 @@
 
 #----------------------------------------------------
 
-#SBATCH -J sf-fire3-alpha05_all.py     # Job name Give a name for the job here good convention would include the simulation name
-#SBATCH -o sf-fire3-alpha05_all.py.o%j # Name of stdout output file
-#SBATCH -e sf-fire3-alpha05_all.py.e%j # Name of stderr error file
-#SBATCH -p normal           # Queue (partition) name skx-normal more memory if you use normal only it has less memory
+#SBATCH -J gas_alpha05     # Job name Give a name for the job here good convention would include the simulation name
+#SBATCH -o export_gas_data_sf-fire3-alpha05.o%j # Name of stdout output file
+#SBATCH -e export_gas_data_sf-fire3-alpha05.e%j # Name of stderr error file
+#SBATCH -p flat-quadrant           # Queue (partition) name eg. normal, skx-normal more memory if you use normal only it has less memory
 #SBATCH -N 1                # Total # of nodes (must be 1 for serial) Not required for now
 #SBATCH -n 1                # Total # of mpi tasks (should be 1 for serial) Not required for now
 #SBATCH -t 24:00:00         # Run time (hh:mm:ss)
@@ -16,7 +16,7 @@
 
 # Launch serial code...
 
-/home1/07428/binod/anaconda3/bin/python sf-fire3-alpha05_all.py
+/home1/07428/binod/anaconda3/bin/python export_gas_data_sf-fire3-alpha05.py
 
 
 # ---------------------------------------------------

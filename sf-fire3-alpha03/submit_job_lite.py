@@ -2,9 +2,9 @@
 
 #----------------------------------------------------
 
-#SBATCH -J track_clusters_sf-fire3-alpha03.py     # Job name Give a name for the job here good convention would include the simulation name
-#SBATCH -o track_clusters_sf-fire3-alpha03.py.o%j # Name of stdout output file
-#SBATCH -e track_clusters_sf-fire3-alpha03.py.e%j # Name of stderr error file
+#SBATCH -J export_gas_sf-fire3-alpha03     # Job name Give a name for the job here good convention would include the simulation name
+#SBATCH -o sf-fire3-alpha03.o%j # Name of stdout output file
+#SBATCH -e sf-fire3-alpha03.e%j # Name of stderr error file
 #SBATCH -p normal           # Queue (partition) name skx-normal more memory if you use normal only it has less memory
 #SBATCH -N 1                # Total # of nodes (must be 1 for serial) Not required for now
 #SBATCH -n 1                # Total # of mpi tasks (should be 1 for serial) Not required for now
@@ -16,7 +16,7 @@
 
 # Launch serial code...
 
-/home1/07428/binod/anaconda3/bin/python track_clusters_sf-fire3-alpha03.py
+/home1/07428/binod/anaconda3/bin/python export_gas_data_sf-fire3-alpha03.py
 
 
 # ---------------------------------------------------
