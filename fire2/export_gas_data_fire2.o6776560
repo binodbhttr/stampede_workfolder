@@ -3539,3 +3539,23 @@
 * reading gas properties: ['accelerdation', 'density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'photon.energy', 'position', 'potential', 'sfr', 'size', 'temperature', 'velocity']
 * reading particles from:
     snapshot_660.0.hdf5
+    snapshot_660.1.hdf5
+    snapshot_660.2.hdf5
+    snapshot_660.3.hdf5
+
+* reading cosmological parameters from:  scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/fire2/initial_condition/ic_agora_m12i.conf
+
+* checking sanity of particle properties
+! warning: gas id.child [min, max] = [0.000, 4.290e9]
+! warning: gas temperature [min, max] = [2.831, 2.069e8]
+! warning: star id.child [min, max] = [0.000, 4.294e9]
+
+  cannot read file containing hosts coordinates
+  instead will assign hosts via iterative zoom on particle mass
+
+# in utilities.particle.get_center_positions():
+* assigning position for 1 center/host, via iterative zoom-in on star particle mass
+  host1 position = (41846.616, 44104.156, 46281.225) [kpc comoving]
+
+# in utilities.particle.get_center_velocities():
+* assigning velocity for 1 center/host, weighting star particles by mass

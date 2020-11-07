@@ -3482,3 +3482,22 @@
     blackhole (id = 5): 0 particles
 
 * reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['accelerdation', 'density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'photon.energy', 'position', 'potential', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    snapshot_659.0.hdf5
+    snapshot_659.1.hdf5
+    snapshot_659.2.hdf5
+    snapshot_659.3.hdf5
+
+* reading cosmological parameters from:  scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/fire3/initial_condition/ic_agora_m12i.conf
+
+* checking sanity of particle properties
+! warning: gas id.child [min, max] = [0.000, 4.290e9]
+! warning: gas temperature [min, max] = [2.831, 3.423e8]
+! warning: star id.child [min, max] = [0.000, 4.294e9]
+
+  cannot read file containing hosts coordinates
+  instead will assign hosts via iterative zoom on particle mass
+
+# in utilities.particle.get_center_positions():
+* assigning position for 1 center/host, via iterative zoom-in on star particle mass
