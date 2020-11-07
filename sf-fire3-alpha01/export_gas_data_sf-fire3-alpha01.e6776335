@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "export_gas_data_sf-fire3-alpha01.py", line 54, in <module>
+    part = gizmo.io.Read.read_snapshots(['all'],'snapshot_index', time[i]+snapshot_start, simulation_name=simname, simulation_directory=simdir, assign_hosts_rotation=True, assign_hosts=True)  
+  File "/home1/07428/binod/simulation_code/gizmo_analysis/gizmo_io.py", line 804, in read_snapshots
+    hubble=header['hubble'],
+  File "/home1/07428/binod/simulation_code/gizmo_analysis/gizmo_io.py", line 1802, in get_cosmology
+    end='\n\n',
+  File "/home1/07428/binod/simulation_code/utilities/basic/io.py", line 151, in say
+    os.sys.stdout.flush()
+OSError: [Errno 122] Disk quota exceeded
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
+OSError: [Errno 122] Disk quota exceeded

@@ -3559,3 +3559,48 @@
 
 # in utilities.particle.get_center_velocities():
 * assigning velocity for 1 center/host, weighting star particles by mass
+  host1 velocity = (-47.7, 81.5, 89.8) [km / s]
+
+
+# in utilities.particle.get_principal_axes():
+* assigning rotation tensor for 1 host
+  using star particles at distance < 10.0 kpc
+  using distance < 7.9 kpc that encloses 90% of mass
+  using youngest 25% of star particles
+  host1: using star particles with age = [0.000, 3.159] Gyr
+  host1: axis ratios: min/maj = 0.181, min/med = 0.190, med/maj = 0.950
+
+
+ Stored the gas data for background plot from the snapshot no. 596 to filename: fire2_gas_data660.pkl 
+#####
+
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/fire2/snapshot_times.txt
+
+  using snapshot index = 661, redshift = 0.003
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/fire2/output/snapdir_661/snapshot_661.0.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 70514272 particles
+    dark2     (id = 2): 5513331 particles
+    gas       (id = 0): 55639058 particles
+    star      (id = 4): 15351373 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['accelerdation', 'density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'photon.energy', 'position', 'potential', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    snapshot_661.0.hdf5
+    snapshot_661.1.hdf5
+    snapshot_661.2.hdf5
+    snapshot_661.3.hdf5
+
+* reading cosmological parameters from:  scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/fire2/initial_condition/ic_agora_m12i.conf
+
+* checking sanity of particle properties
+! warning: gas id.child [min, max] = [0.000, 4.290e9]
+! warning: gas temperature [min, max] = [2.831, 1.594e8]
+! warning: star id.child [min, max] = [0.000, 4.294e9]
