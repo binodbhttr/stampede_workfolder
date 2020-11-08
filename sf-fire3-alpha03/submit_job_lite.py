@@ -2,7 +2,7 @@
 
 #----------------------------------------------------
 
-#SBATCH -J export_gas_sf-fire3-alpha03     # Job name Give a name for the job here good convention would include the simulation name
+#SBATCH -J sf-fire3-alpha03     # Job name Give a name for the job here good convention would include the simulation name
 #SBATCH -o sf-fire3-alpha03.o%j # Name of stdout output file
 #SBATCH -e sf-fire3-alpha03.e%j # Name of stderr error file
 #SBATCH -p normal           # Queue (partition) name skx-normal more memory if you use normal only it has less memory
