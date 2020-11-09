@@ -29,7 +29,7 @@ if not os.path.exists(gas_datapath):
   os.makedirs(gas_datapath)
                 
 snap=596 #this is the snapshot at which the clusters were taken from using the fof algorithm I am using this to extract information from the snapshot where the clusters were first seen
-snapshot_start=600  #snapshot to begin creating the figure
+snapshot_start=676  #snapshot to begin creating the figure
 snapshot_end=696    #snapshot to stop at
 
 snapshot_list=np.arange(snapshot_start,snapshot_end+1) #create a list of snapshot numbers to plot to plot eg. [596,597, ...]
@@ -102,11 +102,12 @@ for i in range(len(time)):
       import_gasdata = pickle.load(input)
     print(import_gasdata["v"])
     '''
-    tracked_gas_all_snaps.update({snapnumber:tracked_gas})
+    #tracked_gas_all_snaps.update({snapnumber:tracked_gas})
 ###########################################
 #storing all the gas data from all snapshots as a single file
+'''
 with open(gas_datapath+simtype+"_gas_data_all_snapshots.pkl", 'wb') as output:
   pickle.dump(tracked_gas_all_snaps, output) #
-  '''
+  
   read it as tracked_gas_all_snaps[snap]["v"]
-  '''
+'''
