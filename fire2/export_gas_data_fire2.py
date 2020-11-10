@@ -102,11 +102,12 @@ for i in range(len(time)):
       import_gasdata = pickle.load(input)
     print(import_gasdata["v"])
     '''
-    tracked_gas_all_snaps.update({snapnumber:tracked_gas})
+    #tracked_gas_all_snaps.update({snapnumber:tracked_gas})
 ###########################################
 #storing all the gas data from all snapshots as a single file
+'''
 with open(gas_datapath+simtype+"_gas_data_all_snapshots.pkl", 'wb') as output:
   pickle.dump(tracked_gas_all_snaps, output) #
-  '''
-  read it as tracked_gas_all_snaps[snap]["v"]
-  '''
+  
+#read it as tracked_gas_all_snaps[snap]["v"]
+'''
