@@ -209,7 +209,7 @@ for i in range(total_snaps):               #we run a for loop until the end of a
   #We have collected all tracked information for our test clusters for one snapshot now which is in dictionary tracked_data_all_clusters.
   #We would store that dictionary in a pickle file as a backup data from each snapshot about or all star cluster.
   ###Now moving out of the j loop. We scanned all clusters and stored the tracked data into a dictionary tracked_data_all_clusters  
-  file_name="sf-fire3_clusters_at_snapshot_"+str(snap)+".pkl"
+  file_name="fire2_clusters_at_snapshot_"+str(snap)+".pkl"
   with open(path+file_name, 'wb') as output:
     pickle.dump(tracked_data_all_clusters, output)
   print("\n Stored tracked data of all stars clusters in the snapshot no.",snap,"to filename:",file_name,"\n#####\n")
