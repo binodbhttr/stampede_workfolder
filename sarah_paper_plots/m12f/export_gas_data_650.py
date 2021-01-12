@@ -21,9 +21,9 @@ bins = np.arange(-25,25,0.1)
 ############################################################################
 #read in sim files and find relevant particles
 ############################################################################
-simname = 'm12i_res7100_mhdcv'
+simname = 'm12f_res7100_mhdcv'
 simtype="fire2"  #this is the simtype eg. fire2, fire3, sf-fire3, sf-fire3-alpha01, sf-fire3-alpha03, sf-fire3-alpha05 
-simdir = '/scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12i_res7100/mhdcv/1Myr/fire2/'
+simdir = '/scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12f_res7100/mhdcv/1Myr/'
 gas_datapath="./"+simtype+"_gas_data_pkl/"  #path to store the gas data
 if not os.path.exists(gas_datapath):
   os.makedirs(gas_datapath)

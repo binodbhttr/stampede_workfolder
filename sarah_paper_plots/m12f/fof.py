@@ -4,8 +4,8 @@ import utilities as ut
 from fof_analysis import fof
 import pickle
 import os
-simname = 'm12i_res7100_mhdcv'
-simdir = '/scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12i_res7100/mhdcv/1Myr/fire2'
+simname = 'm12f_res7100_mhdcv'
+simdir = '/scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12f_res7100/mhdcv/1Myr/'
 snapnumber = 650
 
 part = gizmo.io.Read.read_snapshots(['all'],'snapshot_index', snapnumber, simulation_name=simname, simulation_directory=simdir, assign_hosts_rotation=True, assign_hosts=True)  
@@ -79,7 +79,7 @@ for grp_index in range(ngroup):  #iterate over each group
 
 print('------------------------------------------------------------------------------------------------------------------')
 
-path="./fire2_data_pkl_snapshot_"+str(snapnumber)+"/" #creating a path to store the data only if it does not exist
+path="./fire2_data_pkl/" #creating a path to store the data only if it does not exist
 if not os.path.exists(path):
   os.makedirs(path)
 

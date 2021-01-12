@@ -15,8 +15,8 @@ import pickle
 
 
 
-simname = 'm12i_res7100_mhdcv'
-simdir = '/scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12i_res7100/mhdcv/1Myr/fire2'
+simname = 'm12m_res7100_mhdcv'
+simdir = '/scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/'
 
 # In[ ]:
 snapshot_start=650
@@ -26,7 +26,7 @@ snapshot_end=650 #ran out of memory after 646
 #Loading the sample cluster to be tracked and sorting its id and id_child
 cluster_group="snapshot650" #Remember to change it if you  are changing the star cluster you are tracking in given snapshot
 
-path="./fire2data_pkl/" #creating a path to store the data only if it does not exist
+path="./fire2_data_pkl/" #creating a path to store the data only if it does not exist
 if not os.path.exists(path):
   os.makedirs(path)
 
@@ -37,7 +37,7 @@ if not os.path.exists(path):
 ###############################################
 #loading data of all clusters (id, id_children and all)
 
-cluster_path="./fire2data_pkl/"
+cluster_path="./fire2_data_pkl/"
 cluster_file_name="fire2_clusters_"+simname+"_snapshot_"+str(snapshot_start) 
 with open(cluster_path+cluster_file_name, "rb") as fp:
     import_cluster = pickle.load(fp)
