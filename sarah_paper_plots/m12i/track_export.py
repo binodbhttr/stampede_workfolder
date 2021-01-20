@@ -26,7 +26,7 @@ snapshot_end=650 #ran out of memory after 646
 #Loading the sample cluster to be tracked and sorting its id and id_child
 cluster_group="snapshot650" #Remember to change it if you  are changing the star cluster you are tracking in given snapshot
 
-path="./fire2data_pkl/" #creating a path to store the data only if it does not exist
+path="./fire2_data_pkl/" #creating a path to store the data only if it does not exist
 if not os.path.exists(path):
   os.makedirs(path)
 
@@ -221,7 +221,7 @@ for i in range(total_snaps):               #we run a for loop until the end of a
   
 #Finally we scanned through all the snapshots and now we come out of the loop to store the final file that contains all the tracked information of all clusters 
 #Now we store the tracked data of all clusters into a dictionary with snapshot number as the key. This would be our final dictionary of dictinaries. 
-with open(path+"total_data_sf-fire3_all_snapshots.pkl", 'wb') as output:
+with open(path+"total_data_fire2_all_snapshots.pkl", 'wb') as output:
   pickle.dump(tracked_data_all_clusters_each_snap, output) #access the data using tracked_data_all_clusters_each_snap[snapshot][cluster_id]["x_tracked"])
   
 #Expected Result: tracked_data_all_clusters_each_snap={596:{1:tracked_data,2:tracked_data..},597:{1:tracked_data,2:tracked_data..upto total clusters},598....     upto total snapshots}
