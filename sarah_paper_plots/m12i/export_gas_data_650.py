@@ -90,7 +90,7 @@ for i in range(len(time)):
     face, xh, yh = np.histogram2d(part['gas'].prop('host.distance.principal.cartesian')[v,1][0],part['gas'].prop('host.distance.principal.cartesian')[v,0][0],bins=[bins,bins], weights=part['gas']['mass'][v])
 
     ###########################################################################
-    tracked_gas={"snaptime":snaptime,"v":v,"face":face,"xh":xh,"yh":yh}
+    tracked_gas={"snaptime":snaptime,"v":v,"face":face,"xh":xh,"yh":yh,"xGas":x,"yGas":y,"zGas":z,"vxGas":vx,"vyGas":vy,"vzGas":vz,"mGas":m}
     file_name=simtype+"_gas_data"+str(snapnumber)+".pkl"
     with open(gas_datapath+file_name, 'wb') as output:
       pickle.dump(tracked_gas, output)

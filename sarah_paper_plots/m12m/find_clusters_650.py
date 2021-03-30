@@ -111,7 +111,7 @@ for grp_index in range(ngroup):  #iterate over each group
     print(string)
     print("These are the ids printed",ids_in_cluster)
     #feh_in_cluster=feh[ids_in_cluster]
-    cluster={"cluster_groupid":groupid,"no_of_star":nstar,"id":ids_in_cluster,"id_children":id_children_in_cluster,"is_embedded":bool_arr[grp_index],"xcm":xcm[grp_index],"ycm":ycm[grp_index],"zcm":zcm[grp_index],"mtot":mtot[grp_index],"r90":r90[grp_index],"r50":r50[grp_index],"rmax":rmax[grp_index]}
+    cluster={"cluster_groupid":groupid,"no_of_star":nstar,"id":ids_in_cluster,"id_children":id_children_in_cluster,"is_embedded":bool_arr[grp_index],"xcm":xcm[grp_index],"ycm":ycm[grp_index],"zcm":zcm[grp_index],"mtot":mtot[grp_index],"r90":r90[grp_index],"r50":r50[grp_index],"rmax":rmax[grp_index],"x":x0[ind[grp_index]],"y":y0[ind[grp_index]],"z":z0[ind[grp_index]]}
     export_cluster.update({groupid:cluster})
 
 
@@ -125,7 +125,7 @@ path="./fire2_data_pkl/" #creating a path to store the data only if it does not 
 if not os.path.exists(path):
   os.makedirs(path)
 
-file_name="fire2_clusters_"+simname+"_snapshot_"+str(snapnumber) 
+file_name="fire2_clusters_"+simname+"_snapshot_"+str(snapnumber)+".pkl" 
 
 with open(path+file_name, 'wb') as output:
     # Pickle dictionary using protocol 0.
