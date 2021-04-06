@@ -19,7 +19,7 @@ simname = 'm12i_res7100_mhdcv'
 simdir = '/scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12i_res7100/mhdcv/1Myr/fire2/'
 
 # In[ ]:
-snapshot_start=599
+snapshot_start=608
 snapshot_end=snapshot_start+30 #ran out of memory after 646
 
 
