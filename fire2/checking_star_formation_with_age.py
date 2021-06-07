@@ -15,7 +15,7 @@ simname = 'm12i_res7100_mhdcv'
 simdir = '/scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12i_res7100/mhdcv/1Myr/fire2/'
 simtype="fire2"
 
-snapnumber=686
+snapnumber=620
 snapshot_start=596
 snap=snapnumber
 data_path="./fire2_data_pkl/" 
