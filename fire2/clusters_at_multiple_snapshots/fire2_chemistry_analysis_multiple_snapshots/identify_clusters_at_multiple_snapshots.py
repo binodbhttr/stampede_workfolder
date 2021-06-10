@@ -27,7 +27,7 @@ from fof_analysis import fof
 
 simname = 'm12i_res7100_mhdcv'
 simdir = '/scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12i_res7100/mhdcv/1Myr/fire2/'
-snapnumber = 586
+snapnumber = 670
 
 for s in range(snapnumber,696,3):
   part = gizmo.io.Read.read_snapshots(['all'],'snapshot_index', snapnumber, simulation_name=simname, simulation_directory=simdir, assign_hosts_rotation=True, assign_hosts=True)  
@@ -48,7 +48,11 @@ for s in range(snapnumber,696,3):
   sh      = part['star'].prop('metallicity.s')
   cah      = part['star'].prop('metallicity.ca')
   mgfe    = part['star'].prop('metallicity.mg - metallicity.fe')
+  sife    = part['star'].prop('metallicity.si - metallicity.fe')
+  cafe    = part['star'].prop('metallicity.ca - metallicity.fe')
   ofe    = part['star'].prop('metallicity.o - metallicity.fe')
+  sfe    = part['star'].prop('metallicity.s - metallicity.fe')
+  nefe    = part['star'].prop('metallicity.ne - metallicity.fe')
   ids      = part['star'].prop('id')
   id_child = part['star'].prop('id.child')
   age      = part['star'].prop('age')
@@ -72,6 +76,11 @@ for s in range(snapnumber,696,3):
   cah0=cah[keep]
   mgfe0=mgfe[keep]
   ofe0=ofe[keep]
+  sife0=sife[keep]
+  cafe0=cafe[keep]
+  sfe0=sfe[keep]
+  nefe0=nefe[keep]
+  
   id0       = ids[keep]
   id_child0 = id_child[keep]
   age0      = age[keep]
@@ -115,7 +124,7 @@ for s in range(snapnumber,696,3):
       print(string)
       print("These are the ids printed",ids_in_cluster)
       #feh_in_cluster=feh0[ind[grp_index]]
-      cluster={"cluster_groupid":groupid,"no_of_star":nstar,"id":ids_in_cluster,"id_children":id_children_in_cluster,"xcm":xcm[grp_index],"ycm":ycm[grp_index],"zcm":zcm[grp_index],"mtot":mtot[grp_index],"r90":r90[grp_index],"r50":r50[grp_index],"rmax":rmax[grp_index],"x":x0[ind[grp_index]],"y":y0[ind[grp_index]],"z":z0[ind[grp_index]],"age":age0[ind[grp_index]],"feh":feh0[ind[grp_index]],"mgh":mgh0[ind[grp_index]],"ch":ch0[ind[grp_index]],"nh":nh0[ind[grp_index]],"oh":oh0[ind[grp_index]],"neh":neh0[ind[grp_index]],"sih":sih0[ind[grp_index]],"sh":sh0[ind[grp_index]],"cah":cah0[ind[grp_index]],"mgfe":mgfe0[ind[grp_index]],"ofe":ofe0[ind[grp_index]]}
+      cluster={"cluster_groupid":groupid,"no_of_star":nstar,"id":ids_in_cluster,"id_children":id_children_in_cluster,"xcm":xcm[grp_index],"ycm":ycm[grp_index],"zcm":zcm[grp_index],"mtot":mtot[grp_index],"r90":r90[grp_index],"r50":r50[grp_index],"rmax":rmax[grp_index],"x":x0[ind[grp_index]],"y":y0[ind[grp_index]],"z":z0[ind[grp_index]],"age":age0[ind[grp_index]],"feh":feh0[ind[grp_index]],"mgh":mgh0[ind[grp_index]],"ch":ch0[ind[grp_index]],"nh":nh0[ind[grp_index]],"oh":oh0[ind[grp_index]],"neh":neh0[ind[grp_index]],"sih":sih0[ind[grp_index]],"sh":sh0[ind[grp_index]],"cah":cah0[ind[grp_index]],"mgfe":mgfe0[ind[grp_index]],"ofe":ofe0[ind[grp_index]],"sife":sife0[ind[grp_index]],"sfe":sfe0[ind[grp_index]],"cafe":cafe0[ind[grp_index]],"nefe":nefe0[ind[grp_index]]}
       export_cluster.update({groupid:cluster})
   
   
