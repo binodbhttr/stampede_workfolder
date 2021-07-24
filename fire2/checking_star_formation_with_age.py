@@ -88,7 +88,9 @@ age=part['star'].prop('age')
 x=part['star'].prop('host.distance.principal')[:,0] #x component of the position of all stars 
 y=part['star'].prop('host.distance.principal')[:,1] #y component of the position of all stars
 z=part['star'].prop('host.distance.principal')[:,2] #z component of the position of all stars
-Rxy = part['star'].prop('host.distance.principal.cylindrical')[:,0]
+feh=part['star'].prop('metallicity.fe')
+mgh=part['star'].prop('metallicity.mg')
+Rxy=part['star'].prop('host.distance.principal.cylindrical')[:,0]
 
 xcm=tracked_data[cluster_group]["xcm"]
 ycm=tracked_data[cluster_group]["ycm"]
@@ -102,6 +104,8 @@ region=5
 keep = np.where((age <= .003) & (circle_radius<=region) & (abs(z) < 1.5))
 x0=x[keep]
 y0=y[keep]
+feh0=feh[keep]
+mgh0=mgh[keep]
 
 #keep_old=np.where((age <= .060) & (age > 0.003) & (circle_radius<=region) & (abs(z) < 1.5))
 time=(snapnumber-snapshot_start)/1000
