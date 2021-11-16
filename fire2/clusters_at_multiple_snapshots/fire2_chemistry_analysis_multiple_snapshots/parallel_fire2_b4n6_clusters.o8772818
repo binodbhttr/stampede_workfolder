@@ -1,0 +1,581 @@
+[22;0t]0;IPython: clusters_at_multiple_snapshots/fire2_chemistry_analysis_multiple_snapshots
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12i_res7100/mhdcv/1Myr/fire2/snapshot_times.txt
+
+[22;0t]0;IPython: clusters_at_multiple_snapshots/fire2_chemistry_analysis_multiple_snapshots
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12i_res7100/mhdcv/1Myr/fire2/snapshot_times.txt
+
+[22;0t]0;IPython: clusters_at_multiple_snapshots/fire2_chemistry_analysis_multiple_snapshots
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12i_res7100/mhdcv/1Myr/fire2/snapshot_times.txt
+
+[22;0t]0;IPython: clusters_at_multiple_snapshots/fire2_chemistry_analysis_multiple_snapshots
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12i_res7100/mhdcv/1Myr/fire2/snapshot_times.txt
+
+[22;0t]0;IPython: clusters_at_multiple_snapshots/fire2_chemistry_analysis_multiple_snapshots
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12i_res7100/mhdcv/1Myr/fire2/snapshot_times.txt
+
+  using snapshot index = 678, redshift = 0.001
+
+  using snapshot index = 672, redshift = 0.002
+
+  using snapshot index = 684, redshift = 0.001
+
+  using snapshot index = 690, redshift = 0.000
+
+  using snapshot index = 666, redshift = 0.002
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12i_res7100/mhdcv/1Myr/fire2/output/snapdir_672/snapshot_672.0.hdf5
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12i_res7100/mhdcv/1Myr/fire2/output/snapdir_678/snapshot_678.0.hdf5
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12i_res7100/mhdcv/1Myr/fire2/output/snapdir_684/snapshot_684.0.hdf5
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12i_res7100/mhdcv/1Myr/fire2/output/snapdir_690/snapshot_690.0.hdf5
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12i_res7100/mhdcv/1Myr/fire2/output/snapdir_666/snapshot_666.0.hdf5
+  snapshot contains the following number of particles:
+  snapshot contains the following number of particles:
+    dark      (id = 1): 70514272 particles
+    dark      (id = 1): 70514272 particles
+    dark2     (id = 2): 5513331 particles
+    gas       (id = 0): 55625893 particles
+    dark2     (id = 2): 5513331 particles
+    star      (id = 4): 15366545 particles
+    blackhole (id = 5): 0 particles
+    gas       (id = 0): 55635977 particles
+
+    star      (id = 4): 15354934 particles
+    blackhole (id = 5): 0 particles
+
+  snapshot contains the following number of particles:
+    dark      (id = 1): 70514272 particles
+    dark2     (id = 2): 5513331 particles
+    gas       (id = 0): 55622050 particles
+    star      (id = 4): 15370909 particles
+    blackhole (id = 5): 0 particles
+
+  snapshot contains the following number of particles:
+    dark      (id = 1): 70514272 particles
+    dark2     (id = 2): 5513331 particles
+    gas       (id = 0): 55629092 particles
+    star      (id = 4): 15362899 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading species: ['dark', 'dark2', 'gas', 'star']
+  snapshot contains the following number of particles:
+    dark      (id = 1): 70514272 particles
+    dark2     (id = 2): 5513331 particles
+    gas       (id = 0): 55632379 particles
+    star      (id = 4): 15359096 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['acceleration', 'density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'photon.energy', 'position', 'potential', 'sfr', 'size', 'temperature', 'velocity']
+* reading gas properties: ['acceleration', 'density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'photon.energy', 'position', 'potential', 'sfr', 'size', 'temperature', 'velocity']
+* reading gas properties: ['acceleration', 'density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'photon.energy', 'position', 'potential', 'sfr', 'size', 'temperature', 'velocity']
+* reading gas properties: ['acceleration', 'density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'photon.energy', 'position', 'potential', 'sfr', 'size', 'temperature', 'velocity']
+* reading gas properties: ['acceleration', 'density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'photon.energy', 'position', 'potential', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    snapshot_678.0.hdf5
+* reading particles from:
+    snapshot_666.0.hdf5
+* reading particles from:
+    snapshot_690.0.hdf5
+* reading particles from:
+    snapshot_684.0.hdf5
+* reading particles from:
+    snapshot_672.0.hdf5
+    snapshot_690.1.hdf5
+    snapshot_666.1.hdf5
+    snapshot_678.1.hdf5
+    snapshot_672.1.hdf5
+    snapshot_684.1.hdf5
+    snapshot_690.2.hdf5
+    snapshot_666.2.hdf5
+    snapshot_678.2.hdf5
+    snapshot_672.2.hdf5
+    snapshot_684.2.hdf5
+    snapshot_690.3.hdf5
+    snapshot_666.3.hdf5
+    snapshot_672.3.hdf5
+    snapshot_678.3.hdf5
+    snapshot_684.3.hdf5
+
+* reading cosmological parameters from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12i_res7100/mhdcv/1Myr/fire2/initial_condition/ic_agora_m12i.conf
+
+
+* reading cosmological parameters from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12i_res7100/mhdcv/1Myr/fire2/initial_condition/ic_agora_m12i.conf
+
+
+* reading cosmological parameters from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12i_res7100/mhdcv/1Myr/fire2/initial_condition/ic_agora_m12i.conf
+
+
+* reading cosmological parameters from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12i_res7100/mhdcv/1Myr/fire2/initial_condition/ic_agora_m12i.conf
+
+* checking sanity of particle properties
+* checking sanity of particle properties
+* checking sanity of particle properties
+* checking sanity of particle properties
+! warning: gas id.child [min, max] = [0.000, 4.290e9]
+! warning: gas id.child [min, max] = [0.000, 4.290e9]
+! warning: star id.child [min, max] = [0.000, 4.294e9]
+! warning: gas id.child [min, max] = [0.000, 4.290e9]
+! warning: gas id.child [min, max] = [0.000, 4.290e9]
+! warning: star id.child [min, max] = [0.000, 4.294e9]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12i_res7100/mhdcv/1Myr/fire2/track/host_coordinates.hdf5
+  host1 position = (41845.12, 44106.44, 46284.09) [kpc comoving]
+  host1 velocity = (-48.6, 80.1, 89.5) [km / s]
+  host1 axis ratios = (0.18, 0.19, 0.96)
+  host1 R_90 = 9.8 kpc
+  host1 M_90 = 6.2e+10 Msun
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12i_res7100/mhdcv/1Myr/fire2/track/host_coordinates.hdf5
+  host1 position = (41846.31, 44104.64, 46281.79) [kpc comoving]
+  host1 velocity = (-47.9, 81.0, 89.8) [km / s]
+  host1 axis ratios = (0.18, 0.19, 0.95)
+  host1 R_90 = 9.7 kpc
+  host1 M_90 = 6.2e+10 Msun
+! warning: star id.child [min, max] = [0.000, 4.294e9]
+! warning: star id.child [min, max] = [0.000, 4.294e9]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12i_res7100/mhdcv/1Myr/fire2/track/host_coordinates.hdf5
+  host1 position = (41845.74, 44105.56, 46282.93) [kpc comoving]
+  host1 velocity = (-48.0, 80.5, 89.6) [km / s]
+  host1 axis ratios = (0.18, 0.19, 0.96)
+  host1 R_90 = 9.7 kpc
+  host1 M_90 = 6.2e+10 Msun
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12i_res7100/mhdcv/1Myr/fire2/track/host_coordinates.hdf5
+  host1 position = (41846.02, 44105.09, 46282.36) [kpc comoving]
+  host1 velocity = (-48.0, 80.9, 89.6) [km / s]
+  host1 axis ratios = (0.18, 0.19, 0.95)
+  host1 R_90 = 9.7 kpc
+  host1 M_90 = 6.2e+10 Msun
+
+* reading cosmological parameters from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12i_res7100/mhdcv/1Myr/fire2/initial_condition/ic_agora_m12i.conf
+
+* checking sanity of particle properties
+! warning: gas id.child [min, max] = [0.000, 4.290e9]
+! warning: star id.child [min, max] = [0.000, 4.294e9]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12i_res7100/mhdcv/1Myr/fire2/track/host_coordinates.hdf5
+  host1 position = (41845.46, 44106.00, 46283.50) [kpc comoving]
+  host1 velocity = (-48.3, 80.3, 89.6) [km / s]
+  host1 axis ratios = (0.18, 0.19, 0.96)
+  host1 R_90 = 9.8 kpc
+  host1 M_90 = 6.2e+10 Msun
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mMemoryError[0m                               Traceback (most recent call last)
+[0;32m~/stampede_workfolder/fire2/clusters_at_multiple_snapshots/fire2_chemistry_analysis_multiple_snapshots/identify_many_clusters_parallel.py[0m in [0;36m<module>[0;34m[0m
+[1;32m     45[0m   [0mmass[0m     [0;34m=[0m [0mpart[0m[0;34m[[0m[0;34m'star'[0m[0;34m][0m[0;34m.[0m[0mprop[0m[0;34m([0m[0;34m'mass'[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m     46[0m   [0mfeh[0m      [0;34m=[0m [0mpart[0m[0;34m[[0m[0;34m'star'[0m[0;34m][0m[0;34m.[0m[0mprop[0m[0;34m([0m[0;34m'metallicity.fe'[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0;32m---> 47[0;31m   [0mmgh[0m      [0;34m=[0m [0mpart[0m[0;34m[[0m[0;34m'star'[0m[0;34m][0m[0;34m.[0m[0mprop[0m[0;34m([0m[0;34m'metallicity.mg'[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m     48[0m   [0mch[0m      [0;34m=[0m [0mpart[0m[0;34m[[0m[0;34m'star'[0m[0;34m][0m[0;34m.[0m[0mprop[0m[0;34m([0m[0;34m'metallicity.c'[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m     49[0m   [0mnh[0m      [0;34m=[0m [0mpart[0m[0;34m[[0m[0;34m'star'[0m[0;34m][0m[0;34m.[0m[0mprop[0m[0;34m([0m[0;34m'metallicity.n'[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m~/simulation_code/gizmo_analysis/gizmo_io.py[0m in [0;36mprop[0;34m(self, property_name, indices, _dict_only)[0m
+[1;32m    354[0m         [0;31m# elemental abundance[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    355[0m         [0;32mif[0m [0;34m'massfraction'[0m [0;32min[0m [0mproperty_name[0m [0;32mor[0m [0;34m'metallicity'[0m [0;32min[0m [0mproperty_name[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 356[0;31m             [0;32mreturn[0m [0mself[0m[0;34m.[0m[0m_get_abundances[0m[0;34m([0m[0mproperty_name[0m[0;34m,[0m [0mindices[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    357[0m [0;34m[0m[0m
+[1;32m    358[0m         [0;32mif[0m [0;34m'number.density'[0m [0;32min[0m [0mproperty_name[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m~/simulation_code/gizmo_analysis/gizmo_io.py[0m in [0;36m_get_abundances[0;34m(self, property_name, indices)[0m
+[1;32m    707[0m         [0;31m# convert to metallicity := log10(mass_fraction / mass_fraction_solar)[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    708[0m         [0;32mif[0m [0;34m'metallicity'[0m [0;32min[0m [0mproperty_name[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 709[0;31m             [0mvalues[0m [0;34m=[0m [0mut[0m[0;34m.[0m[0mmath[0m[0;34m.[0m[0mget_log[0m[0;34m([0m[0mvalues[0m [0;34m/[0m [0mut[0m[0;34m.[0m[0mconstant[0m[0;34m.[0m[0msun_massfraction[0m[0;34m[[0m[0melement_name[0m[0;34m][0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    710[0m [0;34m[0m[0m
+[1;32m    711[0m         [0;32mreturn[0m [0mvalues[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m~/simulation_code/utilities/math.py[0m in [0;36mget_log[0;34m(values)[0m
+[1;32m     45[0m             )
+[1;32m     46[0m [0;34m[0m[0m
+[0;32m---> 47[0;31m         [0mmasks_negative[0m [0;34m=[0m [0mvalues[0m [0;34m<=[0m [0;36m0[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m     48[0m [0;34m[0m[0m
+[1;32m     49[0m         [0;32mif[0m [0mnp[0m[0;34m.[0m[0msum[0m[0;34m([0m[0mmasks_negative[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+
+[0;31mMemoryError[0m: Unable to allocate 14.7 MiB for an array with shape (15370909,) and data type bool
+
+linking length  0.004
+min number particles in group  6
+2.6848909854888916 seconds
+number of groups 5
+max number in a group 33
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+1     33     -7.0551     2.6576    -0.1266     4.12e+05     8.0 
+age os stars in the cluster [0.00024915 0.00106552 0.00070139 0.00094248 0.0010198  0.00094747
+ 0.00077538 0.00110127 0.0010198  0.00098821 0.00040378 0.00037302
+ 0.00065983 0.00081279 0.00026494 0.00052681 0.00032147 0.00129664
+ 0.00037302 0.00081695 0.00062408 0.00042373 0.00055757 0.00012611
+ 0.00029071 0.00064985 0.00060911 0.00152776 0.00027991 0.00024915
+ 0.00128666 0.00064985 0.00065983]
+ids
+[51280903, 26588037, 37061252, 47374357, 15339302, 24596584, 10423519, 17649768, 56589476, 9194985, 13580376, 26786969, 6475933, 61361687, 44986341, 39034039, 5936227, 41642360, 48014500, 22079627, 12188894, 13327854, 63388069, 54386163, 41888462, 13241981, 32835537, 46432994, 17421907, 11506392, 25156215, 12300340, 36141993]
+id children
+[0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+These are the ids printed [51280903 26588037 37061252 47374357 15339302 24596584 10423519 17649768
+ 56589476  9194985 13580376 26786969  6475933 61361687 44986341 39034039
+  5936227 41642360 48014500 22079627 12188894 13327854 63388069 54386163
+ 41888462 13241981 32835537 46432994 17421907 11506392 25156215 12300340
+ 36141993]
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+2     16     -7.0414     2.6467    -0.1363     1.96e+05     7.2 
+age os stars in the cluster [7.45709637e-05 3.10666626e-04 5.46764651e-04 4.34534661e-04
+ 3.92968134e-04 1.30534680e-05 1.30534680e-05 7.32153137e-04
+ 3.41425742e-04 2.08413637e-04 2.29196729e-04 1.67678830e-04
+ 1.77654694e-04 2.69931642e-04 7.21345696e-04 2.69100317e-04]
+ids
+[15067035, 30422363, 16426481, 20288985, 10439702, 58770752, 23010834, 7541445, 11657906, 61129108, 14843777, 38264358, 25398930, 34255080, 37430250, 22842214]
+id children
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0]
+These are the ids printed [15067035 30422363 16426481 20288985 10439702 58770752 23010834  7541445
+ 11657906 61129108 14843777 38264358 25398930 34255080 37430250 22842214]
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+3     11     3.9352     4.9959    0.3199     1.35e+05     5.8 
+age os stars in the cluster [7.45709637e-05 2.59955738e-04 6.09114876e-04 1.84035775e-03
+ 3.82992178e-04 2.79907550e-04 1.77654694e-04 1.46895792e-04
+ 4.23727357e-04 6.45951427e-05 1.56871648e-04]
+ids
+[54809335, 26197051, 6262077, 63434713, 9629525, 53336812, 26068308, 46621643, 11261252, 15311407, 21148538]
+id children
+[0, 0, 0, 0, 0, 3, 1, 0, 0, 0, 0]
+These are the ids printed [54809335 26197051  6262077 63434713  9629525 53336812 26068308 46621643
+ 11261252 15311407 21148538]
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+4     6     -5.4603     2.3030    -0.2903     6.71e+04     5.1 
+age os stars in the cluster [0.00050603 0.00036221 0.00034143 0.00040378 0.00058833 0.00056755]
+ids
+[59879456, 27539227, 33476685, 60419931, 27280572, 36734603]
+id children
+[0, 0, 1, 0, 0, 0]
+These are the ids printed [59879456 27539227 33476685 60419931 27280572 36734603]
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+5     6     -7.9375     3.2024    -0.2988     8.31e+04     3.8 
+age os stars in the cluster [5.46193259e-05 4.23727357e-04 1.77654694e-04 1.14283955e-03
+ 7.45709637e-05 2.39172619e-04]
+ids
+[20152445, 47213678, 65401501, 10287116, 26430728, 11862621]
+id children
+[0, 0, 0, 0, 0, 0]
+These are the ids printed [20152445 47213678 65401501 10287116 26430728 11862621]
+------------------------------------------------------------------------------------------------------------------
+
+
+
+The ids of the cluster with group id 1 is [51280903 26588037 37061252 47374357 15339302 24596584 10423519 17649768
+ 56589476  9194985 13580376 26786969  6475933 61361687 44986341 39034039
+  5936227 41642360 48014500 22079627 12188894 13327854 63388069 54386163
+ 41888462 13241981 32835537 46432994 17421907 11506392 25156215 12300340
+ 36141993]
+Total clusters present is 5
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12i_res7100/mhdcv/1Myr/fire2/snapshot_times.txt
+
+  using snapshot index = 669, redshift = 0.002
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12i_res7100/mhdcv/1Myr/fire2/output/snapdir_669/snapshot_669.0.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 70514272 particles
+    dark2     (id = 2): 5513331 particles
+    gas       (id = 0): 55633958 particles
+    star      (id = 4): 15357220 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+
+linking length  0.004
+min number particles in group  6
+2.2672741413116455 seconds
+there are no groups with this linking length
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mTypeError[0m                                 Traceback (most recent call last)
+[0;32m~/stampede_workfolder/fire2/clusters_at_multiple_snapshots/fire2_chemistry_analysis_multiple_snapshots/identify_many_clusters_parallel.py[0m in [0;36m<module>[0;34m[0m
+[1;32m    129[0m       [0mid_children_in_cluster[0m [0;34m=[0m [0mid_child0[0m[0;34m[[0m[0mind[0m[0;34m[[0m[0mgrp_index[0m[0;34m][0m[0;34m][0m[0;34m[0m[0;34m[0m[0m
+[1;32m    130[0m       [0mage[0m[0;34m=[0m[0mage0[0m[0;34m[[0m[0mind[0m[0;34m[[0m[0mgrp_index[0m[0;34m][0m[0;34m][0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 131[0;31m       [0mnstar[0m [0;34m=[0m [0mlen[0m[0;34m([0m[0mids_in_cluster[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    132[0m       [0mgroupid[0m[0;34m=[0m[0mgrpid[0m[0;34m[[0m[0mgrp_index[0m[0;34m][0m[0;34m[0m[0;34m[0m[0m
+[1;32m    133[0m       [0mprint[0m[0;34m([0m[0;34m'------------------------------------------------------------------------------------------------------------------'[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;31mTypeError[0m: object of type 'numpy.uint32' has no len()
+
+linking length  0.004
+min number particles in group  6
+2.078400135040283 seconds
+there are no groups with this linking length
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mTypeError[0m                                 Traceback (most recent call last)
+[0;32m~/stampede_workfolder/fire2/clusters_at_multiple_snapshots/fire2_chemistry_analysis_multiple_snapshots/identify_many_clusters_parallel.py[0m in [0;36m<module>[0;34m[0m
+[1;32m    129[0m       [0mid_children_in_cluster[0m [0;34m=[0m [0mid_child0[0m[0;34m[[0m[0mind[0m[0;34m[[0m[0mgrp_index[0m[0;34m][0m[0;34m][0m[0;34m[0m[0;34m[0m[0m
+[1;32m    130[0m       [0mage[0m[0;34m=[0m[0mage0[0m[0;34m[[0m[0mind[0m[0;34m[[0m[0mgrp_index[0m[0;34m][0m[0;34m][0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 131[0;31m       [0mnstar[0m [0;34m=[0m [0mlen[0m[0;34m([0m[0mids_in_cluster[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    132[0m       [0mgroupid[0m[0;34m=[0m[0mgrpid[0m[0;34m[[0m[0mgrp_index[0m[0;34m][0m[0;34m[0m[0;34m[0m[0m
+[1;32m    133[0m       [0mprint[0m[0;34m([0m[0;34m'------------------------------------------------------------------------------------------------------------------'[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;31mTypeError[0m: object of type 'numpy.uint32' has no len()
+* reading gas properties: ['acceleration', 'density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'photon.energy', 'position', 'potential', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    snapshot_669.0.hdf5
+
+linking length  0.004
+min number particles in group  6
+1.0048260688781738 seconds
+number of groups 2
+max number in a group 32
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+1     32     -1.0853     5.8199    -0.1191     4.00e+05     9.0 
+age os stars in the cluster [1.84975503e-04 3.49451129e-04 2.26509644e-04 1.44272116e-04
+ 1.44272116e-04 1.33473270e-04 1.13536953e-04 2.15710760e-04
+ 5.12360682e-05 2.77181394e-04 2.87980306e-04 2.87980306e-04
+ 2.26509644e-04 1.75007320e-04 1.84975503e-04 4.10922112e-04
+ 6.20348763e-05 1.15107857e-03 9.45061868e-04 6.78405826e-04
+ 2.77181394e-04 1.01733365e-03 1.11951138e-03 6.78405826e-04
+ 7.80582084e-04 8.83589491e-04 1.23248890e-03 8.83589491e-04
+ 7.60645218e-04 1.08877494e-03 6.78405826e-04 1.19178370e-03]
+ids
+[19257199, 32438081, 63072228, 14846588, 44448465, 22344815, 45510689, 37916827, 65434134, 28816368, 48760620, 29923209, 21574123, 33863050, 15088244, 67094680, 43780604, 13284148, 52357219, 62409047, 13733944, 53863201, 21551515, 60317067, 9282049, 25820686, 23875869, 30130989, 53749412, 24815901, 57454588, 39732946]
+id children
+[0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+These are the ids printed [19257199 32438081 63072228 14846588 44448465 22344815 45510689 37916827
+ 65434134 28816368 48760620 29923209 21574123 33863050 15088244 67094680
+ 43780604 13284148 52357219 62409047 13733944 53863201 21551515 60317067
+  9282049 25820686 23875869 30130989 53749412 24815901 57454588 39732946]
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+2     10     1.6573     -2.9461    -0.0422     1.31e+05     4.5 
+age os stars in the cluster [0.00067841 0.00082212 0.00095586 0.00135627 0.00022651 0.00041092
+ 0.00049316 0.00022651 0.00016421 0.00089356]
+ids
+[56109643, 21462988, 21763686, 50229753, 59708801, 21496515, 27441254, 46260310, 18658475, 40680678]
+id children
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+These are the ids printed [56109643 21462988 21763686 50229753 59708801 21496515 27441254 46260310
+ 18658475 40680678]
+------------------------------------------------------------------------------------------------------------------
+
+
+
+The ids of the cluster with group id 1 is [19257199 32438081 63072228 14846588 44448465 22344815 45510689 37916827
+ 65434134 28816368 48760620 29923209 21574123 33863050 15088244 67094680
+ 43780604 13284148 52357219 62409047 13733944 53863201 21551515 60317067
+  9282049 25820686 23875869 30130989 53749412 24815901 57454588 39732946]
+Total clusters present is 2
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12i_res7100/mhdcv/1Myr/fire2/snapshot_times.txt
+
+  using snapshot index = 687, redshift = 0.001
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12i_res7100/mhdcv/1Myr/fire2/output/snapdir_687/snapshot_687.0.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 70514272 particles
+    dark2     (id = 2): 5513331 particles
+    gas       (id = 0): 55624007 particles
+    star      (id = 4): 15368701 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['acceleration', 'density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'photon.energy', 'position', 'potential', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    snapshot_687.0.hdf5
+    snapshot_669.1.hdf5
+    snapshot_687.1.hdf5
+    snapshot_669.2.hdf5
+    snapshot_687.2.hdf5
+    snapshot_669.3.hdf5
+    snapshot_687.3.hdf5
+
+* reading cosmological parameters from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12i_res7100/mhdcv/1Myr/fire2/initial_condition/ic_agora_m12i.conf
+
+* checking sanity of particle properties
+! warning: gas id.child [min, max] = [0.000, 4.290e9]
+! warning: star id.child [min, max] = [0.000, 4.294e9]
+
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12i_res7100/mhdcv/1Myr/fire2/track/host_coordinates.hdf5
+  host1 position = (41846.17, 44104.88, 46282.07) [kpc comoving]
+  host1 velocity = (-47.9, 81.0, 89.7) [km / s]
+  host1 axis ratios = (0.18, 0.19, 0.95)
+  host1 R_90 = 9.7 kpc
+  host1 M_90 = 6.2e+10 Msun
+
+* reading cosmological parameters from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12i_res7100/mhdcv/1Myr/fire2/initial_condition/ic_agora_m12i.conf
+
+* checking sanity of particle properties
+! warning: gas id.child [min, max] = [0.000, 4.290e9]
+! warning: star id.child [min, max] = [0.000, 4.294e9]
+
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12i_res7100/mhdcv/1Myr/fire2/track/host_coordinates.hdf5
+  host1 position = (41845.29, 44106.22, 46283.80) [kpc comoving]
+  host1 velocity = (-48.5, 80.3, 89.6) [km / s]
+  host1 axis ratios = (0.18, 0.19, 0.96)
+  host1 R_90 = 9.8 kpc
+  host1 M_90 = 6.2e+10 Msun
+
+linking length  0.004
+min number particles in group  6
+1.536546230316162 seconds
+number of groups 5
+max number in a group 27
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+1     27     -7.4600     2.2024    -0.2042     3.28e+05     7.6 
+age os stars in the cluster [0.00180935 0.00182016 0.00187336 0.00193571 0.00199473 0.00210446
+ 0.00217927 0.00220006 0.00180935 0.00232558 0.00176862 0.0019382
+ 0.00196647 0.00213272 0.00201468 0.00174784 0.00183014 0.00227155
+ 0.0027537  0.00210695 0.00218925 0.002156   0.00211526 0.00164559
+ 0.00258993 0.00180935 0.00289752]
+ids
+[25466599, 40614481, 56098613, 17186125, 65811955, 11388264, 12028502, 32346513, 14141006, 21662392, 63529362, 68224804, 56756004, 22190112, 30403658, 29911232, 27466844, 24804289, 25305403, 16098236, 7199582, 64987508, 38804833, 29927037, 28039518, 52439875, 17208106]
+id children
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+These are the ids printed [25466599 40614481 56098613 17186125 65811955 11388264 12028502 32346513
+ 14141006 21662392 63529362 68224804 56756004 22190112 30403658 29911232
+ 27466844 24804289 25305403 16098236  7199582 64987508 38804833 29927037
+ 28039518 52439875 17208106]
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+2     22     -8.5490     3.1483    -0.0971     2.67e+05     6.2 
+age os stars in the cluster [7.31217842e-04 5.87414625e-04 7.11268210e-04 4.95148284e-04
+ 8.55072182e-04 1.09114534e-03 7.51998726e-04 6.90487362e-04
+ 6.59731740e-04 7.61973557e-04 1.05306194e-04 2.23601481e-06
+ 5.05954233e-04 3.10616683e-04 6.18170153e-04 1.46035663e-04
+ 1.26086526e-04 1.66816031e-04 1.87596418e-04 6.69706532e-04
+ 1.93238301e-03 1.05306194e-04]
+ids
+[15042482, 48337581, 36233523, 16396545, 47799337, 7220555, 16171272, 12539863, 55465910, 25284769, 26448022, 10535786, 10127436, 6979907, 15201019, 28558039, 45478364, 14909327, 15584548, 58950153, 8083446, 55643692]
+id children
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+These are the ids printed [15042482 48337581 36233523 16396545 47799337  7220555 16171272 12539863
+ 55465910 25284769 26448022 10535786 10127436  6979907 15201019 28558039
+ 45478364 14909327 15584548 58950153  8083446 55643692]
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+3     18     3.1868     5.3073    0.2755     2.25e+05     7.8 
+age os stars in the cluster [0.00144027 0.00165557 0.00160403 0.00170711 0.00170711 0.00159406
+ 0.00163479 0.0013372  0.00162481 0.00154252 0.00182016 0.00175782
+ 0.00161484 0.00146022 0.00205624 0.00144027 0.00174784 0.00135798]
+ids
+[16325991, 48781101, 41872070, 44659541, 22122317, 50114161, 65422610, 31224868, 19120628, 14707724, 33194457, 18072398, 9537243, 17193187, 48680581, 55235241, 15180473, 15793537]
+id children
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
+These are the ids printed [16325991 48781101 41872070 44659541 22122317 50114161 65422610 31224868
+ 19120628 14707724 33194457 18072398  9537243 17193187 48680581 55235241
+ 15180473 15793537]
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+4     8     -8.6967     2.6285    -0.1735     7.70e+04     3.2 
+age os stars in the cluster [0.00109115 0.00150179 0.00072124 0.00141949 0.00090578 0.00100885
+ 0.00135798 0.00082349]
+ids
+[20279989, 36745078, 26058330, 14174670, 24823278, 68872862, 19406101, 36698597]
+id children
+[0, 0, 0, 0, 0, 0, 0, 0]
+These are the ids printed [20279989 36745078 26058330 14174670 24823278 68872862 19406101 36698597]
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+5     7     -5.8712     1.6926    -0.2326     7.92e+04     3.8 
+age os stars in the cluster [0.00058741 0.00055666 0.00041286 0.00028984 0.00053671 0.00039291
+ 0.0005259 ]
+ids
+[8010571, 22626989, 7762103, 38876605, 64598753, 31273171, 24186683]
+id children
+[1, 0, 0, 0, 0, 0, 0]
+These are the ids printed [ 8010571 22626989  7762103 38876605 64598753 31273171 24186683]
+------------------------------------------------------------------------------------------------------------------
+
+
+
+The ids of the cluster with group id 1 is [25466599 40614481 56098613 17186125 65811955 11388264 12028502 32346513
+ 14141006 21662392 63529362 68224804 56756004 22190112 30403658 29911232
+ 27466844 24804289 25305403 16098236  7199582 64987508 38804833 29927037
+ 28039518 52439875 17208106]
+Total clusters present is 5
+
+linking length  0.004
+min number particles in group  6
+0.5569353103637695 seconds
+number of groups 3
+max number in a group 23
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+1     23     1.3478     5.3134    -0.1549     2.89e+05     9.9 
+age os stars in the cluster [8.68529060e-04 1.21821403e-03 5.60378676e-04 1.32121012e-03
+ 5.91941064e-04 8.68529060e-04 3.14525736e-04 6.73338995e-04
+ 5.71176330e-04 4.98915200e-04 5.19679870e-04 4.58216501e-04
+ 2.11534052e-04 4.13364954e-04 4.78150549e-04 6.38260249e-06
+ 3.78480477e-04 1.38267574e-03 1.17751409e-03 5.40444558e-04
+ 5.60378676e-04 6.22672903e-04 1.58783918e-03]
+ids
+[9571481, 36655505, 24747411, 20957109, 9648047, 18739000, 25901561, 37640507, 63921255, 31854049, 14419584, 53206289, 49166100, 65635296, 31090838, 51763826, 25866617, 18279623, 51436052, 61740553, 40408438, 16350227, 19920701]
+id children
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+These are the ids printed [ 9571481 36655505 24747411 20957109  9648047 18739000 25901561 37640507
+ 63921255 31854049 14419584 53206289 49166100 65635296 31090838 51763826
+ 25866617 18279623 51436052 61740553 40408438 16350227 19920701]
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+2     20     -1.6442     5.8787    -0.1910     2.24e+05     7.9 
+age os stars in the cluster [0.00144414 0.00119745 0.00142338 0.00103299 0.00101305 0.00103299
+ 0.00113598 0.00147487 0.00119745 0.00147487 0.00149564 0.00143417
+ 0.00135194 0.00112602 0.00159864 0.00187607 0.00146491 0.00172157
+ 0.00164931 0.00143417]
+ids
+[22864126, 12415944, 49763797, 15765027, 35359898, 21336212, 53674343, 45022032, 57880651, 58966300, 64207451, 25362126, 61003292, 10299705, 19291981, 26537348, 9156781, 8105493, 59095713, 27535142]
+id children
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+These are the ids printed [22864126 12415944 49763797 15765027 35359898 21336212 53674343 45022032
+ 57880651 58966300 64207451 25362126 61003292 10299705 19291981 26537348
+  9156781  8105493 59095713 27535142]
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+3     8     0.9661     5.7275    -0.0944     1.07e+05     4.7 
+age os stars in the cluster [0.00037599 0.00072484 0.00021153 0.00010854 0.00054044 0.0007049
+ 0.00076637 0.0007049 ]
+ids
+[27535613, 48181405, 14603101, 30036433, 15214155, 17035983, 20248879, 19070111]
+id children
+[0, 0, 1, 0, 0, 0, 0, 0]
+These are the ids printed [27535613 48181405 14603101 30036433 15214155 17035983 20248879 19070111]
+------------------------------------------------------------------------------------------------------------------
+
+
+
+The ids of the cluster with group id 1 is [ 9571481 36655505 24747411 20957109  9648047 18739000 25901561 37640507
+ 63921255 31854049 14419584 53206289 49166100 65635296 31090838 51763826
+ 25866617 18279623 51436052 61740553 40408438 16350227 19920701]
+Total clusters present is 3

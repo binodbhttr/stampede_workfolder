@@ -27,7 +27,7 @@ from fof_analysis import fof
 
 simname = 'm12i_res7100_mhdcv'
 simdir = '/scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12i_res7100/mhdcv/1Myr/fire2/'
-snapnumber = 670
+snapnumber = 585
 
 for s in range(snapnumber,696,3):
   part = gizmo.io.Read.read_snapshots(['all'],'snapshot_index', snapnumber, simulation_name=simname, simulation_directory=simdir, assign_hosts_rotation=True, assign_hosts=True)  
@@ -85,8 +85,8 @@ for s in range(snapnumber,696,3):
   id_child0 = id_child[keep]
   age0      = age[keep]
   
-  linking_length = 0.01 #10 parsec (unit here is in kpc)
-  ncut           = 5 #5 star particles
+  linking_length = 0.004 #4 parsec (unit here is in kpc)
+  ncut           = 6 #6 star particles
   
   ind, xcm, ycm, zcm, mtot, grpid, r90, r50, rmax =fof.find(x0,y0,z0, b=linking_length, mass=mass0, ncut=ncut)
   ngroup = len(mtot)
@@ -134,7 +134,7 @@ for s in range(snapnumber,696,3):
   
   print('------------------------------------------------------------------------------------------------------------------')
   
-  path="./fire2_data_pkl/" #creating a path to store the data only if it does not exist
+  path="./fire2_clusterdata_pkl_b4n6/" #creating a path to store the data only if it does not exist
   if not os.path.exists(path):
     os.makedirs(path)
   
