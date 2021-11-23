@@ -2,9 +2,9 @@
 
 #----------------------------------------------------
 
-#SBATCH -J fire2_b4n6_clusters     # Job name Give a name for the job here good convention would include the simulation name
-#SBATCH -o fire2_b4n6_clusters.o%j # Name of stdout output file
-#SBATCH -e fire2_b4n6_clusters.e%j # Name of stderr error file
+#SBATCH -J fire2_b4n4_clusters     # Job name Give a name for the job here good convention would include the simulation name
+#SBATCH -o fire2_b4n4_clusters.o%j # Name of stdout output file
+#SBATCH -e fire2_b4n4_clusters.e%j # Name of stderr error file
 #SBATCH -p normal           # Queue (partition) name skx-normal more memory if you use normal only it has less memory
 #SBATCH -N 1                # Total # of nodes (must be 1 for serial) Not required for now
 #SBATCH -n 1                # Total # of mpi tasks (should be 1 for serial) Not required for now
