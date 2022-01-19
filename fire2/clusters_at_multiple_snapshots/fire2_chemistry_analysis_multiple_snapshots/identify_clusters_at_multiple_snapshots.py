@@ -27,9 +27,9 @@ from fof_analysis import fof
 
 simname = 'm12i_res7100_mhdcv'
 simdir = '/scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12i_res7100/mhdcv/1Myr/fire2/'
-snapnumber = 696
+snapnumber = 675
 
-for s in range(snapnumber,697,1):
+for s in range(snapnumber,696,3):
   part = gizmo.io.Read.read_snapshots(['all'],'snapshot_index', snapnumber, simulation_name=simname, simulation_directory=simdir, assign_hosts_rotation=True, assign_hosts=True)  
   
   rxyz     = part['star'].prop('host.distance.total')
@@ -46,7 +46,7 @@ for s in range(snapnumber,697,1):
   neh      = part['star'].prop('metallicity.ne')
   sih      = part['star'].prop('metallicity.si')
   sh      = part['star'].prop('metallicity.s')
-  cah      = part['star'].prop('metallicity.ca')
+  cah      = part['star'].prop('metallicity.ca') 
   mgfe    = part['star'].prop('metallicity.mg - metallicity.fe')
   sife    = part['star'].prop('metallicity.si - metallicity.fe')
   cafe    = part['star'].prop('metallicity.ca - metallicity.fe')
@@ -86,7 +86,7 @@ for s in range(snapnumber,697,1):
   age0      = age[keep]
   
   linking_length = 0.004 #4 parsec (unit here is in kpc)
-  ncut           = 4 #4 star particles
+  ncut           = 5 #4 star particles
   
   ind, xcm, ycm, zcm, mtot, grpid, r90, r50, rmax =fof.find(x0,y0,z0, b=linking_length, mass=mass0, ncut=ncut)
   ngroup = len(mtot)
@@ -134,7 +134,7 @@ for s in range(snapnumber,697,1):
   
   print('------------------------------------------------------------------------------------------------------------------')
   
-  path="./fire2_clusterdata_pkl_b4n4/" #creating a path to store the data only if it does not exist
+  path="./fire2_clusterdata_pkl_b4n5/" #creating a path to store the data only if it does not exist
   if not os.path.exists(path):
     os.makedirs(path)
   

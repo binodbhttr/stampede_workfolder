@@ -27,9 +27,9 @@ from fof_analysis import fof
 
 simname = 'm12i_res7100_mhdcv'
 simdir = '/scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12i_res7100/mhdcv/1Myr/fire2/'
-snapnumber = 608
+snapnumber = 585
 
-for s in range(snapnumber,668,3):
+for s in range(snapnumber,696,3):
   part = gizmo.io.Read.read_snapshots(['all'],'snapshot_index', snapnumber, simulation_name=simname, simulation_directory=simdir, assign_hosts_rotation=True, assign_hosts=True)  
   
   rxyz     = part['star'].prop('host.distance.total')
