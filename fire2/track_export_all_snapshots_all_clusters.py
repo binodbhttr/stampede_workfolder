@@ -16,7 +16,7 @@ import pickle
 
 
 simname = 'm12i_res7100_mhdcv'
-simdir = '/scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/fire2'
+simdir = '/scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12i_res7100/mhdcv/1Myr/fire2/'
 
 # In[ ]:
 snapshot_start=596
@@ -24,9 +24,9 @@ snapshot_end=696 #ran out of memory after 646
 
 
 #Loading the sample cluster to be tracked and sorting its id and id_child
-cluster_group="snapshot596" #Remember to change it if you  are changing the star cluster you are tracking in given snapshot
+snapnumber=596 #Remember to change it if you  are changing the star cluster you are tracking in given snapshot
 
-path="./data_pkl/" #creating a path to store the data only if it does not exist
+path="/home1/07428/binod/work2/data/fire2data_b4n5_pkl/" #creating a path to store the data only if it does not exist
 if not os.path.exists(path):
   os.makedirs(path)
 
@@ -37,9 +37,8 @@ if not os.path.exists(path):
 ###############################################
 #loading data of all clusters (id, id_children and all)
 
-cluster_path="./"
-cluster_file_name="clusters_"+simname+"_snapshot_"+str(snapshot_start) 
-with open(cluster_path+cluster_file_name, "rb") as fp:
+cluster_file_name="fire2_clusters_"+simname+"_snapshot_"+str(snapnumber)+"_b4n5.pkl" 
+with open(path+cluster_file_name, "rb") as fp:
     import_cluster = pickle.load(fp)
 
 '''
@@ -207,7 +206,7 @@ for i in range(total_snaps):               #we run a for loop until the end of a
   #We have collected all tracked information for our test clusters for one snapshot now which is in dictionary tracked_data_all_clusters.
   #We would store that dictionary in a pickle file as a backup data from each snapshot about or all star cluster.
   ###Now moving out of the j loop. We scanned all clusters and stored the tracked data into a dictionary tracked_data_all_clusters  
-  file_name="all_clusters_at_snapshot_"+str(snap)+".pkl"
+  file_name="tracked_clusters_at_snapshot_"+str(snap)+".pkl"
   with open(path+file_name, 'wb') as output:
     pickle.dump(tracked_data_all_clusters, output)
   print("\n Stored tracked data of all stars clusters in the snapshot no.",snap,"to filename:",file_name,"\n#####\n")
@@ -219,7 +218,7 @@ for i in range(total_snaps):               #we run a for loop until the end of a
   
 #Finally we scanned through all the snapshots and now we come out of the loop to store the final file that contains all the tracked information of all clusters 
 #Now we store the tracked data of all clusters into a dictionary with snapshot number as the key. This would be our final dictionary of dictinaries. 
-with open(path+"total_data_all_clusters_all_snapshots.pkl", 'wb') as output:
+with open(path+"total_data_tracked_clusters_all_snapshots.pkl", 'wb') as output:
   pickle.dump(tracked_data_all_clusters_each_snap, output) #access the data using tracked_data_all_clusters_each_snap[snapshot][cluster_id]["x_tracked"])
   
 #Expected Result: tracked_data_all_clusters_each_snap={596:{1:tracked_data,2:tracked_data..},597:{1:tracked_data,2:tracked_data..upto total clusters},598....     upto total snapshots}

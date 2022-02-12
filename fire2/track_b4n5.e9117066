@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "track_export_all_snapshots_all_clusters.py", line 40, in <module>
+    cluster_file_name="fire2_clusters_"+simname+"_snapshot_"+str(snapnumber)+"_b4n5.pkl" 
+NameError: name 'snapnumber' is not defined
