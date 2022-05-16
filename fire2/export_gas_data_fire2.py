@@ -23,14 +23,15 @@ bins = np.arange(-25,25,0.1)
 ############################################################################
 simname = 'm12i_res7100_mhdcv'
 simtype="fire2"  #this is the simtype eg. fire2, fire3, sf-fire3, sf-fire3-alpha01, sf-fire3-alpha03, sf-fire3-alpha05 
-simdir = '/scratch/projects/xsede/GalaxiesOnFIRE/mhdcv/m12i_res7100_mhdcv/1Myr/fire2/'
-gas_datapath="./"+simtype+"_gas_data_pkl/"  #path to store the gas data
+simdir = '/scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12i_res7100/mhdcv/1Myr/fire2/'
+work_data_path="/home1/07428/binod/work2/data/gas_data/"
+gas_datapath=work_data_path+simtype+"_gas_data_pkl/"  #path to store the gas data
 if not os.path.exists(gas_datapath):
   os.makedirs(gas_datapath)
                 
-snap=596 #this is the snapshot at which the clusters were taken from using the fof algorithm I am using this to extract information from the snapshot where the clusters were first seen
-snapshot_start=596  #snapshot to begin creating the figure
-snapshot_end=696    #snapshot to stop at
+#snap=596 #this is the snapshot at which the clusters were taken from using the fof algorithm I am using this to extract information from the snapshot where the clusters were first seen
+snapshot_start=585  #snapshot to begin creating the figure
+snapshot_end=596    #snapshot to stop at
 
 snapshot_list=np.arange(snapshot_start,snapshot_end+1) #create a list of snapshot numbers to plot to plot eg. [596,597, ...]
 time=snapshot_list-snapshot_start #time starts from zero here where t=0 is at the snapshot where we start from eg. [0,1,2,3,....]
@@ -94,7 +95,7 @@ for i in range(len(time)):
     file_name=simtype+"_gas_data"+str(snapnumber)+".pkl"
     with open(gas_datapath+file_name, 'wb') as output:
       pickle.dump(tracked_gas, output)
-    print("\n Stored the gas data for background plot from the snapshot no.",snap,"to filename:",file_name,"\n#####\n")
+    print("\n Stored the gas data for background plot from the snapshot no.",snapnumber,"to filename:",file_name,"\n#####\n")
     '''
     This is how to read the data:
     file_name="gas_data_snapshot_"+str(snapnumber)+".pkl"

@@ -26,10 +26,10 @@ from fof_analysis import fof
 #srcm = np.sqrt(sxcm**2. + sycm**2.)
 
 simname = 'm12i_res7100_mhdcv'
-simdir = '/scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12i_res7100/mhdcv/1Myr/fire2/'
-snapnumber = 681
+simdir = '/scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12i_res7100/mhdcv/1Myr/fire3/'
+snapnumber = 597
 
-for s in range(snapnumber,684,3):
+for s in range(snapnumber,696,3):
   part = gizmo.io.Read.read_snapshots(['all'],'snapshot_index', snapnumber, simulation_name=simname, simulation_directory=simdir, assign_hosts_rotation=True, assign_hosts=True)  
   
   rxyz     = part['star'].prop('host.distance.total')
@@ -96,12 +96,12 @@ for s in range(snapnumber,684,3):
   id_child0 = id_child[keep]
   age0      = age[keep]
   
-  linking_length = 0.004 #4 parsec (unit here is in kpc)
+  linking_length = 0.004 #4 parsec (unit here is in kpc) be careful of the decimal !!!
   ncut           = 5 #4 star particles
   
   ind, xcm, ycm, zcm, mtot, grpid, r90, r50, rmax =fof.find(x0,y0,z0, b=linking_length, mass=mass0, ncut=ncut)
   ngroup = len(mtot)
-  
+  print("These are total number of clusters: ",ngroup)
   export_cluster={}
   for grp_index in range(ngroup):  #iterate over each group
       cluster={}
@@ -154,11 +154,11 @@ for s in range(snapnumber,684,3):
   
   print('------------------------------------------------------------------------------------------------------------------')
   work_data_path="/home1/07428/binod/work2/data/clusters_from_multiple_snapshots/"
-  path=work_data_path+"fire2_clusterdata_pkl_b4n5_may_2022/" #creating a path to store the data only if it does not exist
+  path=work_data_path+"fire3_clusterdata_pkl_b4n5/" #creating a path to store the data only if it does not exist
   if not os.path.exists(path):
     os.makedirs(path)
   
-  file_name="fire2_clusters_"+simname+"_snapshot_"+str(snapnumber)+".pkl" 
+  file_name="fire3_clusters_"+simname+"_snapshot_"+str(snapnumber)+".pkl" 
   
   with open(path+file_name, 'wb') as output:
       # Pickle dictionary using protocol 0.

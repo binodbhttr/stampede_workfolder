@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "identify_clusters_at_multiple_snapshots.py", line 111, in <module>
+    nstar = len(ids_in_cluster)
+TypeError: object of type 'numpy.uint32' has no len()
