@@ -25,11 +25,11 @@ from fof_analysis import fof
 #sind, sxcm, sycm, szcm, smtot, sgrpid, sr90, sr50, srmax =fof.find(x[si],y[si],z[si], b=b_kpc, mass=mass[si], ncut=ncut_min)
 #srcm = np.sqrt(sxcm**2. + sycm**2.)
 
-simname = 'm12f_res7100_mhdcv'
-simdir = '/scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12f_res7100/mhdcv/1Myr/'
-snapnumber = 596
+simname = 'm12i_res7100_mhdcv'
+simdir = '/scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12i_res7100/mhdcv/1Myr/fire2/'
+snapnumber = 585
 
-for s in range(snapnumber,690,3):
+for s in range(snapnumber,696,3):
   part = gizmo.io.Read.read_snapshots(['all'],'snapshot_index', snapnumber, simulation_name=simname, simulation_directory=simdir, assign_hosts_rotation=True, assign_hosts=True)  
   
   rxyz     = part['star'].prop('host.distance.total')
@@ -57,10 +57,13 @@ for s in range(snapnumber,690,3):
   age0      = age[keep]
   
   linking_length = 0.004 #4 parsec
-  ncut           = 4 #4 star particles
+  ncut           = 5 #5 star particles
   
   ind, xcm, ycm, zcm, mtot, grpid, r90, r50, rmax =fof.find(x0,y0,z0, b=linking_length, mass=mass0, ncut=ncut)
   ngroup = len(mtot)
+
+  if ngroup==0:
+    continue
   
   export_cluster={}
   for grp_index in range(ngroup):  #iterate over each group
@@ -105,11 +108,11 @@ for s in range(snapnumber,690,3):
   
   print('------------------------------------------------------------------------------------------------------------------')
   
-  path="./fire2_data_pkl/" #creating a path to store the data only if it does not exist
+  path="./fire2_data_pkl_b4n5/" #creating a path to store the data only if it does not exist
   if not os.path.exists(path):
     os.makedirs(path)
   
-  file_name="fire2_clusters_"+simname+"_snapshot_"+str(snapnumber)+".pkl" 
+  file_name="fire2_clusters_"+simname+"_snapshot_"+str(snapnumber)+"_b4n5.pkl" 
   
   with open(path+file_name, 'wb') as output:
       # Pickle dictionary using protocol 0.

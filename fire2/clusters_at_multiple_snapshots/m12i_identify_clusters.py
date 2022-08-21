@@ -27,6 +27,7 @@ from fof_analysis import fof
 
 simname = 'm12i_res7100_mhdcv'
 simdir = '/scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12i_res7100/mhdcv/1Myr/fire2/'
+
 snapnumber = 608
 part = gizmo.io.Read.read_snapshots(['all'],'snapshot_index', snapnumber, simulation_name=simname, simulation_directory=simdir, assign_hosts_rotation=True, assign_hosts=True)  
 
@@ -55,7 +56,7 @@ id_child0 = id_child[keep]
 age0      = age[keep]
 
 linking_length = 0.004 #4 parsec
-ncut           = 4 #4 star particles
+ncut           = 5 #4 star particles
 
 ind, xcm, ycm, zcm, mtot, grpid, r90, r50, rmax =fof.find(x0,y0,z0, b=linking_length, mass=mass0, ncut=ncut)
 ngroup = len(mtot)
