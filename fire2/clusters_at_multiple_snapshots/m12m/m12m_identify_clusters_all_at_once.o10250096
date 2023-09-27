@@ -1,0 +1,1808 @@
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 597, redshift = 0.007
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113317064 particles
+    star      (id = 4): 28778914 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.541e5]
+! warning: star mass [min, med, max] = [2968.642, 5524.096, 87057.984]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37589.21, 41587.43, 46743.79) [kpc comoving]
+  host1 velocity = (-184.9, -9.6, 140.6) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.67)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.2404417991638184 seconds
+there are no groups with this linking length
+No clusters found at snapshot:  597
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 600, redshift = 0.007
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_600.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113305872 particles
+    star      (id = 4): 28790112 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_600.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.867e5]
+! warning: star mass [min, med, max] = [2968.642, 5524.334, 87057.984]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37588.64, 41587.39, 46744.23) [kpc comoving]
+  host1 velocity = (-184.9, -10.5, 140.7) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.68)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.0552215576171875 seconds
+number of groups 2
+max number in a group 6
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+1     6     4.0414     0.7113    0.4191     8.93e+04     4.1 
+age os stars in the cluster [0.00126889 0.0006178  0.00066698 0.00066698 0.00087873 0.00066698]
+ids
+[109725689, 94062709, 97761435, 82640070, 126530543, 21766348]
+id children
+[0, 2, 0, 0, 0, 0]
+These are the ids printed [109725689  94062709  97761435  82640070 126530543  21766348]
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+2     5     4.6755     1.4782    -0.0236     6.97e+04     4.2 
+age os stars in the cluster [0.0003577  0.00042272 0.00091124 0.00079703 0.00092708]
+ids
+[99314590, 43003542, 119588653, 133042524, 87084393]
+id children
+[102, 0, 0, 0, 0]
+These are the ids printed [ 99314590  43003542 119588653 133042524  87084393]
+------------------------------------------------------------------------------------------------------------------
+
+
+
+The ids of the cluster with group id 1 is [109725689  94062709  97761435  82640070 126530543  21766348]
+Total clusters present is 2
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 603, redshift = 0.007
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_603.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113299263 particles
+    star      (id = 4): 28796731 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_603.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 2.001e5]
+! warning: star mass [min, med, max] = [2918.688, 5524.388, 87057.984]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37588.06, 41587.33, 46744.68) [kpc comoving]
+  host1 velocity = (-185.1, -11.1, 141.1) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.68)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.3049135208129883 seconds
+number of groups 1
+max number in a group 5
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+1     5     -6.5289     1.2782    0.0039     5.65e+04     3.6 
+age os stars in the cluster [0.00124622 0.00052937 0.00046435 0.00085528 0.00085528]
+ids
+[116963856, 99574025, 125785478, 100987174, 88243121]
+id children
+[0, 0, 0, 0, 0]
+These are the ids printed [116963856  99574025 125785478 100987174  88243121]
+------------------------------------------------------------------------------------------------------------------
+
+
+
+The ids of the cluster with group id 1 is [116963856  99574025 125785478 100987174  88243121]
+Total clusters present is 1
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 606, redshift = 0.007
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_606.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113289576 particles
+    star      (id = 4): 28806427 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_606.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.773e5]
+! warning: star mass [min, med, max] = [2918.688, 5524.514, 87057.984]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37587.49, 41587.29, 46745.12) [kpc comoving]
+  host1 velocity = (-185.3, -11.7, 141.4) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.68)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.198622465133667 seconds
+number of groups 1
+max number in a group 5
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+1     5     -1.3719     -1.9175    0.5218     6.18e+04     3.9 
+age os stars in the cluster [0.00099436 0.00083101 0.00096186 0.00084768 0.00096186]
+ids
+[135175773, 137616842, 110813814, 85131285, 82587210]
+id children
+[0, 0, 0, 0, 0]
+These are the ids printed [135175773 137616842 110813814  85131285  82587210]
+------------------------------------------------------------------------------------------------------------------
+
+
+
+The ids of the cluster with group id 1 is [135175773 137616842 110813814  85131285  82587210]
+Total clusters present is 1
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 609, redshift = 0.006
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_609.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113282177 particles
+    star      (id = 4): 28813838 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_609.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 2.514e5]
+! warning: star mass [min, med, max] = [2918.688, 5524.561, 87057.984]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37586.91, 41587.24, 46745.56) [kpc comoving]
+  host1 velocity = (-185.5, -12.1, 141.8) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.68)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.2848758697509766 seconds
+number of groups 1
+max number in a group 6
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+1     6     6.5297     1.4653    0.2220     7.38e+04     4.3 
+age os stars in the cluster [0.00149007 0.00142507 0.00074172 0.00119756 0.00119756 0.00119756]
+ids
+[126015004, 71072328, 113484608, 99107878, 133057968, 117397189]
+id children
+[0, 1, 0, 0, 0, 0]
+These are the ids printed [126015004  71072328 113484608  99107878 133057968 117397189]
+------------------------------------------------------------------------------------------------------------------
+
+
+
+The ids of the cluster with group id 1 is [126015004  71072328 113484608  99107878 133057968 117397189]
+Total clusters present is 1
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 612, redshift = 0.006
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_612.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113275016 particles
+    star      (id = 4): 28821010 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_612.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 2.571e5]
+! warning: star mass [min, med, max] = [2918.688, 5524.574, 87057.984]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37586.34, 41587.19, 46746.00) [kpc comoving]
+  host1 velocity = (-185.6, -12.4, 142.3) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.68)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.3512349128723145 seconds
+there are no groups with this linking length
+No clusters found at snapshot:  612
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 615, redshift = 0.006
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_615.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113269099 particles
+    star      (id = 4): 28826934 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_615.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 3.314e5]
+! warning: star mass [min, med, max] = [2918.688, 5524.532, 87057.984]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37585.76, 41587.14, 46746.45) [kpc comoving]
+  host1 velocity = (-185.7, -12.4, 142.8) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.68)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.185715675354004 seconds
+number of groups 1
+max number in a group 6
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+1     6     1.3757     6.0557    0.4315     7.69e+04     4.1 
+age os stars in the cluster [0.0007232  0.00055991 0.0012764  0.00055991 0.00108144 0.00147219]
+ids
+[119189685, 71464658, 73639216, 101561962, 84210610, 80165837]
+id children
+[0, 0, 0, 0, 0, 0]
+These are the ids printed [119189685  71464658  73639216 101561962  84210610  80165837]
+------------------------------------------------------------------------------------------------------------------
+
+
+
+The ids of the cluster with group id 1 is [119189685  71464658  73639216 101561962  84210610  80165837]
+Total clusters present is 1
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 618, redshift = 0.006
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_618.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113263030 particles
+    star      (id = 4): 28833012 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_618.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.946e5]
+! warning: star mass [min, med, max] = [2918.688, 5524.491, 1.543e5]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37585.20, 41587.09, 46746.89) [kpc comoving]
+  host1 velocity = (-185.8, -12.1, 143.5) [km / s]
+  host1 axis ratios = (0.25, 0.36, 0.67)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.2031493186950684 seconds
+number of groups 2
+max number in a group 6
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+1     6     7.4393     0.3086    0.0281     9.75e+04     3.6 
+age os stars in the cluster [0.00056651 0.00028079 0.00066397 0.00067979 0.00059899 0.00111963]
+ids
+[102431719, 74415417, 82335651, 84401713, 66637323, 72924682]
+id children
+[0, 1, 0, 0, 0, 0]
+These are the ids printed [102431719  74415417  82335651  84401713  66637323  72924682]
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+2     6     -7.5972     0.2098    -0.1841     7.16e+04     5.2 
+age os stars in the cluster [1.25610896e-05 4.50476778e-05 4.50476778e-05 2.08314283e-04
+ 7.61429927e-04 4.52383299e-04]
+ids
+[76420329, 62700625, 72970057, 102566023, 108748396, 109067625]
+id children
+[0, 0, 0, 0, 1, 0]
+These are the ids printed [ 76420329  62700625  72970057 102566023 108748396 109067625]
+------------------------------------------------------------------------------------------------------------------
+
+
+
+The ids of the cluster with group id 1 is [102431719  74415417  82335651  84401713  66637323  72924682]
+Total clusters present is 2
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 621, redshift = 0.005
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_621.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113258331 particles
+    star      (id = 4): 28837727 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_621.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 2.166e5]
+! warning: star mass [min, med, max] = [2918.688, 5524.424, 1.074e5]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37584.64, 41587.04, 46747.32) [kpc comoving]
+  host1 velocity = (-186.0, -11.7, 144.2) [km / s]
+  host1 axis ratios = (0.25, 0.37, 0.67)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+0.8036479949951172 seconds
+there are no groups with this linking length
+No clusters found at snapshot:  621
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 624, redshift = 0.005
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_624.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113254506 particles
+    star      (id = 4): 28841565 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_624.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.918e5]
+! warning: star mass [min, med, max] = [2918.688, 5524.270, 1.050e5]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37584.07, 41587.00, 46747.78) [kpc comoving]
+  host1 velocity = (-186.2, -10.9, 144.7) [km / s]
+  host1 axis ratios = (0.25, 0.37, 0.67)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+0.5030727386474609 seconds
+number of groups 2
+max number in a group 7
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+1     7     7.8345     -4.5343    0.1432     9.35e+04     4.3 
+age os stars in the cluster [0.00139084 0.00210707 0.00106437 0.00113016 0.00158572 0.00139084
+ 0.00178143]
+ids
+[131077086, 61401801, 106417220, 95016129, 130874357, 54554062, 65745148]
+id children
+[0, 0, 0, 1, 0, 0, 0]
+These are the ids printed [131077086  61401801 106417220  95016129 130874357  54554062  65745148]
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+2     5     8.3586     1.8331    0.7584     5.03e+04     4.7 
+age os stars in the cluster [0.00073874 0.00217204 0.00073874 0.00064131 0.00103189]
+ids
+[131212554, 137830197, 49698365, 84447899, 115076262]
+id children
+[0, 0, 0, 1, 0]
+These are the ids printed [131212554 137830197  49698365  84447899 115076262]
+------------------------------------------------------------------------------------------------------------------
+
+
+
+The ids of the cluster with group id 1 is [131077086  61401801 106417220  95016129 130874357  54554062  65745148]
+Total clusters present is 2
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 627, redshift = 0.005
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_627.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113250686 particles
+    star      (id = 4): 28845393 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_627.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 3.481e5]
+! warning: star mass [min, med, max] = [2918.688, 5524.188, 1.035e5]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37583.49, 41586.96, 46748.24) [kpc comoving]
+  host1 velocity = (-186.4, -9.9, 145.2) [km / s]
+  host1 axis ratios = (0.25, 0.37, 0.67)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+0.5963168144226074 seconds
+number of groups 1
+max number in a group 9
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+1     9     6.9950     1.7854    -0.2084     9.26e+04     7.7 
+age os stars in the cluster [0.00175288 0.00064538 0.00145976 0.00069451 0.0003198  0.00038475
+ 0.00018907 0.00033562 0.00090601]
+ids
+[53057220, 135178450, 100397496, 85539520, 137880248, 128089783, 129243157, 47113231, 76475788]
+id children
+[0, 0, 0, 0, 0, 0, 0, 0, 0]
+These are the ids printed [ 53057220 135178450 100397496  85539520 137880248 128089783 129243157
+  47113231  76475788]
+------------------------------------------------------------------------------------------------------------------
+
+
+
+The ids of the cluster with group id 1 is [ 53057220 135178450 100397496  85539520 137880248 128089783 129243157
+  47113231  76475788]
+Total clusters present is 1
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 630, redshift = 0.005
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_630.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113246290 particles
+    star      (id = 4): 28849797 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_630.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.786e5]
+! warning: star mass [min, med, max] = [2918.688, 5524.092, 1.022e5]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37582.92, 41586.93, 46748.68) [kpc comoving]
+  host1 velocity = (-186.5, -8.9, 145.6) [km / s]
+  host1 axis ratios = (0.24, 0.37, 0.66)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+0.9379563331604004 seconds
+number of groups 2
+max number in a group 11
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+1     11     -7.9352     0.1726    0.4918     1.31e+05     9.1 
+age os stars in the cluster [0.00061616 0.00079516 0.00063198 0.00183759 0.00079516 0.00165025
+ 0.00100664 0.00074604 0.00055122 0.00033891 0.00037138]
+ids
+[34718404, 94098348, 97718026, 114270280, 41069443, 53684758, 68910750, 107350471, 80441280, 117572622, 94805122]
+id children
+[0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
+These are the ids printed [ 34718404  94098348  97718026 114270280  41069443  53684758  68910750
+ 107350471  80441280 117572622  94805122]
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+2     5     3.2554     4.7108    0.2856     6.65e+04     4.4 
+age os stars in the cluster [2.91935105e-05 3.55560227e-04 5.51215902e-04 6.24960303e-05
+ 4.04682138e-04]
+ids
+[112446818, 130152205, 103137914, 133663254, 63248605]
+id children
+[0, 0, 0, 0, 0]
+These are the ids printed [112446818 130152205 103137914 133663254  63248605]
+------------------------------------------------------------------------------------------------------------------
+
+
+
+The ids of the cluster with group id 1 is [ 34718404  94098348  97718026 114270280  41069443  53684758  68910750
+ 107350471  80441280 117572622  94805122]
+Total clusters present is 2
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 633, redshift = 0.005
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_633.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113242314 particles
+    star      (id = 4): 28853773 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_633.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.786e5]
+! warning: star mass [min, med, max] = [2918.688, 5524.008, 1.013e5]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37582.35, 41586.91, 46749.14) [kpc comoving]
+  host1 velocity = (-186.6, -7.7, 145.8) [km / s]
+  host1 axis ratios = (0.24, 0.37, 0.66)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+0.6582331657409668 seconds
+there are no groups with this linking length
+No clusters found at snapshot:  633
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 636, redshift = 0.004
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_636.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113238408 particles
+    star      (id = 4): 28857679 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_636.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.787e5]
+! warning: star mass [min, med, max] = [2918.688, 5523.954, 1.003e5]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37581.77, 41586.89, 46749.61) [kpc comoving]
+  host1 velocity = (-186.6, -6.4, 145.9) [km / s]
+  host1 axis ratios = (0.24, 0.37, 0.66)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+0.8222146034240723 seconds
+number of groups 1
+max number in a group 6
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+1     6     -4.6207     -1.8585    0.0104     7.65e+04     4.4 
+age os stars in the cluster [0.00133767 0.00137013 0.00097891 0.00170809 0.00107713 0.00107713]
+ids
+[84368554, 55484698, 99413863, 102824505, 87025153, 50280642]
+id children
+[0, 0, 0, 0, 0, 0]
+These are the ids printed [ 84368554  55484698  99413863 102824505  87025153  50280642]
+------------------------------------------------------------------------------------------------------------------
+
+
+
+The ids of the cluster with group id 1 is [ 84368554  55484698  99413863 102824505  87025153  50280642]
+Total clusters present is 1
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 639, redshift = 0.004
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_639.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113233619 particles
+    star      (id = 4): 28862469 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_639.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.786e5]
+! warning: star mass [min, med, max] = [2918.688, 5523.881, 99290.391]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37581.19, 41586.89, 46750.07) [kpc comoving]
+  host1 velocity = (-186.3, -5.1, 145.7) [km / s]
+  host1 axis ratios = (0.24, 0.37, 0.66)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+0.8627622127532959 seconds
+number of groups 1
+max number in a group 5
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+1     5     7.3212     3.1026    0.2423     7.38e+04     4.1 
+age os stars in the cluster [0.00081733 0.00098045 0.00124096 0.00078487 0.00065503]
+ids
+[87098701, 57958543, 20459838, 101163507, 32344259]
+id children
+[0, 0, 0, 0, 0]
+These are the ids printed [ 87098701  57958543  20459838 101163507  32344259]
+------------------------------------------------------------------------------------------------------------------
+
+
+
+The ids of the cluster with group id 1 is [ 87098701  57958543  20459838 101163507  32344259]
+Total clusters present is 1
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 642, redshift = 0.004
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_642.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113226191 particles
+    star      (id = 4): 28869897 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_642.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.786e5]
+! warning: star mass [min, med, max] = [2918.688, 5523.976, 1.473e5]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37580.62, 41586.88, 46750.51) [kpc comoving]
+  host1 velocity = (-186.3, -4.5, 145.3) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.66)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+2.410703182220459 seconds
+number of groups 1
+max number in a group 5
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+1     5     -2.0153     4.3882    0.0824     5.43e+04     3.8 
+age os stars in the cluster [0.00019892 0.00036202 0.00034538 0.00068823 0.00072068]
+ids
+[103124364, 122947161, 119558490, 77366892, 78860575]
+id children
+[0, 0, 0, 1, 0]
+These are the ids printed [103124364 122947161 119558490  77366892  78860575]
+------------------------------------------------------------------------------------------------------------------
+
+
+
+The ids of the cluster with group id 1 is [103124364 122947161 119558490  77366892  78860575]
+Total clusters present is 1
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 645, redshift = 0.004
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_645.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113218573 particles
+    star      (id = 4): 28877515 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_645.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.786e5]
+! warning: star mass [min, med, max] = [2918.688, 5524.062, 1.681e5]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37580.04, 41586.86, 46750.97) [kpc comoving]
+  host1 velocity = (-187.3, -4.4, 145.0) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.66)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.0782580375671387 seconds
+there are no groups with this linking length
+No clusters found at snapshot:  645
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 648, redshift = 0.003
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_648.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113210241 particles
+    star      (id = 4): 28885847 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_648.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.786e5]
+! warning: star mass [min, med, max] = [2918.688, 5524.205, 1.243e5]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37579.43, 41586.84, 46751.45) [kpc comoving]
+  host1 velocity = (-187.8, -3.6, 144.4) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.66)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.8760838508605957 seconds
+number of groups 3
+max number in a group 5
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+1     5     0.1497     -4.7268    -0.0799     7.25e+04     4.2 
+age os stars in the cluster [0.00091517 0.00058987 0.00114395 0.00016559 0.00114395]
+ids
+[68862688, 98490871, 69464140, 118931993, 113729952]
+id children
+[1, 0, 0, 0, 0]
+These are the ids printed [ 68862688  98490871  69464140 118931993 113729952]
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+2     5     2.8677     -4.1352    -0.0084     7.78e+04     4.1 
+age os stars in the cluster [3.58077545e-05 1.00697769e-04 1.33142843e-04 3.58077545e-05
+ 3.28646155e-04]
+ids
+[134838325, 89418015, 61908521, 130427668, 125010365]
+id children
+[0, 0, 0, 1, 1]
+These are the ids printed [134838325  89418015  61908521 130427668 125010365]
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+3     5     2.9601     -4.1005    0.0645     6.45e+04     4.2 
+age os stars in the cluster [0.00016559 0.00039437 0.00021467 0.00031284 0.00019471]
+ids
+[109364840, 87648125, 115981669, 52995593, 102916525]
+id children
+[0, 0, 0, 0, 0]
+These are the ids printed [109364840  87648125 115981669  52995593 102916525]
+------------------------------------------------------------------------------------------------------------------
+
+
+
+The ids of the cluster with group id 1 is [ 68862688  98490871  69464140 118931993 113729952]
+Total clusters present is 3
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 651, redshift = 0.003
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_651.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113203823 particles
+    star      (id = 4): 28892265 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_651.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.788e5]
+! warning: star mass [min, med, max] = [2918.688, 5524.194, 1.126e5]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37578.84, 41586.85, 46751.91) [kpc comoving]
+  host1 velocity = (-187.7, -2.7, 143.8) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.66)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.1867125034332275 seconds
+number of groups 3
+max number in a group 10
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+1     10     6.1737     1.7054    -0.4146     1.33e+05     6.9 
+age os stars in the cluster [0.00062058 0.00080026 0.00130519 0.0009791  0.00107726 0.00117542
+ 0.00124031 0.00119123 0.00138671 0.00125694]
+ids
+[71416627, 97526265, 120359674, 109831803, 76099043, 135807068, 53351654, 42771216, 62286580, 73720235]
+id children
+[0, 0, 1, 0, 0, 0, 0, 0, 0, 1]
+These are the ids printed [ 71416627  97526265 120359674 109831803  76099043 135807068  53351654
+  42771216  62286580  73720235]
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+2     5     2.0756     3.5710    0.3271     5.08e+04     3.2 
+age os stars in the cluster [0.00130519 0.00130519 0.00143579 0.00150151 0.00107726]
+ids
+[87372056, 74446769, 52523542, 129611001, 100421505]
+id children
+[0, 0, 0, 0, 1]
+These are the ids printed [ 87372056  74446769  52523542 129611001 100421505]
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+3     5     4.7533     3.0927    0.2891     5.93e+04     2.9 
+age os stars in the cluster [0.0002945  0.00018054 0.00016474 0.0002945  0.00036022]
+ids
+[47348366, 95663904, 101164215, 80021448, 94544392]
+id children
+[0, 1, 3, 0, 0]
+These are the ids printed [ 47348366  95663904 101164215  80021448  94544392]
+------------------------------------------------------------------------------------------------------------------
+
+
+
+The ids of the cluster with group id 1 is [ 71416627  97526265 120359674 109831803  76099043 135807068  53351654
+  42771216  62286580  73720235]
+Total clusters present is 3
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 654, redshift = 0.003
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_654.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113198029 particles
+    star      (id = 4): 28898059 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_654.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.789e5]
+! warning: star mass [min, med, max] = [2918.688, 5524.221, 1.082e5]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37578.24, 41586.87, 46752.35) [kpc comoving]
+  host1 velocity = (-187.5, -2.0, 142.8) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.67)
+  host1 R_90 = 12.2 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+0.6917166709899902 seconds
+number of groups 1
+max number in a group 5
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+1     5     -2.5447     5.6191    0.2265     6.04e+04     3.6 
+age os stars in the cluster [0.00173587 0.00250194 0.00130335 0.00138486 0.00177662]
+ids
+[92967812, 78687560, 134487750, 71188079, 84081869]
+id children
+[0, 0, 0, 0, 0]
+These are the ids printed [ 92967812  78687560 134487750  71188079  84081869]
+------------------------------------------------------------------------------------------------------------------
+
+
+
+The ids of the cluster with group id 1 is [ 92967812  78687560 134487750  71188079  84081869]
+Total clusters present is 1
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 657, redshift = 0.003
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_657.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113192081 particles
+    star      (id = 4): 28904007 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_657.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.797e5]
+! warning: star mass [min, med, max] = [2918.688, 5524.203, 1.098e5]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37577.66, 41586.88, 46752.78) [kpc comoving]
+  host1 velocity = (-186.9, -1.5, 141.4) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.67)
+  host1 R_90 = 12.2 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+0.7459192276000977 seconds
+number of groups 3
+max number in a group 9
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+1     9     -3.6069     -4.7840    0.1012     1.21e+05     5.7 
+age os stars in the cluster [0.00035513 0.00074682 0.00074682 0.00055139 0.00069776 0.00071439
+ 0.00035513 0.00077926 0.00068112]
+ids
+[85045011, 133047962, 103342774, 35784384, 96293297, 130817834, 70049840, 93188977, 123472673]
+id children
+[0, 0, 0, 0, 0, 4, 0, 0, 0]
+These are the ids printed [ 85045011 133047962 103342774  35784384  96293297 130817834  70049840
+  93188977 123472673]
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+2     6     -5.6545     -3.8348    -0.2407     8.36e+04     3.6 
+age os stars in the cluster [0.0016924  0.0017739  0.00162753 0.0022097  0.00156183 0.00143126]
+ids
+[89471007, 113152475, 21099940, 103904603, 121527066, 115323553]
+id children
+[0, 0, 0, 0, 0, 0]
+These are the ids printed [ 89471007 113152475  21099940 103904603 121527066 115323553]
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+3     5     1.7885     3.1460    -0.1669     6.31e+04     5.3 
+age os stars in the cluster [0.00162753 0.00179054 0.0016924  0.0016924  0.00157846]
+ids
+[98811452, 124240965, 121742074, 104801525, 84072080]
+id children
+[0, 0, 0, 1, 0]
+These are the ids printed [ 98811452 124240965 121742074 104801525  84072080]
+------------------------------------------------------------------------------------------------------------------
+
+
+
+The ids of the cluster with group id 1 is [ 85045011 133047962 103342774  35784384  96293297 130817834  70049840
+  93188977 123472673]
+Total clusters present is 3
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 660, redshift = 0.003
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_660.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113184739 particles
+    star      (id = 4): 28911349 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_660.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.800e5]
+! warning: star mass [min, med, max] = [2918.688, 5524.293, 1.767e5]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37577.07, 41586.90, 46753.20) [kpc comoving]
+  host1 velocity = (-186.2, -1.7, 140.0) [km / s]
+  host1 axis ratios = (0.24, 0.35, 0.67)
+  host1 R_90 = 12.2 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+0.9635956287384033 seconds
+there are no groups with this linking length
+No clusters found at snapshot:  660
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 663, redshift = 0.002
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_663.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113175767 particles
+    star      (id = 4): 28920321 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_663.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.800e5]
+! warning: star mass [min, med, max] = [2918.688, 5524.432, 1.321e5]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37576.49, 41586.90, 46753.61) [kpc comoving]
+  host1 velocity = (-185.7, -2.5, 139.1) [km / s]
+  host1 axis ratios = (0.24, 0.35, 0.68)
+  host1 R_90 = 12.2 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.201662302017212 seconds
+number of groups 3
+max number in a group 6
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+1     6     4.9981     0.5625    -0.0646     7.00e+04     3.9 
+age os stars in the cluster [2.24741608e-05 8.73225075e-05 2.33647637e-04 3.31752493e-04
+ 2.66903475e-04 6.41866291e-04]
+ids
+[103343238, 90077300, 119617612, 89305552, 96544268, 117417102]
+id children
+[0, 0, 0, 1, 1, 0]
+These are the ids printed [103343238  90077300 119617612  89305552  96544268 117417102]
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+2     6     1.1376     2.0668    0.1445     7.81e+04     4.0 
+age os stars in the cluster [0.00034838 0.00096778 0.00015217 0.00018543 0.0002827  0.00018543]
+ids
+[52133390, 131389441, 138350604, 32099927, 52838750, 82038378]
+id children
+[0, 0, 0, 0, 0, 0]
+These are the ids printed [ 52133390 131389441 138350604  32099927  52838750  82038378]
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+3     5     7.8118     -2.2501    -0.1324     6.89e+04     3.4 
+age os stars in the cluster [0.00142424 0.0012937  0.00194638 0.0012937  0.0015872 ]
+ids
+[105936015, 91116838, 91419490, 14279071, 102055206]
+id children
+[0, 0, 0, 0, 0]
+These are the ids printed [105936015  91116838  91419490  14279071 102055206]
+------------------------------------------------------------------------------------------------------------------
+
+
+
+The ids of the cluster with group id 1 is [103343238  90077300 119617612  89305552  96544268 117417102]
+Total clusters present is 3
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 666, redshift = 0.002
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_666.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113168917 particles
+    star      (id = 4): 28927172 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_666.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.801e5]
+! warning: star mass [min, med, max] = [2918.688, 5524.480, 1.747e5]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37575.93, 41586.86, 46754.02) [kpc comoving]
+  host1 velocity = (-185.1, -3.6, 138.8) [km / s]
+  host1 axis ratios = (0.24, 0.35, 0.68)
+  host1 R_90 = 12.2 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.2498250007629395 seconds
+number of groups 3
+max number in a group 9
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+1     9     -1.6353     4.1097    0.0685     1.15e+05     4.5 
+age os stars in the cluster [0.00050629 0.00060438 0.00083299 0.00086541 0.00047387 0.00109402
+ 0.00112644 0.00138748 0.0013218 ]
+ids
+[135609181, 126726890, 115740313, 67770585, 65246128, 72661977, 95761539, 79079577, 81670553]
+id children
+[0, 0, 0, 0, 0, 0, 0, 0, 0]
+These are the ids printed [135609181 126726890 115740313  67770585  65246128  72661977  95761539
+  79079577  81670553]
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+2     6     -6.1534     -4.0296    0.2448     7.38e+04     5.0 
+age os stars in the cluster [1.80419244e-04 7.48460640e-05 4.09024207e-04 2.78511284e-04
+ 3.10931624e-04 3.10931624e-04]
+ids
+[61586366, 68347654, 97722440, 49219676, 71079964, 114326543]
+id children
+[0, 0, 0, 0, 0, 0]
+These are the ids printed [ 61586366  68347654  97722440  49219676  71079964 114326543]
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+3     5     4.7226     1.2256    -0.1963     6.32e+04     3.1 
+age os stars in the cluster [0.00047387 0.00086541 0.00040902 0.00044144 0.00067005]
+ids
+[75515455, 71038021, 35787359, 125283932, 110431109]
+id children
+[0, 0, 0, 0, 0]
+These are the ids printed [ 75515455  71038021  35787359 125283932 110431109]
+------------------------------------------------------------------------------------------------------------------
+
+
+
+The ids of the cluster with group id 1 is [135609181 126726890 115740313  67770585  65246128  72661977  95761539
+  79079577  81670553]
+Total clusters present is 3
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 669, redshift = 0.002
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_669.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113162173 particles
+    star      (id = 4): 28933917 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_669.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.802e5]
+! warning: star mass [min, med, max] = [2918.688, 5524.555, 1.697e5]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37575.35, 41586.84, 46754.45) [kpc comoving]
+  host1 velocity = (-184.7, -4.5, 138.6) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.68)
+  host1 R_90 = 12.2 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.1586987972259521 seconds
+number of groups 2
+max number in a group 7
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+1     7     -5.0806     -3.9577    0.3089     9.39e+04     5.5 
+age os stars in the cluster [0.00056689 0.00128422 0.00105563 0.00043639 0.00161006 0.00076222
+ 0.00069739]
+ids
+[129129687, 60016452, 80247993, 129703223, 50114142, 102035440, 61483871]
+id children
+[0, 0, 0, 0, 1, 0, 0]
+These are the ids printed [129129687  60016452  80247993 129703223  50114142 102035440  61483871]
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+2     5     1.7344     4.0242    -0.3833     6.11e+04     2.9 
+age os stars in the cluster [0.00102322 0.00092514 0.00092514 0.00108888 0.00141472]
+ids
+[87016692, 73406393, 57383689, 67334696, 79479318]
+id children
+[0, 0, 0, 0, 0]
+These are the ids printed [87016692 73406393 57383689 67334696 79479318]
+------------------------------------------------------------------------------------------------------------------
+
+
+
+The ids of the cluster with group id 1 is [129129687  60016452  80247993 129703223  50114142 102035440  61483871]
+Total clusters present is 2
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 672, redshift = 0.002
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_672.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113155150 particles
+    star      (id = 4): 28940941 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_672.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.803e5]
+! warning: star mass [min, med, max] = [2918.688, 5524.579, 1.313e5]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37574.79, 41586.81, 46754.88) [kpc comoving]
+  host1 velocity = (-184.4, -5.4, 138.7) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.68)
+  host1 R_90 = 12.1 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+0.9683763980865479 seconds
+number of groups 1
+max number in a group 6
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+1     6     5.1204     -3.7601    -0.4428     7.45e+04     4.5 
+age os stars in the cluster [0.00085438 0.00111534 0.00131065 0.00147438 0.00052776 0.00131065]
+ids
+[105421084, 92376833, 85177059, 106526543, 96707083, 122433165]
+id children
+[0, 0, 0, 0, 0, 0]
+These are the ids printed [105421084  92376833  85177059 106526543  96707083 122433165]
+------------------------------------------------------------------------------------------------------------------
+
+
+
+The ids of the cluster with group id 1 is [105421084  92376833  85177059 106526543  96707083 122433165]
+Total clusters present is 1
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 675, redshift = 0.002
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_675.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113147508 particles
+    star      (id = 4): 28948584 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_675.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.807e5]
+! warning: star mass [min, med, max] = [2918.688, 5524.676, 1.134e5]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37574.21, 41586.77, 46755.31) [kpc comoving]
+  host1 velocity = (-184.2, -6.3, 139.2) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.68)
+  host1 R_90 = 12.1 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.2266407012939453 seconds
+number of groups 3
+max number in a group 8
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+1     8     7.5717     -1.7621    -0.0373     1.15e+05     6.2 
+age os stars in the cluster [0.00079858 0.00101131 0.00094567 0.00088002 0.00107613 0.00123901
+ 0.00083182 0.00177751]
+ids
+[96876356, 92926564, 70496451, 114328900, 93829887, 71748956, 99054892, 117940148]
+id children
+[1, 0, 0, 0, 0, 0, 27, 0]
+These are the ids printed [ 96876356  92926564  70496451 114328900  93829887  71748956  99054892
+ 117940148]
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+2     5     -3.8994     4.3241    0.0679     6.38e+04     3.2 
+age os stars in the cluster [0.00105203 0.00088833 0.0012066  0.00130466 0.00132045]
+ids
+[67971015, 134490381, 89546949, 123697905, 84069832]
+id children
+[0, 0, 0, 0, 0]
+These are the ids printed [ 67971015 134490381  89546949 123697905  84069832]
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+3     5     -6.8047     2.6532    -0.2836     6.66e+04     4.2 
+age os stars in the cluster [0.00061909 0.00110854 0.00061909 0.00068474 0.00058668]
+ids
+[92949515, 46515907, 57294332, 133807863, 125390433]
+id children
+[0, 0, 0, 0, 0]
+These are the ids printed [ 92949515  46515907  57294332 133807863 125390433]
+------------------------------------------------------------------------------------------------------------------
+
+
+
+The ids of the cluster with group id 1 is [ 96876356  92926564  70496451 114328900  93829887  71748956  99054892
+ 117940148]
+Total clusters present is 3
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 678, redshift = 0.001
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_678.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113141087 particles
+    star      (id = 4): 28955007 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_678.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.833e5]
+! warning: star mass [min, med, max] = [2918.688, 5524.664, 1.579e5]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37573.64, 41586.73, 46755.75) [kpc comoving]
+  host1 velocity = (-184.0, -7.1, 140.1) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.68)
+  host1 R_90 = 12.1 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.1436207294464111 seconds
+number of groups 3
+max number in a group 7
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+1     7     7.3902     1.5813    0.2407     8.79e+04     4.1 
+age os stars in the cluster [0.00036726 0.0004977  0.00131363 0.00074281 0.00053094 0.00057996
+ 0.00108514]
+ids
+[126573092, 20923552, 50034583, 98119350, 138147799, 134701037, 85125853]
+id children
+[1, 0, 1, 0, 0, 1, 0]
+These are the ids printed [126573092  20923552  50034583  98119350 138147799 134701037  85125853]
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+2     7     -5.9156     0.9954    -0.9569     8.70e+04     4.9 
+age os stars in the cluster [0.00175402 0.0016892  0.00195011 0.0026024  0.00172161 0.00198252
+ 0.00188447]
+ids
+[97308705, 118016330, 38526653, 137968674, 124565713, 78497522, 97220980]
+id children
+[0, 1, 0, 0, 0, 0, 0]
+These are the ids printed [ 97308705 118016330  38526653 137968674 124565713  78497522  97220980]
+------------------------------------------------------------------------------------------------------------------
+grpid, nstar, xcm (kpc), ycm (kpc), zcm (kpc), mtot (msun), rmax (pc)
+3     5     -5.9323     1.0019    -0.9369     7.94e+04     3.6 
+age os stars in the cluster [0.00289572 0.00198252 0.00221102 0.00181966 0.00195011]
+ids
+[111916482, 116571158, 55732610, 83246424, 74579046]
+id children
+[0, 0, 0, 1, 0]
+These are the ids printed [111916482 116571158  55732610  83246424  74579046]
+------------------------------------------------------------------------------------------------------------------
+
+
+
+The ids of the cluster with group id 1 is [126573092  20923552  50034583  98119350 138147799 134701037  85125853]
+Total clusters present is 3
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 681, redshift = 0.001
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_681.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113134013 particles
+    star      (id = 4): 28962083 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_681.hdf5

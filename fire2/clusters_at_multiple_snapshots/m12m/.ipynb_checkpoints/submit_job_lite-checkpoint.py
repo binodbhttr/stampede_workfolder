@@ -8,7 +8,7 @@
 #SBATCH -p normal           # Queue (partition) name skx-normal more memory if you use normal only it has less memory
 #SBATCH -N 1                # Total # of nodes (must be 1 for serial) Not required for now
 #SBATCH -n 1                # Total # of mpi tasks (should be 1 for serial) Not required for now
-#SBATCH -t 01:59:00         # Run time (hh:mm:ss)
+#SBATCH -t 07:00:00         # Run time (hh:mm:ss)
 #SBATCH --mail-user=binodbhattarai.info.np@gmail.com
 #SBATCH --mail-type=all    # Send email at begin and end of job
 

@@ -1,6 +1,0 @@
-
-# in utilities.simulation.Snapshot():
-* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12f_res7100/mhdcv/1Myr/snapshot_times.txt
-
-  using snapshot index = 585, redshift = 0.010
-

@@ -1,0 +1,1452 @@
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 597, redshift = 0.007
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113317064 particles
+    star      (id = 4): 28778914 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.541e5]
+! warning: star mass [min, med, max] = [2968.642, 5524.096, 87057.984]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37589.21, 41587.43, 46743.79) [kpc comoving]
+  host1 velocity = (-184.9, -9.6, 140.6) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.67)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.156630277633667 seconds
+there are no groups with this linking length
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 597, redshift = 0.007
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113317064 particles
+    star      (id = 4): 28778914 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.541e5]
+! warning: star mass [min, med, max] = [2968.642, 5524.096, 87057.984]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37589.21, 41587.43, 46743.79) [kpc comoving]
+  host1 velocity = (-184.9, -9.6, 140.6) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.67)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.2227177619934082 seconds
+there are no groups with this linking length
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 597, redshift = 0.007
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113317064 particles
+    star      (id = 4): 28778914 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.541e5]
+! warning: star mass [min, med, max] = [2968.642, 5524.096, 87057.984]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37589.21, 41587.43, 46743.79) [kpc comoving]
+  host1 velocity = (-184.9, -9.6, 140.6) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.67)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.165900707244873 seconds
+there are no groups with this linking length
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 597, redshift = 0.007
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113317064 particles
+    star      (id = 4): 28778914 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.541e5]
+! warning: star mass [min, med, max] = [2968.642, 5524.096, 87057.984]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37589.21, 41587.43, 46743.79) [kpc comoving]
+  host1 velocity = (-184.9, -9.6, 140.6) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.67)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.157728910446167 seconds
+there are no groups with this linking length
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 597, redshift = 0.007
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113317064 particles
+    star      (id = 4): 28778914 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.541e5]
+! warning: star mass [min, med, max] = [2968.642, 5524.096, 87057.984]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37589.21, 41587.43, 46743.79) [kpc comoving]
+  host1 velocity = (-184.9, -9.6, 140.6) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.67)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.1584465503692627 seconds
+there are no groups with this linking length
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 597, redshift = 0.007
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113317064 particles
+    star      (id = 4): 28778914 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.541e5]
+! warning: star mass [min, med, max] = [2968.642, 5524.096, 87057.984]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37589.21, 41587.43, 46743.79) [kpc comoving]
+  host1 velocity = (-184.9, -9.6, 140.6) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.67)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.165733814239502 seconds
+there are no groups with this linking length
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 597, redshift = 0.007
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113317064 particles
+    star      (id = 4): 28778914 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.541e5]
+! warning: star mass [min, med, max] = [2968.642, 5524.096, 87057.984]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37589.21, 41587.43, 46743.79) [kpc comoving]
+  host1 velocity = (-184.9, -9.6, 140.6) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.67)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.1729204654693604 seconds
+there are no groups with this linking length
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 597, redshift = 0.007
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113317064 particles
+    star      (id = 4): 28778914 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.541e5]
+! warning: star mass [min, med, max] = [2968.642, 5524.096, 87057.984]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37589.21, 41587.43, 46743.79) [kpc comoving]
+  host1 velocity = (-184.9, -9.6, 140.6) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.67)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.1772775650024414 seconds
+there are no groups with this linking length
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 597, redshift = 0.007
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113317064 particles
+    star      (id = 4): 28778914 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.541e5]
+! warning: star mass [min, med, max] = [2968.642, 5524.096, 87057.984]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37589.21, 41587.43, 46743.79) [kpc comoving]
+  host1 velocity = (-184.9, -9.6, 140.6) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.67)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.1689047813415527 seconds
+there are no groups with this linking length
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 597, redshift = 0.007
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113317064 particles
+    star      (id = 4): 28778914 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.541e5]
+! warning: star mass [min, med, max] = [2968.642, 5524.096, 87057.984]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37589.21, 41587.43, 46743.79) [kpc comoving]
+  host1 velocity = (-184.9, -9.6, 140.6) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.67)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.1716878414154053 seconds
+there are no groups with this linking length
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 597, redshift = 0.007
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113317064 particles
+    star      (id = 4): 28778914 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.541e5]
+! warning: star mass [min, med, max] = [2968.642, 5524.096, 87057.984]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37589.21, 41587.43, 46743.79) [kpc comoving]
+  host1 velocity = (-184.9, -9.6, 140.6) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.67)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.2343840599060059 seconds
+there are no groups with this linking length
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 597, redshift = 0.007
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113317064 particles
+    star      (id = 4): 28778914 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.541e5]
+! warning: star mass [min, med, max] = [2968.642, 5524.096, 87057.984]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37589.21, 41587.43, 46743.79) [kpc comoving]
+  host1 velocity = (-184.9, -9.6, 140.6) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.67)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.210329294204712 seconds
+there are no groups with this linking length
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 597, redshift = 0.007
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113317064 particles
+    star      (id = 4): 28778914 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.541e5]
+! warning: star mass [min, med, max] = [2968.642, 5524.096, 87057.984]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37589.21, 41587.43, 46743.79) [kpc comoving]
+  host1 velocity = (-184.9, -9.6, 140.6) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.67)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.5594587326049805 seconds
+there are no groups with this linking length
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 597, redshift = 0.007
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113317064 particles
+    star      (id = 4): 28778914 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.541e5]
+! warning: star mass [min, med, max] = [2968.642, 5524.096, 87057.984]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37589.21, 41587.43, 46743.79) [kpc comoving]
+  host1 velocity = (-184.9, -9.6, 140.6) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.67)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.160564661026001 seconds
+there are no groups with this linking length
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 597, redshift = 0.007
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113317064 particles
+    star      (id = 4): 28778914 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.541e5]
+! warning: star mass [min, med, max] = [2968.642, 5524.096, 87057.984]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37589.21, 41587.43, 46743.79) [kpc comoving]
+  host1 velocity = (-184.9, -9.6, 140.6) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.67)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.171581506729126 seconds
+there are no groups with this linking length
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 597, redshift = 0.007
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113317064 particles
+    star      (id = 4): 28778914 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.541e5]
+! warning: star mass [min, med, max] = [2968.642, 5524.096, 87057.984]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37589.21, 41587.43, 46743.79) [kpc comoving]
+  host1 velocity = (-184.9, -9.6, 140.6) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.67)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.1578984260559082 seconds
+there are no groups with this linking length
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 597, redshift = 0.007
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113317064 particles
+    star      (id = 4): 28778914 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.541e5]
+! warning: star mass [min, med, max] = [2968.642, 5524.096, 87057.984]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37589.21, 41587.43, 46743.79) [kpc comoving]
+  host1 velocity = (-184.9, -9.6, 140.6) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.67)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.1570801734924316 seconds
+there are no groups with this linking length
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 597, redshift = 0.007
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113317064 particles
+    star      (id = 4): 28778914 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.541e5]
+! warning: star mass [min, med, max] = [2968.642, 5524.096, 87057.984]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37589.21, 41587.43, 46743.79) [kpc comoving]
+  host1 velocity = (-184.9, -9.6, 140.6) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.67)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.1580681800842285 seconds
+there are no groups with this linking length
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 597, redshift = 0.007
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113317064 particles
+    star      (id = 4): 28778914 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.541e5]
+! warning: star mass [min, med, max] = [2968.642, 5524.096, 87057.984]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37589.21, 41587.43, 46743.79) [kpc comoving]
+  host1 velocity = (-184.9, -9.6, 140.6) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.67)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.2524909973144531 seconds
+there are no groups with this linking length
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 597, redshift = 0.007
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113317064 particles
+    star      (id = 4): 28778914 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.541e5]
+! warning: star mass [min, med, max] = [2968.642, 5524.096, 87057.984]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37589.21, 41587.43, 46743.79) [kpc comoving]
+  host1 velocity = (-184.9, -9.6, 140.6) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.67)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.1617133617401123 seconds
+there are no groups with this linking length
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 597, redshift = 0.007
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113317064 particles
+    star      (id = 4): 28778914 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.541e5]
+! warning: star mass [min, med, max] = [2968.642, 5524.096, 87057.984]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37589.21, 41587.43, 46743.79) [kpc comoving]
+  host1 velocity = (-184.9, -9.6, 140.6) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.67)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.1579921245574951 seconds
+there are no groups with this linking length
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 597, redshift = 0.007
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113317064 particles
+    star      (id = 4): 28778914 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.541e5]
+! warning: star mass [min, med, max] = [2968.642, 5524.096, 87057.984]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37589.21, 41587.43, 46743.79) [kpc comoving]
+  host1 velocity = (-184.9, -9.6, 140.6) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.67)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.1632788181304932 seconds
+there are no groups with this linking length
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 597, redshift = 0.007
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113317064 particles
+    star      (id = 4): 28778914 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.541e5]
+! warning: star mass [min, med, max] = [2968.642, 5524.096, 87057.984]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37589.21, 41587.43, 46743.79) [kpc comoving]
+  host1 velocity = (-184.9, -9.6, 140.6) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.67)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.1678211688995361 seconds
+there are no groups with this linking length
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 597, redshift = 0.007
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113317064 particles
+    star      (id = 4): 28778914 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.541e5]
+! warning: star mass [min, med, max] = [2968.642, 5524.096, 87057.984]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37589.21, 41587.43, 46743.79) [kpc comoving]
+  host1 velocity = (-184.9, -9.6, 140.6) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.67)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.1624133586883545 seconds
+there are no groups with this linking length
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 597, redshift = 0.007
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113317064 particles
+    star      (id = 4): 28778914 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.541e5]
+! warning: star mass [min, med, max] = [2968.642, 5524.096, 87057.984]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37589.21, 41587.43, 46743.79) [kpc comoving]
+  host1 velocity = (-184.9, -9.6, 140.6) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.67)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.3141696453094482 seconds
+there are no groups with this linking length
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 597, redshift = 0.007
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113317064 particles
+    star      (id = 4): 28778914 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.541e5]
+! warning: star mass [min, med, max] = [2968.642, 5524.096, 87057.984]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37589.21, 41587.43, 46743.79) [kpc comoving]
+  host1 velocity = (-184.9, -9.6, 140.6) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.67)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.1930651664733887 seconds
+there are no groups with this linking length
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 597, redshift = 0.007
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113317064 particles
+    star      (id = 4): 28778914 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.541e5]
+! warning: star mass [min, med, max] = [2968.642, 5524.096, 87057.984]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37589.21, 41587.43, 46743.79) [kpc comoving]
+  host1 velocity = (-184.9, -9.6, 140.6) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.67)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.1630287170410156 seconds
+there are no groups with this linking length
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 597, redshift = 0.007
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113317064 particles
+    star      (id = 4): 28778914 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.541e5]
+! warning: star mass [min, med, max] = [2968.642, 5524.096, 87057.984]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37589.21, 41587.43, 46743.79) [kpc comoving]
+  host1 velocity = (-184.9, -9.6, 140.6) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.67)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.167776346206665 seconds
+there are no groups with this linking length
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 597, redshift = 0.007
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113317064 particles
+    star      (id = 4): 28778914 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.541e5]
+! warning: star mass [min, med, max] = [2968.642, 5524.096, 87057.984]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37589.21, 41587.43, 46743.79) [kpc comoving]
+  host1 velocity = (-184.9, -9.6, 140.6) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.67)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.1665582656860352 seconds
+there are no groups with this linking length
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 597, redshift = 0.007
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113317064 particles
+    star      (id = 4): 28778914 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.541e5]
+! warning: star mass [min, med, max] = [2968.642, 5524.096, 87057.984]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37589.21, 41587.43, 46743.79) [kpc comoving]
+  host1 velocity = (-184.9, -9.6, 140.6) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.67)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.1723287105560303 seconds
+there are no groups with this linking length
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 597, redshift = 0.007
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113317064 particles
+    star      (id = 4): 28778914 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.541e5]
+! warning: star mass [min, med, max] = [2968.642, 5524.096, 87057.984]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37589.21, 41587.43, 46743.79) [kpc comoving]
+  host1 velocity = (-184.9, -9.6, 140.6) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.67)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.16672682762146 seconds
+there are no groups with this linking length
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 597, redshift = 0.007
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113317064 particles
+    star      (id = 4): 28778914 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.541e5]
+! warning: star mass [min, med, max] = [2968.642, 5524.096, 87057.984]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37589.21, 41587.43, 46743.79) [kpc comoving]
+  host1 velocity = (-184.9, -9.6, 140.6) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.67)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.1975457668304443 seconds
+there are no groups with this linking length
+
+# in utilities.simulation.Snapshot():
+* reading:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/snapshot_times.txt
+
+  using snapshot index = 597, redshift = 0.007
+
+
+# in gizmo_analysis.gizmo_io.Read():
+* reading header from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+  snapshot contains the following number of particles:
+    dark      (id = 1): 140876456 particles
+    dark2     (id = 2): 10063684 particles
+    gas       (id = 0): 113317064 particles
+    star      (id = 4): 28778914 particles
+    blackhole (id = 5): 0 particles
+
+* reading species: ['dark', 'dark2', 'gas', 'star']
+* reading gas properties: ['density', 'electron.fraction', 'hydrogen.neutral.fraction', 'id', 'id.child', 'id.generation', 'magnetic.field', 'mass', 'massfraction', 'position', 'sfr', 'size', 'temperature', 'velocity']
+* reading particles from:
+    scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/output/snapshot_597.hdf5
+
+! cannot find MUSIC config file:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/*/*.conf
+! missing cosmological parameters, assuming the following (from AGORA):
+  assuming omega_baryon = 0.0455
+  assuming sigma_8 = 0.807
+  assuming n_s = 0.961
+
+* checking sanity of particle properties
+! warning: gas mass [min, med, max] = [7067.277, 7067.277, 1.541e5]
+! warning: star mass [min, med, max] = [2968.642, 5524.096, 87057.984]
+
+
+# in gizmo_analysis.gizmo_track.ParticleCoordinate():
+  read 1 host (position, velocity, principal axes) from:  scratch/projects/xsede/GalaxiesOnFIRE/cr_suite/m12m_res7100/mhdcv/1Myr/track/host_coordinates.hdf5
+  host1 position = (37589.21, 41587.43, 46743.79) [kpc comoving]
+  host1 velocity = (-184.9, -9.6, 140.6) [km / s]
+  host1 axis ratios = (0.24, 0.36, 0.67)
+  host1 R_90 = 12.3 kpc
+  host1 M_90 = 1.1e+11 Msun
+
+linking length  0.004
+min number particles in group  5
+1.1854383945465088 seconds
+there are no groups with this linking length
